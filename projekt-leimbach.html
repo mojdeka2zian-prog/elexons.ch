@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekt Leimbach – Komplettsanierung | elexons.ch</title>
+  <meta name="description" content="Projekt Leimbach – hochwertige Komplettsanierung durch elexons.ch. Einblicke in Planung, Ausführung und Ergebnis." />
+  <link rel="canonical" href="https://elexons.ch/projekt-leimbach.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #fff;
+      --bg2: #F7F5F0;
+      --text: #1A1A1A;
+      --text2: #555;
+      --accent: #D52B1E;
+      --gold: #B89A5C;
+      --border: #E5E1D8;
+      --font-h: 'Cormorant Garamond', Georgia, serif;
+      --font-b: 'DM Sans', sans-serif;
+      --nav-h: 76px;
+      --trans: 0.3s ease;
+    }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font-b); color: var(--text); background: var(--bg); overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h);
+      display: flex; align-items: center;
+      padding: 0 40px;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      justify-content: space-between;
+    }
+    .nav-logo img { height: 44px; width: auto; }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a { font-size: .8rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--text2); transition: color var(--trans); }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent); color: #fff;
+      padding: 11px 24px; font-size: .78rem; font-weight: 600;
+      letter-spacing: .08em; text-transform: uppercase; border-radius: 3px;
+      transition: background var(--trans);
+    }
+    .nav-cta:hover { background: #B82318; }
+    @media(max-width:768px) { .nav-links { display: none; } nav { padding: 0 20px; } }
+
+    /* ── HERO ── */
+    .hero {
+      margin-top: var(--nav-h);
+      height: 82vh; min-height: 500px;
+      position: relative; overflow: hidden;
+      background: #1a1a1a;
+    }
+    .hero img {
+      width: 100%; height: 100%; object-fit: cover;
+      opacity: .75; transition: transform 8s ease;
+    }
+    .hero:hover img { transform: scale(1.03); }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.7) 0%, rgba(0,0,0,.15) 60%, transparent 100%);
+    }
+    .hero-content {
+      position: absolute; bottom: 64px; left: 60px; right: 60px;
+    }
+    .hero-tag {
+      font-size: .68rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 12px;
+    }
+    .hero-title {
+      font-family: var(--font-h); font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 400; color: #fff; line-height: 1.1; margin-bottom: 10px;
+    }
+    .hero-sub { font-size: .9rem; color: rgba(255,255,255,.6); }
+    @media(max-width:600px) { .hero-content { left: 24px; right: 24px; bottom: 40px; } }
+
+    /* ── CONTAINER ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    @media(max-width:600px) { .container { padding: 0 20px; } }
+    section { padding: 80px 0; }
+
+    /* ── INTRO ── */
+    .intro-grid {
+      display: grid; grid-template-columns: 1.4fr 1fr; gap: 80px; align-items: start;
+    }
+    .label {
+      font-size: .68rem; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--gold); display: block; margin-bottom: 12px;
+    }
+    h2 { font-family: var(--font-h); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 400; line-height: 1.15; margin-bottom: 20px; }
+    p { font-size: .93rem; color: var(--text2); line-height: 1.8; margin-bottom: 14px; }
+    .meta-list { list-style: none; margin-top: 32px; }
+    .meta-list li {
+      display: flex; align-items: baseline; gap: 12px;
+      padding: 14px 0; border-bottom: 1px solid var(--border);
+      font-size: .85rem;
+    }
+    .meta-list li:first-child { border-top: 1px solid var(--border); }
+    .meta-label { font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: .72rem; color: var(--text); min-width: 110px; }
+    .meta-val { color: var(--text2); }
+    @media(max-width:768px) { .intro-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    /* ── GALLERY MASONRY ── */
+    .gallery-section { background: var(--bg2); }
+    .gallery-header { margin-bottom: 48px; text-align: center; }
+    .gallery-grid {
+      columns: 3; column-gap: 6px;
+    }
+    .gallery-item {
+      break-inside: avoid; margin-bottom: 6px;
+      overflow: hidden; cursor: pointer; position: relative;
+    }
+    .gallery-item img {
+      width: 100%; display: block;
+      transition: transform .5s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.04); }
+    @media(max-width:900px) { .gallery-grid { columns: 2; } }
+    @media(max-width:500px) { .gallery-grid { columns: 1; } }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 999;
+      background: rgba(0,0,0,.95);
+      display: none; align-items: center; justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-height: 90vh; max-width: 90vw; object-fit: contain; border-radius: 2px; }
+    .lb-close {
+      position: fixed; top: 20px; right: 28px;
+      font-size: 2rem; color: #fff; cursor: pointer; z-index: 1000;
+      background: none; border: none; line-height: 1;
+    }
+    .lb-prev, .lb-next {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,.1); border: none; color: #fff;
+      font-size: 1.6rem; padding: 16px 20px; cursor: pointer; z-index: 1000;
+      transition: background .2s;
+    }
+    .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,.2); }
+    .lb-prev { left: 16px; }
+    .lb-next { right: 16px; }
+
+    /* ── CTA ── */
+    .cta-section { background: var(--accent); text-align: center; padding: 72px 0; }
+    .cta-section h2 { font-family: var(--font-h); font-size: 2.4rem; font-weight: 400; color: #fff; margin-bottom: 14px; }
+    .cta-section p { color: rgba(255,255,255,.72); max-width: 500px; margin: 0 auto 32px; }
+    .btn-light {
+      display: inline-block; border: 1.5px solid rgba(255,255,255,.6);
+      color: #fff; padding: 14px 36px; font-size: .82rem;
+      font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      border-radius: 3px; transition: all .3s;
+    }
+    .btn-light:hover { background: #fff; color: var(--accent); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #141414; padding: 32px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px;
+    }
+    footer img { height: 36px; filter: brightness(0) invert(1); opacity: .7; }
+    footer p { font-size: .78rem; color: rgba(255,255,255,.3); }
+    footer a { font-size: .78rem; color: rgba(255,255,255,.3); margin-left: 20px; }
+    footer a:hover { color: rgba(255,255,255,.7); }
+    @media(max-width:600px) { footer { flex-direction: column; text-align: center; padding: 28px 20px; } }
+
+    /* ── Back link ── */
+    .back-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 32px;
+    }
+    .back-link svg { width: 16px; height: 16px; }
+    .back-link:hover { opacity: .7; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="elexons.ch" /></a>
+  <div class="nav-links">
+    <a href="index.html" data-i18n="nav_home">Startseite</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="projekte.html">Projekte</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+  <div class="lang-switch" style="display:flex;align-items:center;gap:2px;margin-right:12px;"><button onclick="setLang('de')" class="lang-btn active" data-lang="de" style="background:none;border:1px solid transparent;cursor:pointer;font-size:.7rem;font-weight:700;letter-spacing:.1em;padding:4px 9px;border-radius:3px;color:rgba(255,255,255,.5);transition:all .2s;">DE</button><button onclick="setLang('en')" class="lang-btn" data-lang="en" style="background:none;border:1px solid transparent;cursor:pointer;font-size:.7rem;font-weight:700;letter-spacing:.1em;padding:4px 9px;border-radius:3px;color:rgba(255,255,255,.5);transition:all .2s;">EN</button></div>
+    <a href="kontakt.html" class="nav-cta" data-i18n="btn_beratung">Beratung anfragen</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="Leimbach/why1.jpg" alt="Projekt Leimbach – Sanierung elexons.ch" loading="eager" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Referenzprojekt · Zürich</div>
+    <h1 class="hero-title">Leimbach</h1>
+    <div class="hero-sub">Komplettsanierung · Innenausbau · Umbau</div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section>
+  <div class="container">
+    <a href="projekte.html" class="back-link">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      <span data-i18n="btn_alle_proj">Alle Projekte</span>
+    </a>
+    <div class="intro-grid">
+      <div>
+        <span class="label" data-i18n-de="Referenzprojekt" data-i18n-en="Reference Project">Referenzprojekt</span>
+        <h2 data-i18n-de="Komplettsanierung in Leimbach, Zürich" data-i18n-en="Complete Renovation in Leimbach, Zürich">Komplettsanierung in Leimbach, Zürich</h2>
+        <p data-i18n-de="Ein Sanierungsprojekt mit Anspruch: Elexons hat in Leimbach eine vollständige Renovation realisiert – von der Badezimmersanierung über den hochwertigen Innenausbau bis zu den Malerarbeiten und Bodenbelägen." data-i18n-en="A demanding renovation project: Elexons completed a full renovation in Leimbach – from bathroom renovation to high-end interior fit-out, paintwork and flooring.">Ein Sanierungsprojekt mit Anspruch: Elexons hat in Leimbach eine vollständige Renovation realisiert – von der Badezimmersanierung über den hochwertigen Innenausbau bis zu den Malerarbeiten und Bodenbelägen.</p>
+        <p data-i18n-de="Jedes Detail wurde sorgfältig geplant und in enger Abstimmung mit dem Auftraggeber umgesetzt. Das Ergebnis: ein modernes, funktionales Zuhause, das höchsten Ansprüchen gerecht wird." data-i18n-en="Every detail was carefully planned and implemented in close coordination with the client. The result: a modern, functional home that meets the highest standards.">Jedes Detail wurde sorgfältig geplant und in enger Abstimmung mit dem Auftraggeber umgesetzt. Das Ergebnis: ein zeitlos elegantes Zuhause mit modernem Komfort und Schweizer Verarbeitungsqualität.</p>
+        <p data-i18n-de="Die Koordination aller Gewerke – Sanitär, Elektro, Schreiner, Maler und Bodenleger – erfolgte durch Elexons als Generalkoordinator. Termine wurden eingehalten, Qualität gesichert." data-i18n-en="The coordination of all trades – plumbing, electrical, carpentry, painting and flooring – was handled by Elexons as general coordinator. Deadlines were met, quality assured.">Die Koordination aller Gewerke – Sanitär, Elektro, Schreiner, Maler und Bodenleger – erfolgte durch einen einzigen Projektleiter bei Elexons. Termintreu, transparent, schlüsselfertig.</p>
+      </div>
+      <div>
+        <ul class="meta-list">
+          <li><span class="meta-label" data-i18n-de="Standort" data-i18n-en="Location">Standort</span><span class="meta-val">Leimbach, Zürich</span></li>
+          <li><span class="meta-label" data-i18n-de="Leistungen" data-i18n-en="Services">Leistungen</span><span class="meta-val" data-i18n-de="Komplettsanierung, Innenausbau, Bad, Malerarbeiten, Bodenbeläge" data-i18n-en="Full renovation, interior fit-out, bathroom, painting, flooring">Komplettsanierung, Innenausbau, Bad, Malerarbeiten, Bodenbeläge</span></li>
+          <li><span class="meta-label" data-i18n-de="Status" data-i18n-en="Status">Status</span><span class="meta-val" data-i18n-de="Abgeschlossen" data-i18n-en="Completed">Abgeschlossen</span></li>
+          <li><span class="meta-label" data-i18n-de="Auftraggeber" data-i18n-en="Client">Auftraggeber</span><span class="meta-val" data-i18n-de="Privater Eigentümer" data-i18n-en="Private Owner">Privater Eigentümer</span></li>
+          <li><span class="meta-label" data-i18n-de="Projektleitung" data-i18n-en="Project Management">Projektleitung</span><span class="meta-val" data-i18n-de="Elexons" data-i18n-en="Elexons">Elexons</span></li>
+          <li><span class="meta-label" data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</span><span class="meta-val"><a href="kontakt.html" style="color:var(--accent);"><span data-i18n-de="Ähnliches Projekt anfragen →" data-i18n-en="Request a Similar Project →">Ähnliches Projekt anfragen →</span></a></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-header">
+      <span class="label" style="justify-content:center;display:block;" data-i18n-de="Projektdokumentation" data-i18n-en="Project Documentation">Projektdokumentation</span>
+      <h2 data-i18n-de="Einblicke ins Projekt" data-i18n-en="Project Insights">Einblicke ins Projekt</h2>
+    </div>
+    <div class="gallery-grid" id="leimbach-gallery">
+      <div class="gallery-item" onclick="openLB(0)"><img src="Leimbach/web/IMG_0783.jpg" alt="Leimbach 1" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(1)"><img src="Leimbach/web/IMG_0824.jpg" alt="Leimbach 2" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(2)"><img src="Leimbach/web/IMG_0833.jpg" alt="Leimbach 3" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(3)"><img src="Leimbach/web/IMG_0835.jpg" alt="Leimbach 4" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(4)"><img src="Leimbach/web/IMG_0836.jpg" alt="Leimbach 5" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(5)"><img src="Leimbach/web/IMG_0837.jpg" alt="Leimbach 6" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(6)"><img src="Leimbach/web/IMG_0838.jpg" alt="Leimbach 7" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(7)"><img src="Leimbach/web/IMG_0845.jpg" alt="Leimbach 8" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(8)"><img src="Leimbach/web/IMG_0846.jpg" alt="Leimbach 9" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(9)"><img src="Leimbach/web/IMG_0847.jpg" alt="Leimbach 10" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(10)"><img src="Leimbach/web/IMG_0848.jpg" alt="Leimbach 11" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(11)"><img src="Leimbach/web/IMG_0849.jpg" alt="Leimbach 12" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(12)"><img src="Leimbach/web/IMG_0850.jpg" alt="Leimbach 13" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(13)"><img src="Leimbach/web/IMG_0853.jpg" alt="Leimbach 14" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(14)"><img src="Leimbach/web/IMG_0854.jpg" alt="Leimbach 15" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(15)"><img src="Leimbach/web/IMG_0855.jpg" alt="Leimbach 16" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(16)"><img src="Leimbach/web/IMG_0856.jpg" alt="Leimbach 17" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(17)"><img src="Leimbach/web/IMG_0857.jpg" alt="Leimbach 18" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(18)"><img src="Leimbach/web/IMG_0858.jpg" alt="Leimbach 19" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(19)"><img src="Leimbach/web/IMG_0933.jpg" alt="Leimbach 20" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(20)"><img src="Leimbach/web/IMG_0948.jpg" alt="Leimbach 21" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(21)"><img src="Leimbach/web/IMG_4512.jpg" alt="Leimbach 22" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(22)"><img src="Leimbach/web/IMG_4568.jpg" alt="Leimbach 23" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(23)"><img src="Leimbach/web/IMG_4569.jpg" alt="Leimbach 24" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(24)"><img src="Leimbach/web/IMG_8960.jpg" alt="Leimbach 25" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(25)"><img src="Leimbach/web/IMG_9328.jpg" alt="Leimbach 26" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2 data-i18n-de="Ein ähnliches Projekt planen?" data-i18n-en="Planning a Similar Project?">Ein ähnliches Projekt planen?</h2>
+    <p data-i18n-de="Kontaktieren Sie uns für eine kostenlose Erstberatung – persönlich, unverbindlich und ohne versteckte Kosten." data-i18n-en="Contact us for a free initial consultation – personal, non-binding and without hidden costs.">Kontaktieren Sie uns für eine kostenlose Erstberatung – persönlich, unverbindlich und ohne versteckte Kosten.</p>
+    <a href="kontakt.html" class="btn-light" data-i18n="btn_kos_anfr">Kostenlose Beratung anfragen</a>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" onclick="closeLB()">×</button>
+  <button class="lb-prev" onclick="moveLB(-1)">&#8249;</button>
+  <img src="" alt="" id="lb-img" />
+  <button class="lb-next" onclick="moveLB(1)">&#8250;</button>
+</div>
+
+<footer>
+  <img src="assets/images/logo.png" alt="elexons.ch" />
+  <p>© 2024 elexons.ch – Alpenblickstrasse 2, 8725 Gebertingen</p>
+  <div>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+  </div>
+</footer>
+
+<script>
+  const imgs = [
+    'Leimbach/web/IMG_0783.jpg','Leimbach/web/IMG_0824.jpg','Leimbach/web/IMG_0833.jpg',
+    'Leimbach/web/IMG_0835.jpg','Leimbach/web/IMG_0836.jpg','Leimbach/web/IMG_0837.jpg',
+    'Leimbach/web/IMG_0838.jpg','Leimbach/web/IMG_0845.jpg','Leimbach/web/IMG_0846.jpg',
+    'Leimbach/web/IMG_0847.jpg','Leimbach/web/IMG_0848.jpg','Leimbach/web/IMG_0849.jpg',
+    'Leimbach/web/IMG_0850.jpg','Leimbach/web/IMG_0853.jpg','Leimbach/web/IMG_0854.jpg',
+    'Leimbach/web/IMG_0855.jpg','Leimbach/web/IMG_0856.jpg','Leimbach/web/IMG_0857.jpg',
+    'Leimbach/web/IMG_0858.jpg','Leimbach/web/IMG_0933.jpg','Leimbach/web/IMG_0948.jpg',
+    'Leimbach/web/IMG_4512.jpg','Leimbach/web/IMG_4568.jpg','Leimbach/web/IMG_4569.jpg',
+    'Leimbach/web/IMG_8960.jpg','Leimbach/web/IMG_9328.jpg'
+  ];
+  let cur = 0;
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lb-img');
+
+  function openLB(i) { cur = i; lbImg.src = imgs[i]; lb.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeLB() { lb.classList.remove('open'); document.body.style.overflow=''; }
+  function moveLB(d) { cur = (cur + d + imgs.length) % imgs.length; lbImg.src = imgs[cur]; }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLB();
+    if (e.key === 'ArrowLeft') moveLB(-1);
+    if (e.key === 'ArrowRight') moveLB(1);
+  });
+  lb.addEventListener('click', e => { if(e.target === lb) closeLB(); });
+</script>
+<script src="assets/js/lang.js"></script>
+</body>
+</html>

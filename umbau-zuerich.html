@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umbau Zürich – Moderne Raumgestaltung & professionelle Umsetzung | elexons.ch</title>
+  <meta name="description" content="Umbau Zürich: elexons.ch realisiert Wohnungsumbau, Hausumbau, Grundrissänderungen und Innenausbau in Zürich – professionell, kreativ und termintreu." />
+  <link rel="canonical" href="https://elexons.ch/umbau-zuerich.html" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    /* Service page shared styles */
+    .svc-hero {
+      position: relative; min-height: 90vh;
+      display: flex; align-items: flex-end;
+      overflow: hidden;
+    }
+    .svc-hero__bg {
+      position: absolute; inset: 0;
+    }
+    .svc-hero__bg img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .svc-hero__overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top,
+        rgba(0,0,0,.85) 0%,
+        rgba(0,0,0,.35) 50%,
+        rgba(0,0,0,.2) 100%);
+    }
+    .svc-hero__content {
+      position: relative; z-index: 2;
+      padding: 80px 0; width: 100%;
+    }
+    .svc-hero__content .container { max-width: 860px; }
+    .svc-hero__label {
+      display: inline-block;
+      font-size: .62rem; letter-spacing: .28em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .svc-hero__title {
+      font-family: var(--font-h);
+      font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+      font-weight: 400; color: #fff;
+      line-height: 1.08; margin-bottom: 22px;
+    }
+    .svc-hero__title em { font-style: italic; color: var(--gold); }
+    .svc-hero__sub {
+      font-size: 1rem; color: rgba(255,255,255,.65);
+      max-width: 560px; line-height: 1.8; margin-bottom: 36px;
+    }
+    /* Photo gallery strip */
+    .photo-strip {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 4px; height: 460px;
+      overflow: hidden;
+    }
+    .photo-strip__cell {
+      overflow: hidden; background: #111;
+    }
+    .photo-strip__cell img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .6s ease;
+    }
+    .photo-strip__cell:hover img { transform: scale(1.04); }
+
+    .photo-strip--2 {
+      grid-template-columns: 1fr 1fr;
+      height: 400px;
+    }
+    .photo-strip--4 {
+      grid-template-columns: repeat(4, 1fr);
+      height: 320px;
+    }
+    @media (max-width: 768px) {
+      .svc-hero { min-height: 70vh; }
+      .photo-strip { grid-template-columns: 1fr; height: auto; }
+      .photo-strip__cell { height: 260px; }
+      .photo-strip--2 { grid-template-columns: 1fr; height: auto; }
+      .photo-strip--4 { grid-template-columns: repeat(2,1fr); height: auto; }
+      .photo-strip--4 .photo-strip__cell { height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header transparent" data-transparent="true">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="elexons.ch" /></a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link" data-i18n="nav_home">Startseite</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-toggle">
+            <span data-i18n="nav_services">Leistungen</span>
+            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </span>
+          <div class="dropdown-menu">
+            <a href="sanierung-zuerich.html" class="dropdown-item"><svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.125 1.125 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg><span data-i18n="drop_sanierung">Sanierung</span></a>
+            <a href="umbau-zuerich.html" class="dropdown-item"><svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63"/></svg><span data-i18n="drop_umbau">Umbau &amp; Innenausbau</span></a>
+            <a href="badsanierung-zuerich.html" class="dropdown-item"><svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15"/></svg><span data-i18n="drop_bad">Badsanierung</span></a>
+            <a href="kuechensanierung-zuerich.html" class="dropdown-item"><svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg><span data-i18n="drop_kueche">Küchensanierung</span></a>
+            <a href="smart-home-zuerich.html" class="dropdown-item"><svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>Smart Home</a>
+            <div class="dropdown-divider"></div>
+            <a href="leistungen.html" class="dropdown-item dropdown-item--all"><span data-i18n="drop_all">Alle Leistungen ansehen →</span></a>
+          </div>
+        </div>
+        <a href="projekte.html" class="nav__link" data-i18n="nav_projects">Projekte</a>
+        <a href="ueber-uns.html" class="nav__link" data-i18n="nav_about">Über uns</a>
+        <a href="kontakt.html" class="nav__link" data-i18n="nav_contact">Kontakt</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="de">DE</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="kontakt.html" class="btn btn--primary" data-i18n="btn_cta">Kostenlose Beratung</a>
+        <button class="hamburger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+  <nav class="mobile-menu__nav">
+    <a href="index.html" class="mobile-menu__link" data-i18n="mob_home">Startseite</a>
+    <a href="leistungen.html" class="mobile-menu__link" data-i18n="mob_services">Leistungen</a>
+    <a href="sanierung-zuerich.html" class="mobile-menu__link" data-i18n="mob_renovation">Sanierung Zürich</a>
+    <a href="umbau-zuerich.html" class="mobile-menu__link" data-i18n="mob_umbau">Umbau Zürich</a>
+    <a href="badsanierung-zuerich.html" class="mobile-menu__link" data-i18n="mob_bad">Badsanierung</a>
+    <a href="kuechensanierung-zuerich.html" class="mobile-menu__link" data-i18n="mob_kueche">Küchensanierung</a>
+    <a href="smart-home-zuerich.html" class="mobile-menu__link">Smart Home</a>
+    <a href="projekte.html" class="mobile-menu__link" data-i18n="mob_projects">Projekte</a>
+    <a href="ueber-uns.html" class="mobile-menu__link" data-i18n="mob_about">Über uns</a>
+    <a href="kontakt.html" class="mobile-menu__link" data-i18n="mob_contact">Kontakt</a>
+  </nav>
+  <a href="kontakt.html" class="btn btn--primary" style="width:100%;justify-content:center;" data-i18n="btn_cta">Kostenlose Beratung</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="svc-hero">
+  <div class="svc-hero__bg">
+    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1920&q=85&fit=crop" alt="Umbau Zürich – elexons.ch" loading="eager" />
+    <div class="svc-hero__overlay"></div>
+  </div>
+  <div class="svc-hero__content">
+    <div class="container">
+      <span class="svc-hero__label">Umbau Zürich</span>
+      <h1 class="svc-hero__title" data-i18n-html-de="Umbau &amp; <em>Innenausbau</em><br>in Zürich" data-i18n-html-en="Remodelling &amp; <em>Interiors</em><br>in Zürich">Umbau &amp; <em>Innenausbau</em><br>in Zürich</h1>
+      <p class="svc-hero__sub" data-i18n-de="Grundrissänderungen, Raumoptimierungen und hochwertiger Innenausbau – kreativ geplant, sorgfältig ausgeführt, pünktlich übergeben." data-i18n-en="Floor plan changes, space optimisation and premium interior fit-out – creatively planned, carefully executed, delivered on time.">Grundrissänderungen, Raumoptimierungen und hochwertiger Innenausbau – kreativ geplant, sorgfältig ausgeführt, pünktlich übergeben.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <a href="kontakt.html" class="btn btn--primary" data-i18n="btn_cta">Kostenlose Beratung</a>
+        <a href="projekte.html" class="btn btn--outline-light" data-i18n="nav_projects">Projekte ansehen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PHOTO STRIP 1 ── -->
+<div class="photo-strip">
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80&fit=crop" alt="Innenausbau Zürich" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80&fit=crop" alt="Umbau Wohnung" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80&fit=crop" alt="Raumgestaltung" loading="lazy" /></div>
+</div>
+<!-- ── INTRO ── -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;">
+      <div class="reveal">
+        <span class="label" data-i18n-de="Umbau Zürich" data-i18n-en="Conversion Zürich">Umbau Zürich</span>
+        <h2 data-i18n-de="Mehr Raum, mehr Qualität, mehr Wohnkomfort" data-i18n-en="More Space, More Quality, More Living Comfort">Mehr Raum, mehr Qualität, mehr Wohnkomfort</h2>
+        <p style="margin-top:18px;">Ein Umbau verändert nicht nur Wände – er verändert die Art, wie Sie leben. Elexons realisiert Umbauprojekte in Zürich mit Kreativität, Fachkompetenz und Präzision.</p>
+        <p style="margin-top:14px;" data-i18n-de="Ob Grundrissänderung, Zusammenlegung von Zimmern oder vollständiger Innenausbau – wir beraten Sie ehrlich, planen sorgfältig und führen termingerecht aus." data-i18n-en="Whether floor plan change, merging rooms or complete interior fit-out – we advise you honestly, plan carefully and execute on time.">Ob Grundrissänderung, Zusammenlegung von Zimmern oder vollständiger Innenausbau – wir beraten Sie ehrlich, planen sorgfältig und führen termingerecht aus.</p>
+        <a href="kontakt.html" class="btn btn--primary" style="margin-top:32px;" data-i18n="btn_cta">Kostenlose Beratung</a>
+      </div>
+      <div class="reveal reveal-delay-1" style="height:520px;border-radius:8px;overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=900&q=85&fit=crop" alt="Mehr Raum, mehr Qualität, mehr Wohnkomfort" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES GRID ── -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section__header section__header--center reveal">
+      <span class="label" data-i18n-de="Umbau-Leistungen" data-i18n-en="Conversion Services">Umbau-Leistungen</span>
+      <h2 data-i18n-de="Was wir für Sie umbauen" data-i18n-en="What We Convert for You">Was wir für Sie umbauen</h2>
+      <p data-i18n-de="Von der Grundrissänderung bis zum massgeschneiderten Innenausbau – wir realisieren Ihre Vision." data-i18n-en="From floor plan changes to bespoke interior fit-out – we bring your vision to life.">Von der Grundrissänderung bis zum massgeschneiderten Innenausbau – wir realisieren Ihre Vision.</p>
+    </div>
+    <div class="leistungen-grid" style="margin-top:56px;">
+      <div class="leistung-card reveal">
+        <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.125 1.125 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg></div>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Wohnungsumbau" data-i18n-en="Apartment Conversion">Wohnungsumbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Raumaufteilung optimieren, Zimmer zusammenlegen, Durchbrüche erstellen – für mehr Wohnqualität in Ihrer Zürcher Woh" data-i18n-en="Optimise room layout, merge rooms, create openings – for greater quality of living.">Raumaufteilung optimieren, Zimmer zusammenlegen, Durchbrüche erstellen – für mehr Wohnqualität in Ihrer Zürcher Wohnung.</p>
+      </div>
+      <div class="leistung-card reveal reveal-delay-1">
+        <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545"/></svg></div>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Hausumbau" data-i18n-en="House Conversion">Hausumbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);">Strukturelle Anpassungen, Grundrissveränderungen und Neugestaltung von Einfamilienhäusern und Villen in der Region Zürich.</p>
+      </div>
+      <div class="leistung-card reveal reveal-delay-2">
+        <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Grundrissänderung" data-i18n-en="Floor Plan Modification">Grundrissänderung</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Wände verschieben oder entfernen, neue Öffnungen schaffen – mit statischer Beratung und koordinierter Ausführung." data-i18n-en="Moving or removing walls, creating new openings – with structural advice and coordinated execution.">Wände verschieben oder entfernen, neue Öffnungen schaffen – mit statischer Beratung und koordinierter Ausführung.</p>
+      </div>
+      <div class="leistung-card reveal">
+        <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/></svg></div>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Gewerbeumbau" data-i18n-en="Commercial Conversion">Gewerbeumbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Umbau von Büros, Arztpraxen, Restaurants und Geschäften – diskret, termingerecht und mit minimalem Unterbruch." data-i18n-en="Conversion of offices, medical practices, restaurants and shops – discreet, on schedule and with minimal disruption.">Umbau von Büros, Arztpraxen, Restaurants und Geschäften – diskret, termingerecht und mit minimalem Unterbruch.</p>
+      </div>
+      <div class="leistung-card reveal reveal-delay-1">
+        <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18"/></svg></div>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Innenausbau" data-i18n-en="Interior Fit-Out">Innenausbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Massgeschneiderter Innenausbau mit hochwertigen Materialien – Schreinerei, Einbaumöbel, Bodenbeläge, Beleuchtung." data-i18n-en="Bespoke interior fit-out with premium materials – carpentry, fitted furniture, flooring and paintwork.">Massgeschneiderter Innenausbau mit hochwertigen Materialien – Schreinerei, Einbaumöbel, Bodenbeläge, Beleuchtung.</p>
+      </div>
+      <div class="leistung-card reveal reveal-delay-2">
+        <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189"/></svg></div>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Smart Home beim Umbau" data-i18n-en="Smart Home During Conversion">Smart Home beim Umbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Der Umbau ist die ideale Gelegenheit für Smart Home Integration – Licht, Heizung, Beschattung und Sicherheit nahtl" data-i18n-en="Conversion is the ideal opportunity for Smart Home integration – lighting, heating, blinds.">Der Umbau ist die ideale Gelegenheit für Smart Home Integration – Licht, Heizung, Beschattung und Sicherheit nahtlos geplant.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PHOTO STRIP 2 ── -->
+<div class="photo-strip photo-strip--4">
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&q=80&fit=crop" alt="Wohnzimmer Umbau" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&q=80&fit=crop" alt="Innendesign" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80&fit=crop" alt="Ausbau Zürich" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&q=80&fit=crop" alt="Raumplanung" loading="lazy" /></div>
+</div>
+<!-- ── PROCESS ── -->
+<section class="section">
+  <div class="container">
+    <div class="section__header section__header--center reveal">
+      <span class="label" data-i18n-de="Unser Vorgehen" data-i18n-en="Our Process">Unser Vorgehen</span>
+      <h2 data-i18n-de="Wie läuft Ihr Projekt ab?" data-i18n-en="How Does Your Project Work?">Wie läuft Ihr Projekt ab?</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;margin-top:56px;">
+      <div style="text-align:center;padding:32px 16px;" class="reveal">
+        <div style="width:52px;height:52px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-family:var(--font-h);font-size:1.3rem;">1</div>
+        <h4 style="margin-bottom:8px;" data-i18n-de="Beratung" data-i18n-en="Consultation">Beratung</h4>
+        <p style="font-size:.85rem;color:var(--text-sec);" data-i18n-de="Kostenlose Erstberatung vor Ort" data-i18n-en="Free on-site initial consultation">Kostenlose Erstberatung vor Ort</p>
+      </div>
+      <div style="text-align:center;padding:32px 16px;" class="reveal reveal-delay-1">
+        <div style="width:52px;height:52px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-family:var(--font-h);font-size:1.3rem;">2</div>
+        <h4 style="margin-bottom:8px;" data-i18n-de="Planung" data-i18n-en="Planning">Planung</h4>
+        <p style="font-size:.85rem;color:var(--text-sec);" data-i18n-de="Detaillierte Bedarfsanalyse" data-i18n-en="Detailed needs analysis">Detaillierte Bedarfsanalyse</p>
+      </div>
+      <div style="text-align:center;padding:32px 16px;" class="reveal reveal-delay-2">
+        <div style="width:52px;height:52px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-family:var(--font-h);font-size:1.3rem;">3</div>
+        <h4 style="margin-bottom:8px;" data-i18n-de="Offerte" data-i18n-en="Quote">Offerte</h4>
+        <p style="font-size:.85rem;color:var(--text-sec);" data-i18n-de="Transparente Kostenkalkulation" data-i18n-en="Transparent cost calculation">Transparente Kostenkalkulation</p>
+      </div>
+      <div style="text-align:center;padding:32px 16px;" class="reveal reveal-delay-3">
+        <div style="width:52px;height:52px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-family:var(--font-h);font-size:1.3rem;">4</div>
+        <h4 style="margin-bottom:8px;" data-i18n-de="Ausführung" data-i18n-en="Execution">Ausführung</h4>
+        <p style="font-size:.85rem;color:var(--text-sec);" data-i18n-de="Professionelle Umsetzung" data-i18n-en="Professional implementation">Professionelle Umsetzung</p>
+      </div>
+      <div style="text-align:center;padding:32px 16px;" class="reveal">
+        <div style="width:52px;height:52px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-family:var(--font-h);font-size:1.3rem;">5</div>
+        <h4 style="margin-bottom:8px;" data-i18n-de="Übergabe" data-i18n-en="Handover">Übergabe</h4>
+        <p style="font-size:.85rem;color:var(--text-sec);" data-i18n-de="Schlüsselfertige Übergabe" data-i18n-en="Turnkey handover">Schlüsselfertige Übergabe</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section__header section__header--center reveal"><span class="label" data-i18n-de="Häufige Fragen" data-i18n-en="Frequently Asked Questions">Häufige Fragen</span><h2 data-i18n-de="FAQ – Umbau Zürich" data-i18n-en="FAQ – Conversion Zürich">FAQ – Umbau Zürich</h2></div>
+    <div class="faq-list" style="margin-top:48px;">
+      <div class="faq-item">
+        <button class="faq-question">Was kostet ein Wohnungsumbau in Zürich?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Die Kosten variieren stark je nach Umfang. Eine einfache Grundrissänderung beginnt ab ca. CHF 10'000. Ein umfassender Wohnungsumbau kann CHF 50'000–150'000+ kosten." data-i18n-en="Costs vary greatly depending on scope. A simple floor plan change starts from around CHF 10,000. A comprehensive apartment conversion can cost CHF 50,000–150,000+.">Die Kosten variieren stark je nach Umfang. Eine einfache Grundrissänderung beginnt ab ca. CHF 10'000. Ein umfassender Wohnungsumbau liegt typischerweise zwischen CHF 40'000 und CHF 150'000+.</span></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Brauche ich eine Baubewilligung für einen Umbau in Zürich?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Für tragende Wände, Nutzungsänderungen und grössere Eingriffe kann eine Baubewilligung nötig sein. Wir beraten Sie dazu und unterstützen Sie im Bewilligungsverfahren." data-i18n-en="For load-bearing walls, changes of use and major interventions, a building permit may be required. We advise you on this and support you in the permit process.">Für tragende Wände, Nutzungsänderungen und grössere Eingriffe kann eine Baubewilligung nötig sein. Wir beraten Sie dazu und übernehmen auf Wunsch die Kommunikation mit den Behörden.</span></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" data-i18n-de="Wie lange dauert ein typischer Umbau?" data-i18n-en="How long does a typical conversion take?">Wie lange dauert ein typischer Umbau?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ein Wohnungsumbau dauert je nach Umfang 3–10 Wochen. Kleinere Umbaumassnahmen können in 1–3 Wochen realisiert werden." data-i18n-en="An apartment conversion takes 3–10 weeks depending on scope. Minor conversion measures can be completed in 1–3 weeks.">Ein Wohnungsumbau dauert je nach Umfang 3–10 Wochen. Kleinere Umbaumassnahmen können in 1–3 Wochen realisiert werden.</span></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" data-i18n-de="Übernimmt Elexons Planung und Materialbeschaffung?" data-i18n-en="Does Elexons handle planning and material procurement?">Übernimmt Elexons Planung und Materialbeschaffung?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ja, wir übernehmen die vollständige Planung, Materialauswahl und Beschaffung – von der ersten Beratung bis zur Lieferung auf die Baustelle." data-i18n-en="Yes, we handle complete planning, material selection and procurement – from the initial consultation to delivery to the construction site.">Ja, wir übernehmen die vollständige Planung, Materialauswahl und Beschaffung – von der ersten Beratung bis zur Lieferung auf die Baustelle.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-banner">
+  <div class="container">
+    <span class="label"  data-i18n-de="Kostenlos & unverbindlich" data-i18n-en="Free & No Obligation">Kostenlos &amp; unverbindlich</span>
+    <h2 data-i18n-de="Planen Sie einen Umbau in Zürich?" data-i18n-en="Planning a Conversion in Zürich?">Planen Sie einen Umbau in Zürich?</h2>
+    <p data-i18n-de="Kontaktieren Sie uns – wir beraten Sie kostenlos und unverbindlich zu Ihrem Projekt." data-i18n-en="Contact us – we advise you free of charge and without obligation regarding your project.">Kontaktieren Sie uns – wir beraten Sie kostenlos und unverbindlich zu Ihrem Projekt.</p>
+    <div class="btn-group"><a href="kontakt.html" class="btn btn--primary btn--lg" data-i18n="btn_cta">Kostenlose Beratung anfragen</a></div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo"><img src="assets/images/logo.png" alt="elexons.ch" /></a><p data-i18n-de="Professionelle Sanierung, Umbau und Smart Home Integration in Zürich. Schweizer Qualität – persönlich, transparent, zuverlässig." data-i18n-en="Professional renovation, conversion and Smart Home integration in Zürich. Swiss quality – personal, transparent, reliable.">Professionelle Sanierung, Umbau und Smart Home Integration in Zürich. Schweizer Qualität – persönlich, transparent, zuverlässig.</p></div>
+    <div class="footer__col"><h5 data-i18n-de="Leistungen" data-i18n-en="Services">Leistungen</h5><div class="footer__links"><a href="sanierung-zuerich.html" class="footer__link" data-i18n="fl_sanierung">Sanierung Zürich</a><a href="umbau-zuerich.html" class="footer__link" data-i18n="fl_umbau">Umbau Zürich</a><a href="badsanierung-zuerich.html" class="footer__link" data-i18n="drop_bad">Badsanierung</a><a href="kuechensanierung-zuerich.html" class="footer__link" data-i18n="drop_kueche">Küchensanierung</a><a href="smart-home-zuerich.html" class="footer__link">Smart Home</a></div></div>
+    <div class="footer__col"><h5 data-i18n-de="Unternehmen" data-i18n-en="Company">Unternehmen</h5><div class="footer__links"><a href="ueber-uns.html" class="footer__link" data-i18n="nav_about">Über uns</a><a href="projekte.html" class="footer__link" data-i18n="nav_projects">Projekte</a><a href="kontakt.html" class="footer__link" data-i18n="nav_contact">Kontakt</a><a href="datenschutz.html" class="footer__link" data-i18n="fl_daten">Datenschutz</a><a href="impressum.html" class="footer__link" data-i18n="fl_impress">Impressum</a></div></div>
+    <div class="footer__col"><h5 data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</h5><div class="footer__links"><span class="footer__link">Alpenblickstrasse 2, 8725 Gebertingen</span><a href="tel:+41799109999" class="footer__link">+41 79 910 99 99</a><a href="mailto:info@elexons.com" class="footer__link">info@elexons.com</a></div></div>
+  </div>
+  <div class="footer__bottom"><span data-i18n-de="© 2024 elexons.ch – Alle Rechte vorbehalten" data-i18n-en="© 2024 elexons.ch – All rights reserved">© 2024 elexons.ch – Alle Rechte vorbehalten</span><div class="footer__legal"><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></div></div>
+</div></footer>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/lang.js"></script>
+</body></html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Home Zürich – Loxone Integration & Intelligente Steuerung | elexons.ch</title>
+  <meta name="description" content="Smart Home Zürich von elexons.ch – professionelle Loxone Integration für Häuser, Wohnungen und Villen. Licht, Heizung, Beschattung, Sicherheit – alles vernetzt." />
+  <link rel="canonical" href="https://elexons.ch/smart-home-zuerich.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Smart Home Zürich",
+    "provider": { "@type": "LocalBusiness", "name": "elexons.ch", "url": "https://elexons.ch" },
+    "serviceType": "Smart Home Installation",
+    "areaServed": { "@type": "City", "name": "Zürich" },
+    "description": "Professionelle Loxone Smart Home Integration in Zürich – Licht, Heizung, Beschattung, Sicherheit und mehr."
+  }
+  </script>
+
+  <style>
+    /* ──────────────────────────────
+       SMART HOME PAGE — DARK THEME
+       ────────────────────────────── */
+    :root {
+      --sh-bg: #0a0a0a;
+      --sh-bg2: #111111;
+      --sh-bg3: #161616;
+      --sh-border: rgba(255,255,255,.07);
+      --sh-gold: #B89A5C;
+      --sh-green: #D52B1E;
+      --sh-text: rgba(255,255,255,.88);
+      --sh-sub: rgba(255,255,255,.42);
+    }
+
+    /* ── Hero ── */
+    .sh-hero {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: var(--sh-bg); position: relative; overflow: hidden;
+      padding: calc(var(--header-h, 80px) + 60px) 40px 80px;
+    }
+    .sh-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(213,43,30,.18) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(184,154,92,.07) 0%, transparent 55%);
+    }
+    .sh-hero-inner { max-width: 800px; text-align: center; position: relative; z-index: 1; }
+    .sh-eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      border: 1px solid rgba(184,154,92,.25); border-radius: 100px;
+      padding: 7px 18px; margin-bottom: 32px;
+      font-size: .68rem; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--sh-gold);
+    }
+    .sh-eyebrow span { width: 6px; height: 6px; border-radius: 50%; background: var(--sh-gold); display: block; }
+    .sh-hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 300;
+      color: #fff; line-height: 1.05; margin-bottom: 24px; letter-spacing: -.01em;
+    }
+    .sh-hero h1 em { font-style: italic; color: var(--sh-gold); }
+    .sh-hero p {
+      font-size: 1rem; color: var(--sh-sub); max-width: 540px; margin: 0 auto 40px; line-height: 1.8;
+    }
+    .sh-hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-sh-primary {
+      background: var(--sh-green); color: #fff; padding: 15px 36px;
+      font-size: .82rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      border-radius: 3px; border: none; cursor: pointer; transition: background .3s;
+      text-decoration: none; display: inline-block;
+    }
+    .btn-sh-primary:hover { background: #B82318; }
+    .btn-sh-ghost {
+      border: 1px solid rgba(255,255,255,.2); color: rgba(255,255,255,.75);
+      padding: 15px 36px; font-size: .82rem; font-weight: 500; letter-spacing: .08em;
+      text-transform: uppercase; border-radius: 3px; transition: all .3s;
+      text-decoration: none; display: inline-block;
+    }
+    .btn-sh-ghost:hover { border-color: rgba(255,255,255,.5); color: #fff; }
+
+    /* ── Loxone Band ── */
+    .loxone-band {
+      background: var(--sh-bg2); border-top: 1px solid var(--sh-border);
+      border-bottom: 1px solid var(--sh-border); padding: 28px 40px;
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      font-size: .78rem; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--sh-sub);
+    }
+    .loxone-band strong { color: rgba(255,255,255,.7); font-weight: 600; }
+    .loxone-pill {
+      background: rgba(213,43,30,.25); border: 1px solid rgba(213,43,30,.4);
+      color: #6bc49a; padding: 4px 14px; border-radius: 100px;
+      font-size: .68rem; font-weight: 600; letter-spacing: .12em;
+    }
+
+    /* ── Features Grid ── */
+    .sh-features { background: var(--sh-bg); padding: 100px 0; }
+    .sh-section-head { text-align: center; max-width: 600px; margin: 0 auto 64px; }
+    .sh-label { font-size: .68rem; letter-spacing: .22em; text-transform: uppercase; color: var(--sh-gold); display: block; margin-bottom: 14px; }
+    .sh-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: #fff; line-height: 1.15; }
+    .sh-sub { font-size: .9rem; color: var(--sh-sub); margin-top: 14px; line-height: 1.75; }
+
+    .features-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+      max-width: 1200px; margin: 0 auto; padding: 0 40px;
+    }
+    .feature-card {
+      background: var(--sh-bg2); border: 1px solid var(--sh-border);
+      padding: 44px 36px; transition: background .3s, border-color .3s;
+      position: relative; overflow: hidden;
+    }
+    .feature-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--sh-green), transparent);
+      opacity: 0; transition: opacity .3s;
+    }
+    .feature-card:hover { background: var(--sh-bg3); border-color: rgba(255,255,255,.12); }
+    .feature-card:hover::before { opacity: 1; }
+    .feature-icon {
+      width: 48px; height: 48px; margin-bottom: 24px;
+      background: rgba(213,43,30,.15); border: 1px solid rgba(213,43,30,.25);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    }
+    .feature-icon svg { width: 22px; height: 22px; color: #6bc49a; }
+    .feature-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; font-weight: 500; color: #fff; margin-bottom: 12px; }
+    .feature-text { font-size: .85rem; color: var(--sh-sub); line-height: 1.75; }
+
+    @media(max-width: 900px) { .features-grid { grid-template-columns: repeat(2, 1fr); padding: 0 20px; } }
+    @media(max-width: 580px) { .features-grid { grid-template-columns: 1fr; } }
+
+    /* ── How it works ── */
+    .sh-process { background: var(--sh-bg2); padding: 100px 0; border-top: 1px solid var(--sh-border); }
+    .sh-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    .sh-step { padding: 36px 32px; border-right: 1px solid var(--sh-border); }
+    .sh-step:last-child { border-right: none; }
+    .step-num { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3.5rem; font-weight: 300; color: rgba(255,255,255,.06); line-height: 1; margin-bottom: 16px; }
+    .step-title { font-size: .82rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.7); margin-bottom: 10px; }
+    .step-text { font-size: .83rem; color: var(--sh-sub); line-height: 1.7; }
+
+    @media(max-width: 900px) { .sh-steps { grid-template-columns: repeat(2, 1fr); } .sh-step { border-right: none; border-bottom: 1px solid var(--sh-border); } .sh-step:nth-child(odd) { border-right: 1px solid var(--sh-border); } }
+    @media(max-width: 580px) { .sh-steps { grid-template-columns: 1fr; padding: 0 20px; } .sh-step:nth-child(odd) { border-right: none; } }
+
+    /* ── Areas ── */
+    .sh-areas { background: var(--sh-bg); padding: 80px 0; border-top: 1px solid var(--sh-border); }
+    .sh-areas-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    .area-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+    .area-chip { background: var(--sh-bg2); border: 1px solid var(--sh-border); color: var(--sh-sub); padding: 9px 20px; border-radius: 100px; font-size: .78rem; letter-spacing: .06em; transition: all .2s; }
+    .area-chip:hover { border-color: rgba(184,154,92,.4); color: var(--sh-gold); }
+
+    /* ── CTA ── */
+    .sh-cta {
+      background: var(--sh-bg2); border-top: 1px solid var(--sh-border);
+      padding: 100px 40px; text-align: center;
+    }
+    .sh-cta h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem,4vw,3.2rem); font-weight: 400; color: #fff; margin-bottom: 16px; }
+    .sh-cta p { font-size: .9rem; color: var(--sh-sub); max-width: 480px; margin: 0 auto 36px; line-height: 1.8; }
+
+    /* Force dark bg on this page's footer top border */
+    .footer { border-top: 1px solid rgba(255,255,255,.04); }
+  </style>
+</head>
+<body>
+
+<header class="header" data-transparent="true">
+  <div class="header__inner">
+    <a href="index.html" class="logo" aria-label="elexons.ch Startseite">
+      <img src="assets/images/logo.png" alt="elexons.ch Logo" />
+    </a>
+    <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+      <a href="index.html" class="nav__link" data-i18n="nav_home">Startseite</a>
+      <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-toggle">
+            <span data-i18n="nav_services">Leistungen</span>
+            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </span>
+          <div class="dropdown-menu">
+            <a href="sanierung-zuerich.html" class="dropdown-item">
+              <svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.125 1.125 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg>
+              <span data-i18n="drop_sanierung">Sanierung</span>
+            </a>
+            <a href="umbau-zuerich.html" class="dropdown-item">
+              <svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63"/></svg>
+              <span data-i18n="drop_umbau">Umbau &amp; Innenausbau</span>
+            </a>
+            <a href="badsanierung-zuerich.html" class="dropdown-item">
+              <svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15"/></svg>
+              <span data-i18n="drop_bad">Badsanierung</span>
+            </a>
+            <a href="kuechensanierung-zuerich.html" class="dropdown-item">
+              <svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+              <span data-i18n="drop_kueche">Küchensanierung</span>
+            </a>
+            <a href="smart-home-zuerich.html" class="dropdown-item">
+              <svg class="dropdown-item__icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+              Smart Home
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="leistungen.html" class="dropdown-item dropdown-item--all">
+              <span data-i18n="drop_all">Alle Leistungen ansehen →</span>
+            </a>
+          </div>
+        </div>
+      <a href="projekte.html" class="nav__link" data-i18n="nav_projects">Projekte</a>
+      <a href="ueber-uns.html" class="nav__link" data-i18n="nav_about">Über uns</a>
+      <a href="kontakt.html" class="nav__link" data-i18n="nav_contact">Kontakt</a>
+    </nav>
+    <div class="lang-switch">
+          <button class="lang-btn active" data-lang="de" onclick="setLang('de')">DE</button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        </div>
+        <a href="kontakt.html" class="btn btn--primary header__cta" data-i18n="btn_beratung">Beratung anfragen</a>
+    <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-overlay"></div>
+<div class="mobile-menu" role="dialog" aria-label="Mobilmenü">
+  <a href="index.html" class="mobile-menu__link" data-i18n="nav_home">Startseite</a>
+  <a href="leistungen.html" class="mobile-menu__link" data-i18n="mob_services">Leistungen</a>
+  <a href="projekte.html" class="mobile-menu__link" data-i18n="nav_projects">Projekte</a>
+  <a href="ueber-uns.html" class="mobile-menu__link">Über uns</a>
+  <a href="kontakt.html" class="mobile-menu__link" data-i18n="nav_contact">Kontakt</a>
+  <a href="kontakt.html" class="btn btn--primary" style="margin-top:24px;" data-i18n="btn_beratung">Beratung anfragen</a>
+</div>
+
+<!-- HERO -->
+<section class="sh-hero">
+  <div class="sh-hero-inner">
+    <div class="sh-eyebrow"><span></span>Certified Loxone Partner · Zürich<span></span></div>
+    <h1 data-i18n-de="Smart Home, intelligent vernetzt" data-i18n-html-en="Smart Home,<br/><em>intelligently connected</em>">Smart Home,<br/><em>intelligent vernetzt</em></h1>
+    <p data-i18n-de="Licht, Heizung, Beschattung, Sicherheit – nahtlos integriert. Elexons plant und installiert Ihr Smart Home System direkt während der Sanierung." data-i18n-en="Lighting, heating, blinds, security – seamlessly integrated. Elexons plans and installs your Smart Home system directly during renovation.">Licht, Heizung, Beschattung, Sicherheit – nahtlos integriert. Elexons plant und installiert Ihr Smart Home mit Loxone direkt während der Sanierung oder im Neubau.</p>
+    <div class="sh-hero-btns">
+      <a href="kontakt.html" class="btn-sh-primary" data-i18n="btn_cta">Kostenlose Beratung</a>
+      <a href="projekte.html" class="btn-sh-ghost" data-i18n="btn_refs">Referenzprojekte ansehen</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOXONE PARTNER BAND -->
+<div class="loxone-band">
+  <strong>Powered by Loxone</strong>
+  <span>·</span>
+  <span class="loxone-pill" data-i18n-de="Certified Partner" data-i18n-en="Certified Partner">Certified Partner</span>
+  <span>·</span>
+  <span data-i18n-de="Planung · Installation · Wartung · Support" data-i18n-en="Planning · Installation · Maintenance · Support">Planung · Installation · Wartung · Support</span>
+</div>
+
+<!-- 6-FEATURE DARK GRID -->
+<section class="sh-features">
+  <div class="sh-section-head" style="padding:0 40px;">
+    <span class="sh-label" data-i18n-de="Was wir integrieren" data-i18n-en="What We Integrate">Was wir integrieren</span>
+    <h2 class="sh-title" data-i18n-de="Ihr Zuhause denkt mit" data-i18n-en="Your Home Thinks for Itself">Ihr Zuhause denkt mit</h2>
+    <p class="sh-sub" data-i18n-de="Alle Systeme kommunizieren miteinander – für maximalen Komfort, Energieeffizienz und Sicherheit." data-i18n-en="All systems communicate with each other – for maximum comfort, energy efficiency and security.">Alle Systeme kommunizieren miteinander – für maximalen Komfort, Energieeffizienz und Sicherheit.</p>
+  </div>
+  <div class="features-grid">
+
+    <!-- Licht -->
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+      </div>
+      <div class="feature-title">Lichtsteuerung</div>
+      <p class="feature-text" data-i18n-de="Stimmungen auf Knopfdruck, automatische Tageslichtsimulation, Präsenzsteuerung und Energiesparmodi – alles intelligent koordiniert." data-i18n-en="Moods at the touch of a button, automatic daylight simulation, presence control and energy-saving modes – all intelligently coordinated.">Stimmungen auf Knopfdruck, automatische Tageslichtsimulation, Präsenzsteuerung und Energiesparmodi – alles intelligent koordiniert.</p>
+    </div>
+
+    <!-- Heizung -->
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg>
+      </div>
+      <div class="feature-title">Heizung &amp; Klima</div>
+      <p class="feature-text" data-i18n-de="Raumgenaue Temperatursteuerung, Abwesenheitsmodi und Wetterprognose-Integration für optimalen Komfort bei minimalem Energieverbrauch." data-i18n-en="Room-by-room temperature control, absence modes and weather forecast integration for optimum comfort with minimal energy consumption.">Raumgenaue Temperatursteuerung, Abwesenheitsmodi und Wetterprognose-Integration für optimalen Komfort bei minimalem Energieverbrauch.</p>
+    </div>
+
+    <!-- Beschattung -->
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+      </div>
+      <div class="feature-title">Beschattung</div>
+      <p class="feature-text" data-i18n-de="Automatische Storen- und Raffstoresteuerung basierend auf Sonneneinstrahlung, Wind und Uhrzeit – schützt vor Überhitzung und Blend." data-i18n-en="Automatic blind and louvre control based on sunlight, wind and time – protects and saves energy.">Automatische Storen- und Raffstoresteuerung basierend auf Sonneneinstrahlung, Wind und Uhrzeit – schützt vor Überhitzung und Blend.</p>
+    </div>
+
+    <!-- Sicherheit -->
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+      </div>
+      <div class="feature-title">Sicherheit &amp; Zugang</div>
+      <p class="feature-text">Videotürsprechanlage, Alarmanlage, Zugangskontrolle und Überwachung – vollständig integriert und remote steuerbar via App.</p>
+    </div>
+
+    <!-- Audio -->
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/></svg>
+      </div>
+      <div class="feature-title">Multiroom Audio</div>
+      <p class="feature-text">Musik in jedem Raum – koordiniert, mit Lautstärkeregelung per Schalter, App oder Sprachsteuerung. Nahtlos integriert in die Loxone Infrastruktur.</p>
+    </div>
+
+    <!-- Energie -->
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+      </div>
+      <div class="feature-title">Energiemanagement</div>
+      <p class="feature-text" data-i18n-de="Photovoltaik-Integration, Wärmepumpensteuerung, Einspeiseoptimierung und Echtzeit-Energiemonitoring für maximale Effizienz." data-i18n-en="Photovoltaic integration, heat pump control, feed-in optimisation and real-time energy monitoring for maximum efficiency.">Photovoltaik-Integration, Wärmepumpensteuerung, Einspeiseoptimierung und Echtzeit-Energiemonitoring für maximale Effizienz.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="sh-process">
+  <div class="sh-section-head" style="padding:0 40px;margin-bottom:56px;">
+    <span class="sh-label" data-i18n-de="Ablauf" data-i18n-en="Process">Ablauf</span>
+    <h2 class="sh-title" data-i18n-de="Von der Idee zur intelligenten Lösung" data-i18n-en="From Idea to Intelligent Solution">Von der Idee zur intelligenten Lösung</h2>
+  </div>
+  <div class="sh-steps">
+    <div class="sh-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Bedarfsanalyse</div>
+      <p class="step-text" data-i18n-de="Wir analysieren Ihr Gebäude, Ihre Wünsche und den Stand der Technik. Kein Standard – jede Lösung ist massgeschneidert." data-i18n-en="We analyse your building, your wishes and the state of the technology. Nothing standard – every solution is tailor-made.">Wir analysieren Ihr Gebäude, Ihre Wünsche und den Stand der Technik. Kein Standard – jede Lösung ist massgeschneidert.</p>
+    </div>
+    <div class="sh-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Planung &amp; Konzept</div>
+      <p class="step-text" data-i18n-de="Detaillierter Systemplan mit allen Funktionen, Schaltplänen und Integration in die Sanierungsarbeiten." data-i18n-en="Detailed system plan with all functions, wiring diagrams and integration into the renovation work.">Detaillierter Systemplan mit allen Funktionen, Schaltplänen und Integration in die Sanierungsarbeiten.</p>
+    </div>
+    <div class="sh-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Installation</div>
+      <p class="step-text">Professionelle Montage koordiniert mit allen Gewerken – Elektriker, Sanitär, Maler – aus einer Hand durch Elexons.</p>
+    </div>
+    <div class="sh-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Übergabe &amp; Support</div>
+      <p class="step-text" data-i18n-de="Persönliche Einführung, individuelle Programmierung Ihrer Szenarien und langfristiger Support via App oder vor Ort." data-i18n-en="Personal introduction, individual programming of your scenes and long-term support via app and on-site service.">Persönliche Einführung, individuelle Programmierung Ihrer Szenarien und langfristiger Support via App oder vor Ort.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="sh-areas">
+  <div class="sh-areas-inner">
+    <span class="sh-label" data-i18n-de="Einsatzgebiete" data-i18n-en="Service Areas">Einsatzgebiete</span>
+    <h2 class="sh-title" style="color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:400;">Smart Home in der ganzen Region</h2>
+    <div class="area-chips">
+      <span class="area-chip">Zürich Stadt</span>
+      <span class="area-chip">Zürichsee</span>
+      <span class="area-chip">Küsnacht</span>
+      <span class="area-chip">Zollikon</span>
+      <span class="area-chip">Meilen</span>
+      <span class="area-chip">Herrliberg</span>
+      <span class="area-chip">Erlenbach</span>
+      <span class="area-chip">Kilchberg</span>
+      <span class="area-chip">Rüschlikon</span>
+      <span class="area-chip">Thalwil</span>
+      <span class="area-chip">Zug</span>
+      <span class="area-chip">Winterthur</span>
+      <span class="area-chip">Baar</span>
+      <span class="area-chip">Baden</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sh-cta">
+  <h2 data-i18n-de="Bereit für Ihr Smart Home?" data-i18n-en="Ready for Your Smart Home?">Bereit für Ihr Smart Home?</h2>
+  <p data-i18n-de="Lassen Sie sich von uns unverbindlich beraten – wir erklären Ihnen, was in Ihrem Gebäude möglich ist, und was es kostet." data-i18n-en="Let us advise you without obligation – we will explain what is possible in your building and what it costs.">Lassen Sie sich von uns unverbindlich beraten – wir erklären Ihnen, was in Ihrem Gebäude möglich ist, und was es kostet.</p>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+    <a href="kontakt.html" class="btn-sh-primary" data-i18n="btn_kos_anfr">Kostenlose Beratung anfragen</a>
+    <a href="https://wa.me/41799109999" target="_blank" rel="noopener" class="btn-sh-ghost">
+      WhatsApp: +41 79 910 99 99
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="logo" aria-label="elexons.ch">
+        <img src="assets/images/logo.png" alt="elexons.ch Logo" />
+      </a>
+      <p class="footer__tagline">Exzellenz in Sanierung &amp; Smart Home</p>
+    </div>
+    <div class="footer__nav">
+      <div class="footer__col">
+        <h4 data-i18n-de="Leistungen" data-i18n-en="Services">Leistungen</h4>
+        <a href="sanierung-zuerich.html">Sanierung Zürich</a>
+        <a href="umbau-zuerich.html">Umbau Zürich</a>
+        <a href="badsanierung-zuerich.html" data-i18n="drop_bad">Badsanierung</a>
+        <a href="kuechensanierung-zuerich.html" data-i18n="drop_kueche">Küchensanierung</a>
+        <a href="smart-home-zuerich.html">Smart Home</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n-de="Unternehmen" data-i18n-en="Company">Unternehmen</h4>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="projekte.html" data-i18n="nav_projects">Projekte</a>
+        <a href="kontakt.html" data-i18n="nav_contact">Kontakt</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</h4>
+        <a href="tel:+41799109999">+41 79 910 99 99</a>
+        <a href="mailto:info@elexons.com">info@elexons.com</a>
+        <p style="color:rgba(255,255,255,.4);font-size:.8rem;margin-top:4px;">Alpenblickstrasse 2<br/>8725 Gebertingen</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p data-i18n-de="© 2024 elexons.ch – Alle Rechte vorbehalten" data-i18n-en="© 2024 elexons.ch – All rights reserved">© 2024 elexons.ch – Alle Rechte vorbehalten</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/lang.js"></script>
+</body>
+</html>
