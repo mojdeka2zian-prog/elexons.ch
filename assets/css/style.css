@@ -1469,19 +1469,62 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
   .nav, .header__actions .btn { display: none; }
   .hamburger { display: flex; }
 
-  /* ── Hero: push content below fixed header, tighten spacing ── */
-  .hero { align-items: flex-start; }
-  .hero .container { padding-top: calc(var(--header-h) + 36px); padding-bottom: 56px; }
+  /* ═══ HERO MOBILE ═══════════════════════════════════════════
+     padding-top on .hero itself pushes flex children below the
+     fixed header — unaffected by the .container shorthand reset.
+  ═══════════════════════════════════════════════════════════ */
+  .hero {
+    align-items: flex-start;
+    /* push ALL content (incl. overlay) below the fixed nav */
+    padding-top: calc(var(--header-h) + 44px);
+    padding-bottom: 56px;
+    min-height: 100svh; /* use small viewport height on mobile */
+    min-height: 100vh;  /* fallback */
+  }
   .hero__content { max-width: 100%; }
-  .hero__title { font-size: 2.2rem; margin-bottom: 16px; }
-  .hero__subtitle { font-size: 1rem; margin-bottom: 12px; line-height: 1.65; }
-  .hero__text { font-size: 0.88rem; margin-bottom: 28px; }
-  .hero__actions { margin-bottom: 36px; gap: 12px; }
-  .hero__stats { gap: 20px; flex-wrap: wrap; }
-  .hero__stat-num { font-size: 1.7rem; }
-  .hero__stat-label { font-size: 0.7rem; }
+
+  /* Typography */
+  .hero__title {
+    font-size: 2.15rem;
+    line-height: 1.12;
+    margin-bottom: 18px;
+  }
+  .hero__subtitle {
+    font-size: 0.97rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    max-width: 100%;
+  }
+  .hero__text {
+    font-size: 0.875rem;
+    margin-bottom: 28px;
+    max-width: 100%;
+  }
+
+  /* Buttons */
+  .hero__actions {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Stats: 2×2 grid */
+  .hero__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 24px;
+  }
+  .hero__stat-num  { font-size: 1.8rem; }
+  .hero__stat-label { font-size: 0.68rem; }
+
+  /* Hide scroll indicator */
   .hero__scroll { display: none; }
 
+  /* Rest of page */
   .why-pillars { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .footer__grid { grid-template-columns: 1fr; gap: 32px; }
@@ -1497,21 +1540,24 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .footer__bottom { flex-direction: column; text-align: center; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  h1 { font-size: 2.2rem; }
+  h1 { font-size: 2.1rem; }
   h2 { font-size: 1.9rem; }
   .page-hero { padding-top: calc(var(--header-h) + 48px); padding-bottom: 56px; }
 }
 
 @media (max-width: 480px) {
-  /* ── Hero: very small screens ── */
-  .hero .container { padding-top: calc(var(--header-h) + 24px); padding-bottom: 40px; }
-  .hero__title { font-size: 1.9rem; }
-  .hero__subtitle { font-size: 0.95rem; }
-  .hero__text { display: none; } /* hide secondary paragraph to reduce clutter */
-  .hero__actions { flex-direction: column; margin-bottom: 28px; }
-  .hero__actions .btn { width: 100%; justify-content: center; }
-  .hero__stats { gap: 16px; }
-  .hero__stat-num { font-size: 1.5rem; }
+  /* ═══ HERO EXTRA-SMALL (375 px phones) ═══════════════════ */
+  .hero {
+    padding-top: calc(var(--header-h) + 32px);
+    padding-bottom: 44px;
+  }
+  .hero__title  { font-size: 1.85rem; }
+  .hero__subtitle { font-size: 0.92rem; }
+  .hero__text   { display: none; } /* remove to save vertical space */
+  .hero__actions { gap: 10px; margin-bottom: 32px; }
+  .hero__stats  { gap: 16px 20px; }
+  .hero__stat-num { font-size: 1.6rem; }
+  .hero__stat-label { font-size: 0.65rem; }
 
   .stats-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
