@@ -1468,7 +1468,20 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
   .section { padding: 72px 0; }
   .nav, .header__actions .btn { display: none; }
   .hamburger { display: flex; }
-  .hero__stats { gap: 28px; }
+
+  /* ── Hero: push content below fixed header, tighten spacing ── */
+  .hero { align-items: flex-start; }
+  .hero .container { padding-top: calc(var(--header-h) + 36px); padding-bottom: 56px; }
+  .hero__content { max-width: 100%; }
+  .hero__title { font-size: 2.2rem; margin-bottom: 16px; }
+  .hero__subtitle { font-size: 1rem; margin-bottom: 12px; line-height: 1.65; }
+  .hero__text { font-size: 0.88rem; margin-bottom: 28px; }
+  .hero__actions { margin-bottom: 36px; gap: 12px; }
+  .hero__stats { gap: 20px; flex-wrap: wrap; }
+  .hero__stat-num { font-size: 1.7rem; }
+  .hero__stat-label { font-size: 0.7rem; }
+  .hero__scroll { display: none; }
+
   .why-pillars { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .footer__grid { grid-template-columns: 1fr; gap: 32px; }
@@ -1484,14 +1497,22 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .footer__bottom { flex-direction: column; text-align: center; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  h1 { font-size: 2.4rem; }
+  h1 { font-size: 2.2rem; }
   h2 { font-size: 1.9rem; }
   .page-hero { padding-top: calc(var(--header-h) + 48px); padding-bottom: 56px; }
 }
 
 @media (max-width: 480px) {
-  .hero__actions { flex-direction: column; }
+  /* ── Hero: very small screens ── */
+  .hero .container { padding-top: calc(var(--header-h) + 24px); padding-bottom: 40px; }
+  .hero__title { font-size: 1.9rem; }
+  .hero__subtitle { font-size: 0.95rem; }
+  .hero__text { display: none; } /* hide secondary paragraph to reduce clutter */
+  .hero__actions { flex-direction: column; margin-bottom: 28px; }
   .hero__actions .btn { width: 100%; justify-content: center; }
+  .hero__stats { gap: 16px; }
+  .hero__stat-num { font-size: 1.5rem; }
+
   .stats-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
