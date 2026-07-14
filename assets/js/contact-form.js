@@ -1,7 +1,7 @@
 /**
  * contact-form.js
- * Handles async submission of the contact form on kontakt.html
- * POSTs JSON to /api/contact (Cloudflare Pages Function)
+ * Handles async submission of the contact form via Web3Forms
+ * https://web3forms.com — no server / Cloudflare Function required
  */
 
 (function () {
@@ -17,11 +17,10 @@
     var errMsg  = document.getElementById('form-error-msg');
     var lang    = sessionStorage.getItem('elexons_lang') || 'de';
 
-    // -- Collect all named form fields into a plain object --
-    var data = {};
-    new FormData(form).forEach(function (val, key) { data[key] = val; });
+    // -- Collect all named form fields (including hidden access_key + subject) --
+    var data = Object.fromEntries(new FormData(form).entries());
 
-    // -- Client-side validation (required fields) --
+    // -- Client-side validation --
     if (!data.name || !data.name.trim() || !data.email || !data.email.trim()) {
       errBox.style.display = 'block';
       errMsg.textContent = lang === 'en'
@@ -39,23 +38,25 @@
     errBox.style.display  = 'none';
 
     try {
-      var response = await fetch('/api/contact', {
+      var response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
       });
 
       var result = await response.json();
 
-      if (result.ok) {
-        // Show success, clear form
+      if (result.success) {
+        // Show success, reset form
         success.style.display = 'block';
         form.reset();
         success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       } else {
-        // Show server-side error message
         errBox.style.display = 'block';
-        errMsg.textContent = ' ' + (result.error || (lang === 'en'
+        errMsg.textContent = ' ' + (result.message || (lang === 'en'
           ? 'An error occurred. Please try again.'
           : 'Ein Fehler ist aufgetreten. Bitte erneut versuchen.'));
       }

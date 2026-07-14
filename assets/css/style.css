@@ -1612,3 +1612,20 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
   box-shadow: 0 6px 22px rgba(213,43,30,0.45), 0 3px 10px rgba(0,0,0,0.18);
 }
 .home-float svg { width: 22px; height: 22px; stroke: #fff; }
+
+/* ── M3: Process layout — responsive ── */
+@media (max-width: 768px) {
+  .proc-layout {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .proc-layout > div:last-child { display: none; }
+}
+
+/* ── M4: Smart Home grid — responsive ── */
+@media (max-width: 900px) {
+  .sh-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 600px) {
+  .sh-grid { grid-template-columns: 1fr !important; }
+}

@@ -125,28 +125,6 @@
     counters.forEach(c => counterObserver.observe(c));
   }
 
-  /* ── Contact Form Handling ── */
-  document.querySelectorAll('.contact-form').forEach(form => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('[type="submit"]');
-      const origText = btn.textContent;
-      btn.textContent = 'Wird gesendet…';
-      btn.disabled = true;
-
-      setTimeout(() => {
-        btn.textContent = '✓ Nachricht gesendet';
-        btn.style.background = '#2E7D32';
-        setTimeout(() => {
-          btn.textContent = origText;
-          btn.disabled = false;
-          btn.style.background = '';
-          form.reset();
-        }, 4000);
-      }, 1200);
-    });
-  });
-
   /* ── Smooth Scroll for anchors ── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {

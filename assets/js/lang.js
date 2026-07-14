@@ -182,15 +182,48 @@
       fl_alle:        'Alle Leistungen',
       fl_daten:       'Datenschutz',
       fl_impress:     'Impressum',
-      fl_copyright:   '© 2024 Elexons – Alle Rechte vorbehalten',
+      fl_copyright:   '© 2026 elexons.ch – Alle Rechte vorbehalten',
 
       /* FOOTER */
       footer_desc:    'Professionelle Sanierung, Umbau und Smart Home Integration in Zürich und Umgebung. Schweizer Qualität, transparente Preise, persönliche Betreuung.',
       footer_h1:      'Leistungen',
       footer_h2:      'Unternehmen',
       footer_h3:      'Kontakt',
-      footer_copy:    '© 2024 Elexons – Alle Rechte vorbehalten',
+      footer_copy:    '© 2026 elexons.ch – Alle Rechte vorbehalten',
       footer_tagline: 'Exzellenz in Sanierung &amp; Smart Home',
+
+      /* CONTACT FORM PLACEHOLDERS */
+      ph_name:        'Ihr vollständiger Name',
+      ph_phone:       '+41 79 000 00 00',
+      ph_email:       'ihre@email.ch',
+      ph_location:    'z.B. Zürich Seefeld',
+      ph_message:     'Beschreiben Sie kurz Ihr Projekt oder Ihre Fragen…',
+
+      /* CONTACT FORM OPTIONS – service */
+      opt_svc_choose:    'Bitte wählen…',
+      opt_svc_wohnung:   'Wohnungssanierung',
+      opt_svc_haus:      'Haussanierung',
+      opt_svc_umbau:     'Umbau / Innenausbau',
+      opt_svc_bad:       'Badsanierung',
+      opt_svc_kueche:    'Küchensanierung',
+      opt_svc_smarthome: 'Smart Home Integration',
+      opt_svc_mehrere:   'Mehrere Leistungen',
+      opt_svc_anderes:   'Anderes',
+
+      /* CONTACT FORM OPTIONS – budget */
+      opt_bud_choose: 'Bitte wählen…',
+      opt_bud_1:      'Bis CHF 20\'000',
+      opt_bud_2:      'CHF 20\'000 – 50\'000',
+      opt_bud_3:      'CHF 50\'000 – 100\'000',
+      opt_bud_4:      'CHF 100\'000 – 250\'000',
+      opt_bud_5:      'Über CHF 250\'000',
+      opt_bud_6:      'Noch nicht definiert',
+
+      /* CONTACT FORM OPTIONS – contact method */
+      opt_con_phone:  'Telefon',
+      opt_con_email:  'E-Mail',
+      opt_con_wa:     'WhatsApp',
+      opt_con_video:  'Video-Call',
     },
 
     en: {
@@ -352,25 +385,6 @@
       ref_card3_loc:   'Zürich, Seefeld',
 
       /* BUTTONS & LINKS */
-      btn_mehr:       'Mehr erfahren',
-      btn_anfrage:    'Anfrage stellen',
-      btn_alle_proj:  'Alle Projekte',
-      btn_maps:       'Google Maps öffnen →',
-      btn_refs:       'Referenzprojekte ansehen',
-      btn_alle_leist: 'Alle Leistungen',
-      btn_beratung:   'Beratung anfragen',
-      btn_kos_anfr:   'Kostenlose Beratung anfragen',
-
-      /* FOOTER LINKS */
-      fl_sanierung:   'Sanierung Zürich',
-      fl_umbau:       'Umbau Zürich',
-      fl_alle:        'Alle Leistungen',
-      fl_daten:       'Datenschutz',
-      fl_impress:     'Impressum',
-      fl_copyright:   '© 2024 Elexons – Alle Rechte vorbehalten',
-
-
-      /* BUTTONS & LINKS */
       btn_mehr:       'Learn more',
       btn_anfrage:    'Submit enquiry',
       btn_alle_proj:  'All Projects',
@@ -386,15 +400,48 @@
       fl_alle:        'All Services',
       fl_daten:       'Privacy Policy',
       fl_impress:     'Legal Notice',
-      fl_copyright:   '© 2024 Elexons – All rights reserved',
+      fl_copyright:   '© 2026 elexons.ch – All rights reserved',
 
       /* FOOTER */
       footer_desc:    'Professional renovation, remodelling and Smart Home integration in Zürich and the surrounding area. Swiss quality, transparent pricing, personal service.',
       footer_h1:      'Services',
       footer_h2:      'Company',
       footer_h3:      'Contact',
-      footer_copy:    '© 2024 Elexons – All rights reserved',
+      footer_copy:    '© 2026 elexons.ch – All rights reserved',
       footer_tagline: 'Excellence in Renovation &amp; Smart Home',
+
+      /* CONTACT FORM PLACEHOLDERS */
+      ph_name:        'Your full name',
+      ph_phone:       '+41 79 000 00 00',
+      ph_email:       'your@email.ch',
+      ph_location:    'e.g. Zürich Seefeld',
+      ph_message:     'Briefly describe your project or questions…',
+
+      /* CONTACT FORM OPTIONS – service */
+      opt_svc_choose:    'Please select…',
+      opt_svc_wohnung:   'Apartment Renovation',
+      opt_svc_haus:      'House Renovation',
+      opt_svc_umbau:     'Remodelling / Interiors',
+      opt_svc_bad:       'Bathroom Renovation',
+      opt_svc_kueche:    'Kitchen Renovation',
+      opt_svc_smarthome: 'Smart Home Integration',
+      opt_svc_mehrere:   'Multiple Services',
+      opt_svc_anderes:   'Other',
+
+      /* CONTACT FORM OPTIONS – budget */
+      opt_bud_choose: 'Please select…',
+      opt_bud_1:      'Up to CHF 20\'000',
+      opt_bud_2:      'CHF 20\'000 – 50\'000',
+      opt_bud_3:      'CHF 50\'000 – 100\'000',
+      opt_bud_4:      'CHF 100\'000 – 250\'000',
+      opt_bud_5:      'Over CHF 250\'000',
+      opt_bud_6:      'Not yet defined',
+
+      /* CONTACT FORM OPTIONS – contact method */
+      opt_con_phone:  'Phone',
+      opt_con_email:  'Email',
+      opt_con_wa:     'WhatsApp',
+      opt_con_video:  'Video Call',
     }
   };
 
@@ -439,6 +486,12 @@
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
       const key = el.getAttribute('data-i18n-placeholder');
       if (dict[key] !== undefined) el.placeholder = dict[key];
+    });
+
+    // Apply option text translations (data-i18n-opt)
+    document.querySelectorAll('[data-i18n-opt]').forEach(el => {
+      const key = el.getAttribute('data-i18n-opt');
+      if (dict[key] !== undefined) el.textContent = dict[key];
     });
 
     // Apply per-page service hero translations (data-i18n-html-de / data-i18n-html-en)

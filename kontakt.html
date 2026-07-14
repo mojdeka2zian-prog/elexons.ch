@@ -5,6 +5,11 @@
   <title>Kontakt | elexons.ch – Kostenlose Beratung Zürich</title>
   <meta name="description" content="Kontaktieren Sie elexons.ch für eine kostenlose Beratung zu Sanierung, Umbau und Smart Home in Zürich. Persönlich, unverbindlich und ohne versteckte Kosten." />
   <link rel="canonical" href="https://elexons.ch/kontakt.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kontakt | elexons.ch – Kostenlose Beratung Zürich" />
+  <meta property="og:description" content="Kostenlose Erstberatung zu Sanierung, Umbau und Smart Home in Zürich. Persönlich, unverbindlich und ohne versteckte Kosten." />
+  <meta property="og:url" content="https://elexons.ch/kontakt.html" />
+  <meta property="og:image" content="https://elexons.ch/assets/images/logo.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
@@ -74,6 +79,8 @@
   <a href="kontakt.html" class="btn btn--primary" style="width:100%;justify-content:center;" data-i18n="btn_cta">Kostenlose Beratung</a>
 </div>
 
+<h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;" data-i18n-de="Kontakt – Kostenlose Beratung Sanierung &amp; Smart Home Zürich" data-i18n-en="Contact – Free Consultation Renovation &amp; Smart Home Zürich">Kontakt – Kostenlose Beratung Sanierung &amp; Smart Home Zürich</h1>
+
 <section class="section">
   <div class="container">
     <div class="kontakt-grid">
@@ -123,7 +130,7 @@
           <div>
             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="width:40px;height:40px;margin:0 auto 12px;display:block;color:var(--accent);"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
             <strong style="color:var(--text);">Elexons</strong><br>Alpenblickstrasse 2, 8725 Gebertingen<br>
-            <a href="https://maps.google.com/?q=Zürich" target="_blank" style="color:var(--accent);font-size:.85rem;" data-i18n="btn_maps">Google Maps öffnen →</a>
+            <a href="https://maps.google.com/?q=Alpenblickstrasse+2,+8725+Gebertingen,+Switzerland" target="_blank" style="color:var(--accent);font-size:.85rem;" data-i18n="btn_maps">Google Maps öffnen →</a>
           </div>
         </div>
       </div>
@@ -134,63 +141,65 @@
         <h2 style="font-size:1.9rem;margin-bottom:8px;" data-i18n-de="Kostenloses Erstgespräch" data-i18n-en="Free Initial Consultation">Kostenloses Erstgespräch</h2>
         <p style="margin-bottom:32px;" data-i18n-de="Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden bei Ihnen." data-i18n-en="Fill out the form – we will get back to you within 24 hours.">Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
         <form class="form form--light contact-form" id="contact-form" novalidate>
+          <input type="hidden" name="access_key" value="55f33a90-dff0-4b4f-866b-41fb5bac8531">
+          <input type="hidden" name="subject" value="Neue Anfrage von elexons.ch">
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" data-i18n-de="Name *" data-i18n-en="Name *">Name *</label>
-              <input type="text" name="name" class="form-control" placeholder="Ihr vollständiger Name" required />
+              <input type="text" name="name" class="form-control" placeholder="Ihr vollständiger Name" data-i18n-placeholder="ph_name" required />
             </div>
             <div class="form-group">
               <label class="form-label" data-i18n-de="Telefon / WhatsApp" data-i18n-en="Phone / WhatsApp">Telefon / WhatsApp</label>
-              <input type="tel" name="phone" class="form-control" placeholder="+41 79 910 99 99" />
+              <input type="tel" name="phone" class="form-control" placeholder="+41 79 910 99 99" data-i18n-placeholder="ph_phone" />
             </div>
           </div>
           <div class="form-group">
             <label class="form-label" data-i18n-de="E-Mail *" data-i18n-en="Email *">E-Mail *</label>
-            <input type="email" name="email" class="form-control" placeholder="ihre@email.ch" required />
+            <input type="email" name="email" class="form-control" placeholder="ihre@email.ch" data-i18n-placeholder="ph_email" required />
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" data-i18n-de="Projektstandort" data-i18n-en="Project Location">Projektstandort</label>
-              <input type="text" name="location" class="form-control" placeholder="z.B. Zürich Seefeld" />
+              <input type="text" name="location" class="form-control" placeholder="z.B. Zürich Seefeld" data-i18n-placeholder="ph_location" />
             </div>
             <div class="form-group">
               <label class="form-label" data-i18n-de="Gewünschte Leistung" data-i18n-en="Requested Service">Gewünschte Leistung</label>
               <select name="service" class="form-control form-select">
-                <option value="">Bitte wählen…</option>
-                <option>Wohnungssanierung</option>
-                <option>Haussanierung</option>
-                <option>Umbau / Innenausbau</option>
-                <option>Badsanierung</option>
-                <option>Küchensanierung</option>
-                <option>Smart Home Integration</option>
-                <option>Mehrere Leistungen</option>
-                <option>Anderes</option>
+                <option value="" data-i18n-opt="opt_svc_choose">Bitte wählen…</option>
+                <option data-i18n-opt="opt_svc_wohnung">Wohnungssanierung</option>
+                <option data-i18n-opt="opt_svc_haus">Haussanierung</option>
+                <option data-i18n-opt="opt_svc_umbau">Umbau / Innenausbau</option>
+                <option data-i18n-opt="opt_svc_bad">Badsanierung</option>
+                <option data-i18n-opt="opt_svc_kueche">Küchensanierung</option>
+                <option data-i18n-opt="opt_svc_smarthome">Smart Home Integration</option>
+                <option data-i18n-opt="opt_svc_mehrere">Mehrere Leistungen</option>
+                <option data-i18n-opt="opt_svc_anderes">Anderes</option>
               </select>
             </div>
           </div>
           <div class="form-group">
             <label class="form-label" data-i18n-de="Budgetrahmen (ca.)" data-i18n-en="Budget (approx.)">Budgetrahmen (ca.)</label>
             <select name="budget" class="form-control form-select">
-              <option value="">Bitte wählen…</option>
-              <option>Bis CHF 20'000</option>
-              <option>CHF 20'000 – 50'000</option>
-              <option>CHF 50'000 – 100'000</option>
-              <option>CHF 100'000 – 250'000</option>
-              <option>Über CHF 250'000</option>
-              <option>Noch nicht definiert</option>
+              <option value="" data-i18n-opt="opt_bud_choose">Bitte wählen…</option>
+              <option data-i18n-opt="opt_bud_1">Bis CHF 20'000</option>
+              <option data-i18n-opt="opt_bud_2">CHF 20'000 – 50'000</option>
+              <option data-i18n-opt="opt_bud_3">CHF 50'000 – 100'000</option>
+              <option data-i18n-opt="opt_bud_4">CHF 100'000 – 250'000</option>
+              <option data-i18n-opt="opt_bud_5">Über CHF 250'000</option>
+              <option data-i18n-opt="opt_bud_6">Noch nicht definiert</option>
             </select>
           </div>
           <div class="form-group">
             <label class="form-label" data-i18n-de="Ihre Nachricht" data-i18n-en="Your Message">Ihre Nachricht</label>
-            <textarea name="message" class="form-control" rows="4" placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Fragen…"></textarea>
+            <textarea name="message" class="form-control" rows="4" placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Fragen…" data-i18n-placeholder="ph_message"></textarea>
           </div>
           <div class="form-group">
             <label class="form-label" data-i18n-de="Bevorzugte Kontaktmethode" data-i18n-en="Preferred Contact Method">Bevorzugte Kontaktmethode</label>
             <select name="contact_method" class="form-control form-select">
-              <option>Telefon</option>
-              <option>E-Mail</option>
-              <option>WhatsApp</option>
-              <option>Video-Call</option>
+              <option data-i18n-opt="opt_con_phone">Telefon</option>
+              <option data-i18n-opt="opt_con_email">E-Mail</option>
+              <option data-i18n-opt="opt_con_wa">WhatsApp</option>
+              <option data-i18n-opt="opt_con_video">Video-Call</option>
             </select>
           </div>
           <p class="form-note" data-i18n-de="* Pflichtfelder. Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben." data-i18n-en="* Required fields. Your data will be treated confidentially and not shared with third parties.">* Pflichtfelder. Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben. Weitere Informationen in unserer <a href="datenschutz.html" style="color:var(--accent);">Datenschutzerklärung</a>.</p>
@@ -217,7 +226,7 @@
     <div class="footer__col"><h5 data-i18n-de="Unternehmen" data-i18n-en="Company">Unternehmen</h5><div class="footer__links"><a href="ueber-uns.html" class="footer__link" data-i18n="nav_about">Über uns</a><a href="projekte.html" class="footer__link" data-i18n="nav_projects">Projekte</a><a href="kontakt.html" class="footer__link" data-i18n="nav_contact">Kontakt</a><a href="datenschutz.html" class="footer__link" data-i18n="fl_daten">Datenschutz</a><a href="impressum.html" class="footer__link" data-i18n="fl_impress">Impressum</a></div></div>
     <div class="footer__col"><h5 data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</h5><div class="footer__links"><span class="footer__link">Alpenblickstrasse 2, 8725 Gebertingen</span><a href="tel:+41799109999" class="footer__link">+41 79 910 99 99</a><a href="mailto:info@elexons.com" class="footer__link">info@elexons.com</a></div></div>
   </div>
-  <div class="footer__bottom"><span data-i18n-de="© 2024 elexons.ch – Alle Rechte vorbehalten" data-i18n-en="© 2024 elexons.ch – All rights reserved">© 2024 elexons.ch – Alle Rechte vorbehalten</span><div class="footer__legal"><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></div></div>
+  <div class="footer__bottom"><span data-i18n-de="© 2026 elexons.ch – Alle Rechte vorbehalten" data-i18n-en="© 2026 elexons.ch – All rights reserved">© 2026 elexons.ch – Alle Rechte vorbehalten</span><div class="footer__legal"><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></div></div>
 </div></footer>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/lang.js"></script>

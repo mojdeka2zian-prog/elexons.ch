@@ -61,6 +61,20 @@
   </url>
 
   <url>
+    <loc>https://elexons.ch/projekt-leimbach.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/projekt-muri.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://elexons.ch/ueber-uns.html</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -74,18 +88,5 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://elexons.ch/datenschutz.html</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://elexons.ch/impressum.html</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
 
 </urlset>
