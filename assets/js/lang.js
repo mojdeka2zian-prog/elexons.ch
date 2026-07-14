@@ -92,7 +92,7 @@
       /* WHY ELEXONS */
       why_label:  'Warum Elexons',
       why_title:  'Schweizer Qualität. Persönliche Betreuung.',
-      why_lead:   'Wir sind ein Zürcher Unternehmen mit klarer Spezialisierung: hochwertige Renovation, durchdachter Umbau und modernste Smart Home Technologie – ausgeführt mit Schweizer Präzision.',
+      why_lead:   'Wir sind spezialisiert auf hochwertige Renovationen, durchdachten Umbau und modernste Smart Home Technologie in Zürich und Umgebung – ausgeführt mit Schweizer Präzision.',
       why_text:   'Jedes Projekt wird von einem erfahrenen Koordinator betreut. Sie haben immer einen direkten Ansprechpartner, klare Kostentransparenz und pünktliche Ausführung.',
       why_p1:     'Transparent &amp; fair',
       why_p1t:    'Detaillierte Offerten, keine Überraschungskosten, klare Kommunikation.',
@@ -310,7 +310,7 @@
       /* WHY ELEXONS */
       why_label:  'Why Elexons',
       why_title:  'Swiss Quality. Personal Service.',
-      why_lead:   'We are a Zürich-based company with a clear specialisation: premium renovation, thoughtful remodelling and state-of-the-art Smart Home technology – delivered with Swiss precision.',
+      why_lead:   'We specialise in premium renovations, thoughtful remodelling and state-of-the-art Smart Home technology across Zürich and the surrounding region – delivered with Swiss precision.',
       why_text:   'Every project is supervised by an experienced coordinator. You always have a direct contact, full cost transparency and on-time delivery.',
       why_p1:     'Transparent &amp; Fair',
       why_p1t:    'Detailed quotes, no surprise costs, clear communication.',

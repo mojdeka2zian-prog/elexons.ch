@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════════╗
+  ║  ELEXONS PROJECT PAGE TEMPLATE                                      ║
+  ║  Copy this file, rename it to projekt-[name].html                  ║
+  ║  Search for all TODO: markers and replace with real content         ║
+  ║  Checklist at the bottom of this file                               ║
+  ╚══════════════════════════════════════════════════════════════════════╝
+-->
+<html lang="de">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TODO: Update title, description, and canonical URL -->
+  <title>Projekt [NAME] – [LEISTUNGEN] | elexons.ch</title>
+  <meta name="description" content="Projekt [NAME] – [kurze Beschreibung des Projekts] durch elexons.ch. Einblicke in Planung, Ausführung und Ergebnis." />
+  <link rel="canonical" href="https://elexons.ch/projekt-[name].html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #fff; --bg2: #F7F5F0; --text: #1A1A1A; --text2: #555;
+      --accent: #D52B1E; --gold: #B89A5C; --border: #E5E1D8;
+      --font-h: 'Cormorant Garamond', Georgia, serif;
+      --font-b: 'DM Sans', sans-serif;
+      --nav-h: 76px; --trans: 0.3s ease;
+    }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font-b); color: var(--text); background: var(--bg); overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h); display: flex; align-items: center; padding: 0 40px;
+      background: rgba(255,255,255,0.96); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border); justify-content: space-between;
+    }
+    .nav-logo img { height: 44px; width: auto; }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a { font-size: .8rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--text2); transition: color var(--trans); }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta { background: var(--accent); color: #fff; padding: 11px 24px; font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; border-radius: 3px; transition: background var(--trans); }
+    .nav-cta:hover { background: #B82318; }
+    @media(max-width:768px) { .nav-links { display: none; } nav { padding: 0 20px; } }
+
+    /* ── HERO ── */
+    .hero {
+      margin-top: var(--nav-h); height: 82vh; min-height: 500px;
+      position: relative; overflow: hidden; background: #1a1a1a;
+    }
+    .hero img { width: 100%; height: 100%; object-fit: cover; opacity: .75; transition: transform 8s ease; }
+    .hero:hover img { transform: scale(1.03); }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.7) 0%, rgba(0,0,0,.15) 60%, transparent 100%); }
+    .hero-content { position: absolute; bottom: 64px; left: 60px; right: 60px; }
+    .hero-tag { font-size: .68rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .hero-title { font-family: var(--font-h); font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 400; color: #fff; line-height: 1.1; margin-bottom: 10px; }
+    .hero-sub { font-size: .9rem; color: rgba(255,255,255,.6); }
+    @media(max-width:600px) { .hero-content { left: 24px; right: 24px; bottom: 40px; } }
+
+    /* ── CONTAINER & SECTIONS ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    @media(max-width:600px) { .container { padding: 0 20px; } }
+    section { padding: 80px 0; }
+
+    /* ── INTRO GRID ── */
+    .intro-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 80px; align-items: start; }
+    .label { font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 12px; }
+    h2 { font-family: var(--font-h); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 400; line-height: 1.15; margin-bottom: 20px; }
+    p { font-size: .93rem; color: var(--text2); line-height: 1.8; margin-bottom: 14px; }
+    .meta-list { list-style: none; margin-top: 32px; }
+    .meta-list li { display: flex; align-items: baseline; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--border); font-size: .85rem; }
+    .meta-list li:first-child { border-top: 1px solid var(--border); }
+    .meta-label { font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: .72rem; color: var(--text); min-width: 110px; }
+    .meta-val { color: var(--text2); }
+    @media(max-width:768px) { .intro-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    /* ── PROJECT FACTS STRIP ── */
+    .facts-strip { background: #F7F5F0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 0; }
+    .facts-grid { display: grid; grid-template-columns: repeat(5, 1fr); max-width: 1200px; margin: 0 auto; }
+    .fact-item { padding: 32px 28px; border-right: 1px solid var(--border); text-align: center; }
+    .fact-item:last-child { border-right: none; }
+    .fact-label { font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 8px; }
+    .fact-value { font-family: var(--font-h); font-size: 1.55rem; font-weight: 400; color: var(--text); line-height: 1.15; }
+    @media(max-width:900px) { .facts-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media(max-width:600px) { .facts-grid { grid-template-columns: repeat(2, 1fr); } .fact-item { border-right: none; border-bottom: 1px solid var(--border); } }
+
+    /* ── TESTIMONIAL ── */
+    .testimonial-section { background: #fff; padding: 80px 0; }
+    .testimonial-inner { max-width: 760px; margin: 0 auto; text-align: center; padding: 0 40px; }
+    .testimonial-quote { font-family: var(--font-h); font-size: clamp(1.3rem, 2.2vw, 1.8rem); font-weight: 300; font-style: italic; color: var(--text); line-height: 1.65; margin-bottom: 32px; border-left: 3px solid var(--gold); padding-left: 28px; text-align: left; }
+    .testimonial-source { display: flex; align-items: center; gap: 16px; }
+    .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--border); display: flex; align-items: center; justify-content: center; color: var(--text2); flex-shrink: 0; overflow: hidden; }
+    .testimonial-name { font-weight: 600; font-size: .85rem; color: var(--text); }
+    .testimonial-role { font-size: .78rem; color: var(--text2); margin-top: 2px; }
+    .testimonial-placeholder-note { font-size: .72rem; color: #aaa; font-style: italic; border: 1px dashed #ddd; border-radius: 4px; padding: 6px 14px; margin-top: 24px; display: inline-block; }
+
+    /* ── BEFORE / AFTER COMPARISON (optional section) ── */
+    .before-after { background: var(--bg2); padding: 80px 0; }
+    .ba-header { text-align: center; margin-bottom: 48px; }
+    .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; max-width: 1000px; margin: 0 auto; }
+    .ba-panel { position: relative; overflow: hidden; }
+    .ba-panel img { width: 100%; height: 480px; object-fit: cover; display: block; }
+    .ba-label {
+      position: absolute; bottom: 16px; left: 16px;
+      background: rgba(0,0,0,.65); color: #fff;
+      font-size: .68rem; letter-spacing: .18em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 2px;
+    }
+    .ba-label--after { background: var(--gold); }
+    @media(max-width:600px) { .ba-grid { grid-template-columns: 1fr; } .ba-panel img { height: 260px; } }
+
+    /* ── GALLERY MASONRY ── */
+    .gallery-section { background: var(--bg2); }
+    .gallery-header { margin-bottom: 48px; text-align: center; }
+    .gallery-grid { columns: 3; column-gap: 6px; }
+    .gallery-item { break-inside: avoid; margin-bottom: 6px; overflow: hidden; cursor: pointer; position: relative; }
+    .gallery-item img { width: 100%; display: block; transition: transform .5s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
+    @media(max-width:900px) { .gallery-grid { columns: 2; } }
+    @media(max-width:500px) { .gallery-grid { columns: 1; } }
+
+    /* ── LIGHTBOX ── */
+    .lightbox { position: fixed; inset: 0; z-index: 999; background: rgba(0,0,0,.95); display: none; align-items: center; justify-content: center; }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-height: 90vh; max-width: 90vw; object-fit: contain; border-radius: 2px; }
+    .lb-close { position: fixed; top: 20px; right: 28px; font-size: 2rem; color: #fff; cursor: pointer; z-index: 1000; background: none; border: none; line-height: 1; }
+    .lb-prev, .lb-next { position: fixed; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,.1); border: none; color: #fff; font-size: 1.6rem; padding: 16px 20px; cursor: pointer; z-index: 1000; transition: background .2s; }
+    .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,.2); }
+    .lb-prev { left: 16px; } .lb-next { right: 16px; }
+    .lb-caption { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,.6); color: rgba(255,255,255,.75); font-size: .78rem; padding: 7px 18px; border-radius: 2px; z-index: 1001; max-width: 80vw; text-align: center; pointer-events: none; letter-spacing: .04em; }
+    .lb-counter { position: fixed; top: 24px; left: 50%; transform: translateX(-50%); font-size: .72rem; letter-spacing: .15em; color: rgba(255,255,255,.4); z-index: 1001; pointer-events: none; }
+
+    /* ── CTA ── */
+    .cta-section { background: var(--accent); text-align: center; padding: 72px 0; }
+    .cta-section h2 { font-family: var(--font-h); font-size: 2.4rem; font-weight: 400; color: #fff; margin-bottom: 14px; }
+    .cta-section p { color: rgba(255,255,255,.72); max-width: 500px; margin: 0 auto 32px; }
+    .btn-light { display: inline-block; border: 1.5px solid rgba(255,255,255,.6); color: #fff; padding: 14px 36px; font-size: .82rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; border-radius: 3px; transition: all .3s; }
+    .btn-light:hover { background: #fff; color: var(--accent); }
+
+    /* ── FOOTER ── */
+    footer { background: #141414; padding: 32px 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    footer img { height: 36px; filter: brightness(0) invert(1); opacity: .7; }
+    footer p { font-size: .78rem; color: rgba(255,255,255,.3); }
+    footer a { font-size: .78rem; color: rgba(255,255,255,.3); margin-left: 20px; }
+    footer a:hover { color: rgba(255,255,255,.7); }
+    @media(max-width:600px) { footer { flex-direction: column; text-align: center; padding: 28px 20px; } }
+
+    /* ── BACK LINK ── */
+    .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 32px; }
+    .back-link svg { width: 16px; height: 16px; }
+    .back-link:hover { opacity: .7; }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="elexons.ch" /></a>
+  <div class="nav-links">
+    <a href="index.html" data-i18n="nav_home">Startseite</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="projekte.html">Projekte</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+  <div class="lang-switch" style="display:flex;align-items:center;gap:2px;margin-right:12px;">
+    <button onclick="setLang('de')" class="lang-btn active" data-lang="de" style="background:none;border:1px solid transparent;cursor:pointer;font-size:.7rem;font-weight:700;letter-spacing:.1em;padding:4px 9px;border-radius:3px;color:rgba(0,0,0,.5);transition:all .2s;">DE</button>
+    <button onclick="setLang('en')" class="lang-btn" data-lang="en" style="background:none;border:1px solid transparent;cursor:pointer;font-size:.7rem;font-weight:700;letter-spacing:.1em;padding:4px 9px;border-radius:3px;color:rgba(0,0,0,.5);transition:all .2s;">EN</button>
+  </div>
+  <a href="kontakt.html" class="nav-cta" data-i18n="btn_beratung">Beratung anfragen</a>
+</nav>
+
+<!-- ── HERO ── -->
+<!-- TODO: Replace src with the best "hero" photo from the project folder -->
+<div class="hero">
+  <img src="[PROJEKTORDNER]/web/[HAUPTBILD].jpg" alt="Projekt [NAME] – [LEISTUNGEN] elexons.ch" loading="eager" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <!-- TODO: Update tag, title, subtitle -->
+    <div class="hero-tag">Referenzprojekt · [STANDORT]</div>
+    <h1 class="hero-title">[NAME]</h1>
+    <div class="hero-sub">[Leistung 1] · [Leistung 2] · [Leistung 3]</div>
+  </div>
+</div>
+
+<!-- ── INTRO ── -->
+<section>
+  <div class="container">
+    <a href="projekte.html" class="back-link">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      <span data-i18n="btn_alle_proj">Alle Projekte</span>
+    </a>
+    <div class="intro-grid">
+      <!-- LEFT: Description -->
+      <div>
+        <span class="label" data-i18n-de="Referenzprojekt" data-i18n-en="Reference Project">Referenzprojekt</span>
+        <!-- TODO: Replace h2 and paragraphs with real project description -->
+        <h2 data-i18n-de="[Projekttitel auf Deutsch]" data-i18n-en="[Project Title in English]">[Projekttitel auf Deutsch]</h2>
+        <p data-i18n-de="[Erster Absatz: Was wurde gemacht? Scope des Projekts.]" data-i18n-en="[First paragraph in English]">[Erster Absatz: Was wurde gemacht? Scope des Projekts.]</p>
+        <p data-i18n-de="[Zweiter Absatz: Herausforderungen, besondere Aspekte.]" data-i18n-en="[Second paragraph in English]">[Zweiter Absatz: Herausforderungen, besondere Aspekte.]</p>
+        <p data-i18n-de="[Dritter Absatz: Ergebnis, Übergabe, Kundenzufriedenheit.]" data-i18n-en="[Third paragraph in English]">[Dritter Absatz: Ergebnis, Übergabe, Kundenzufriedenheit.]</p>
+      </div>
+
+      <!-- RIGHT: Meta facts list -->
+      <div>
+        <ul class="meta-list">
+          <!-- TODO: Fill in real values for all meta items -->
+          <li>
+            <span class="meta-label" data-i18n-de="Standort" data-i18n-en="Location">Standort</span>
+            <span class="meta-val">[Stadt, Kanton]</span>
+          </li>
+          <li>
+            <span class="meta-label" data-i18n-de="Leistungen" data-i18n-en="Services">Leistungen</span>
+            <span class="meta-val" data-i18n-de="[Leistung 1], [Leistung 2], [Leistung 3]" data-i18n-en="[Service 1], [Service 2], [Service 3]">[Leistung 1], [Leistung 2], [Leistung 3]</span>
+          </li>
+          <li>
+            <span class="meta-label" data-i18n-de="Fläche" data-i18n-en="Area">Fläche</span>
+            <!-- TODO: Replace with real area -->
+            <span class="meta-val">[XX] m²</span>
+          </li>
+          <li>
+            <span class="meta-label" data-i18n-de="Dauer" data-i18n-en="Duration">Dauer</span>
+            <!-- TODO: Replace with real duration -->
+            <span class="meta-val" data-i18n-de="[X] Monate" data-i18n-en="[X] months">[X] Monate</span>
+          </li>
+          <li>
+            <span class="meta-label" data-i18n-de="Abschluss" data-i18n-en="Completed">Abschluss</span>
+            <!-- TODO: Replace with real year -->
+            <span class="meta-val">[JAHR]</span>
+          </li>
+          <li>
+            <span class="meta-label" data-i18n-de="Auftraggeber" data-i18n-en="Client">Auftraggeber</span>
+            <!-- TODO: Use "Privater Eigentümer" or specific client type -->
+            <span class="meta-val" data-i18n-de="[Privater Eigentümer / Unternehmen]" data-i18n-en="[Private Owner / Company]">[Privater Eigentümer / Unternehmen]</span>
+          </li>
+          <li>
+            <span class="meta-label" data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</span>
+            <span class="meta-val">
+              <a href="kontakt.html" style="color:var(--accent);">
+                <span data-i18n-de="Ähnliches Projekt anfragen →" data-i18n-en="Request a Similar Project →">Ähnliches Projekt anfragen →</span>
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECT FACTS STRIP ── -->
+<section class="facts-strip">
+  <div class="facts-grid">
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Standort" data-i18n-en="Location">Standort</span>
+      <span class="fact-value">[Stadt]</span><!-- TODO: Replace -->
+    </div>
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Abschluss" data-i18n-en="Completed">Abschluss</span>
+      <span class="fact-value">[JAHR]</span><!-- TODO: Replace -->
+    </div>
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Fläche" data-i18n-en="Area">Fläche</span>
+      <span class="fact-value">[XX] m²</span><!-- TODO: Replace -->
+    </div>
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Dauer" data-i18n-en="Duration">Dauer</span>
+      <span class="fact-value">[X] <span style="font-size:1rem;" data-i18n-de="Monate" data-i18n-en="months">Monate</span></span><!-- TODO: Replace -->
+    </div>
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Auftraggeber" data-i18n-en="Client">Auftraggeber</span>
+      <span class="fact-value" style="font-size:1.1rem;" data-i18n-de="Privater Eigentümer" data-i18n-en="Private Owner">Privater Eigentümer</span><!-- TODO: Replace if needed -->
+    </div>
+  </div>
+</section>
+
+<!-- ── CLIENT TESTIMONIAL ── -->
+<!-- TODO: Replace with real client quote, OR delete this entire section if no quote available -->
+<section class="testimonial-section">
+  <div class="testimonial-inner">
+    <blockquote class="testimonial-quote" data-i18n-de="«TODO: Kundenzitat hier einfügen.»" data-i18n-en="«TODO: Insert client quote here.»">
+      «TODO: Kundenzitat hier einfügen.»
+    </blockquote>
+    <div class="testimonial-source">
+      <div class="testimonial-avatar">
+        <!-- TODO: Replace with client photo img tag, or remove avatar div entirely -->
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+      </div>
+      <div>
+        <!-- TODO: Replace with real name (or use "Privater Auftraggeber, [Ort]") -->
+        <div class="testimonial-name">TODO: Name oder «Privater Auftraggeber, [Ort]»</div>
+        <div class="testimonial-role" data-i18n-de="Auftraggeber, [Projektname]" data-i18n-en="Client, [Project Name]">Auftraggeber, [Projektname]</div>
+      </div>
+    </div>
+    <span class="testimonial-placeholder-note">TODO: Echtes Kundenzitat einfügen oder diesen Block entfernen</span>
+  </div>
+</section>
+
+<!-- ── BEFORE / AFTER (optional) ── -->
+<!-- TODO: Use this section if you have before/after photos. Delete otherwise. -->
+<!--
+<section class="before-after">
+  <div class="container">
+    <div class="ba-header">
+      <span class="label" style="display:block;text-align:center;" data-i18n-de="Vorher / Nachher" data-i18n-en="Before / After">Vorher / Nachher</span>
+      <h2 data-i18n-de="Die Transformation" data-i18n-en="The Transformation">Die Transformation</h2>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-panel">
+        <img src="[PROJEKTORDNER]/vorher/[VORHER-BILD].jpg" alt="Vorher – [RAUM]" loading="lazy" />
+        <span class="ba-label" data-i18n-de="Vorher" data-i18n-en="Before">Vorher</span>
+      </div>
+      <div class="ba-panel">
+        <img src="[PROJEKTORDNER]/nachher/[NACHHER-BILD].jpg" alt="Nachher – [RAUM] renoviert durch elexons.ch" loading="lazy" />
+        <span class="ba-label ba-label--after" data-i18n-de="Nachher" data-i18n-en="After">Nachher</span>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- ── GALLERY ── -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-header">
+      <span class="label" style="justify-content:center;display:block;" data-i18n-de="Projektdokumentation" data-i18n-en="Project Documentation">Projektdokumentation</span>
+      <h2 data-i18n-de="Einblicke ins Projekt" data-i18n-en="Project Insights">Einblicke ins Projekt</h2>
+    </div>
+
+    <!-- TODO: Add/remove .gallery-item divs to match your photo count -->
+    <!-- Pattern: <div class="gallery-item" onclick="openLB(INDEX)" data-caption="CAPTION"><img src="PATH" alt="ALT" loading="lazy" /></div> -->
+    <!-- IMPORTANT: Keep onclick index (0-based) in sync with the order here -->
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLB(0)" data-caption="[NAME] – [Raumbezeichnung] (1/[TOTAL])">
+        <img src="[PROJEKTORDNER]/web/[BILD_1].jpg" alt="[NAME] – [Raumbezeichnung] – elexons.ch" loading="lazy" />
+      </div>
+      <div class="gallery-item" onclick="openLB(1)" data-caption="[NAME] – [Raumbezeichnung] (2/[TOTAL])">
+        <img src="[PROJEKTORDNER]/web/[BILD_2].jpg" alt="[NAME] – [Raumbezeichnung] – elexons.ch" loading="lazy" />
+      </div>
+      <div class="gallery-item" onclick="openLB(2)" data-caption="[NAME] – [Raumbezeichnung] (3/[TOTAL])">
+        <img src="[PROJEKTORDNER]/web/[BILD_3].jpg" alt="[NAME] – [Raumbezeichnung] – elexons.ch" loading="lazy" />
+      </div>
+      <!-- TODO: Duplicate the pattern above for all additional photos -->
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-section">
+  <div class="container">
+    <h2 data-i18n-de="Ein ähnliches Projekt planen?" data-i18n-en="Planning a Similar Project?">Ein ähnliches Projekt planen?</h2>
+    <p data-i18n-de="Kontaktieren Sie uns für eine kostenlose Erstberatung – persönlich, unverbindlich und ohne versteckte Kosten." data-i18n-en="Contact us for a free initial consultation – personal, non-binding and without hidden costs.">Kontaktieren Sie uns für eine kostenlose Erstberatung – persönlich, unverbindlich und ohne versteckte Kosten.</p>
+    <a href="kontakt.html" class="btn-light" data-i18n="btn_kos_anfr">Kostenlose Beratung anfragen</a>
+  </div>
+</section>
+
+<!-- ── LIGHTBOX ── -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildvorschau">
+  <button class="lb-close" onclick="closeLB()" aria-label="Schliessen">×</button>
+  <button class="lb-prev" onclick="moveLB(-1)" aria-label="Vorheriges Bild">&#8249;</button>
+  <img src="" alt="" id="lb-img" />
+  <button class="lb-next" onclick="moveLB(1)" aria-label="Nächstes Bild">&#8250;</button>
+  <div class="lb-counter" id="lb-counter"></div>
+  <div class="lb-caption" id="lb-caption"></div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <img src="assets/images/logo.png" alt="elexons.ch" />
+  <p>© 2026 elexons.ch – Alpenblickstrasse 2, 8725 Gebertingen</p>
+  <div>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+  </div>
+</footer>
+
+<script>
+  /* ── Lightbox: reads from DOM so captions always stay in sync ── */
+  const galleryItems = Array.from(document.querySelectorAll('.gallery-item[data-caption]'));
+  const imgs     = galleryItems.map(el => el.querySelector('img').src);
+  const captions = galleryItems.map(el => el.dataset.caption || '');
+
+  let cur = 0;
+  const lb      = document.getElementById('lightbox');
+  const lbImg   = document.getElementById('lb-img');
+  const lbCap   = document.getElementById('lb-caption');
+  const lbCount = document.getElementById('lb-counter');
+
+  function updateLB() {
+    lbImg.src           = imgs[cur];
+    lbImg.alt           = captions[cur];
+    lbCap.textContent   = captions[cur];
+    lbCount.textContent = (cur + 1) + ' / ' + imgs.length;
+  }
+  function openLB(i)  { cur = i; updateLB(); lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeLB()  { lb.classList.remove('open'); document.body.style.overflow = ''; }
+  function moveLB(d)  { cur = (cur + d + imgs.length) % imgs.length; updateLB(); }
+
+  /* Keyboard */
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape')     closeLB();
+    if (e.key === 'ArrowLeft')  moveLB(-1);
+    if (e.key === 'ArrowRight') moveLB(1);
+  });
+  lb.addEventListener('click', e => { if (e.target === lb) closeLB(); });
+
+  /* Touch / swipe */
+  let touchStartX = 0;
+  lb.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend',   e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 50) moveLB(dx < 0 ? 1 : -1);
+  }, { passive: true });
+</script>
+<script src="assets/js/lang.js"></script>
+</body>
+</html>
+
+<!--
+╔══════════════════════════════════════════════════════════════════════╗
+║  CHECKLIST — complete before publishing this page                   ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  [ ] Rename file to projekt-[name].html                             ║
+║  [ ] Update <title> and <meta name="description">                   ║
+║  [ ] Update <link rel="canonical"> URL                              ║
+║  [ ] Hero image: replace [PROJEKTORDNER]/web/[HAUPTBILD].jpg        ║
+║  [ ] Hero tag / title / subtitle text                               ║
+║  [ ] Intro paragraphs (DE + EN via data-i18n-de/en)                ║
+║  [ ] Meta list: Standort, Leistungen, Fläche, Dauer, Abschluss      ║
+║  [ ] Facts strip: fill in real numbers                              ║
+║  [ ] Testimonial: add real quote OR delete testimonial-section      ║
+║  [ ] Before/After: uncomment section if before photos exist         ║
+║  [ ] Gallery: add all .gallery-item divs with correct paths         ║
+║  [ ] Gallery captions: update data-caption on each .gallery-item    ║
+║  [ ] Gallery alt text: replace "TODO: Raumbezeichnung"              ║
+║  [ ] Add new card to projekte.html (copy existing card pattern)     ║
+║  [ ] Add new page to sitemap.xml                                    ║
+╚══════════════════════════════════════════════════════════════════════╝
+-->

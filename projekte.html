@@ -92,12 +92,6 @@
       50% { transform: translateX(-50%) translateY(8px); }
     }
 
-    /* slim proj-intro (now just spacing) */
-    .proj-intro--slim {
-      padding: 0;
-      min-height: 0;
-    }
-
     /* ── BREADCRUMB ── */
     .breadcrumb {
       padding: 20px 0 0;
@@ -122,56 +116,271 @@
     .breadcrumb__sep { font-size: .6rem; }
     .breadcrumb__current { color: rgba(255,255,255,.6); }
 
-    /* ── PAGE INTRO ── */
-    .proj-intro {
-      padding: 40px 0 56px;
+    /* ── STATS ROW (moved up for immediate trust) ── */
+    .proj-stats {
+      background: #111;
+      border-top: 1px solid rgba(255,255,255,.07);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      padding: 48px 32px;
+      margin-top: 32px;
+    }
+    .proj-stats__grid {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
       text-align: center;
-      background: #0c0c0c;
     }
-    .proj-intro__label {
-      display: inline-block;
-      font-size: .65rem; letter-spacing: .3em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 18px;
-    }
-    .proj-intro__title {
+    .stat-item__number {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: clamp(2.8rem, 5vw, 4.4rem);
-      font-weight: 400; color: #fff; line-height: 1.08;
-      margin-bottom: 20px;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 400;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 8px;
     }
-    .proj-intro__title em { font-style: italic; color: var(--gold); }
-    .proj-intro__sub {
-      color: rgba(255,255,255,.45); font-size: .9rem;
-      max-width: 500px; margin: 0 auto;
+    .stat-item__number span { color: var(--gold); }
+    .stat-item__label {
+      font-size: .72rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+    }
+
+    /* ── FEATURED CASE STUDY ── */
+    .featured-case {
+      background: #0c0c0c;
+      padding: 88px 32px 72px;
+    }
+    .featured-case__pre {
+      max-width: var(--max-w);
+      margin: 0 auto 40px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .featured-case__pre-label {
+      font-size: .58rem;
+      letter-spacing: .32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      white-space: nowrap;
+    }
+    .featured-case__pre-line {
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,.08);
+    }
+    .featured-case__inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 58fr 42fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .featured-case__img-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: 2px;
+      aspect-ratio: 4 / 3;
+    }
+    .featured-case__img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .8s cubic-bezier(.25,.46,.45,.94);
+    }
+    .featured-case__img-wrap:hover img {
+      transform: scale(1.04);
+    }
+    .featured-case__img-count {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background: rgba(12,12,12,.8);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.6);
+      padding: 6px 14px;
+      font-size: .65rem;
+      letter-spacing: .12em;
+      backdrop-filter: blur(6px);
+      border-radius: 2px;
+    }
+    .featured-case__content {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .featured-case__tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    .featured-case__tag {
+      font-size: .6rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.38);
+      border: 1px solid rgba(255,255,255,.1);
+      padding: 4px 10px;
+      border-radius: 2px;
+    }
+    .featured-case__title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+    .featured-case__desc {
+      color: rgba(255,255,255,.4);
+      font-size: .875rem;
       line-height: 1.9;
+      margin-bottom: 28px;
+    }
+    .featured-case__facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 2px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .featured-case__fact {
+      padding: 16px 18px;
+      border-right: 1px solid rgba(255,255,255,.08);
+    }
+    .featured-case__fact:last-child { border-right: none; }
+    .featured-case__fact-label {
+      font-size: .56rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.25);
+      margin-bottom: 5px;
+    }
+    .featured-case__fact-value {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.85);
+      font-weight: 400;
+    }
+    .featured-case__thumbs {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 3px;
+      margin-bottom: 30px;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .featured-case__thumb {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      display: block;
+    }
+    .featured-case__thumb img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s ease, filter .4s ease;
+      filter: brightness(.75);
+    }
+    .featured-case__thumb:hover img {
+      transform: scale(1.1);
+      filter: brightness(1);
+    }
+    .featured-case__actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .featured-case__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      background: var(--gold);
+      color: #fff;
+      text-decoration: none;
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background .25s ease, transform .2s ease;
+    }
+    .featured-case__cta:hover {
+      background: #9e7e3a;
+      transform: translateY(-1px);
+    }
+    .featured-case__cta svg { width: 13px; height: 13px; }
+    .featured-case__link {
+      font-size: .72rem;
+      color: rgba(255,255,255,.3);
+      text-decoration: none;
+      letter-spacing: .06em;
+      transition: color .2s;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      padding-bottom: 1px;
+    }
+    .featured-case__link:hover { color: var(--gold); border-bottom-color: var(--gold); }
+
+    /* ── SECONDARY PROJECTS SECTION ── */
+    .proj-secondary {
+      background: #0c0c0c;
+      padding: 0 32px 80px;
+    }
+    .proj-secondary__header {
+      max-width: var(--max-w);
+      margin: 0 auto 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .proj-secondary__title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: rgba(255,255,255,.32);
+      white-space: nowrap;
+      letter-spacing: .04em;
+    }
+    .proj-secondary__line {
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,.07);
     }
 
     /* ── FILTER BAR ── */
     .filter-bar {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 8px;
-      padding: 0 32px 56px;
+      max-width: var(--max-w);
+      margin: 0 auto 48px;
       flex-wrap: wrap;
-      background: #0c0c0c;
     }
     .filter-btn {
       background: transparent;
-      border: 1px solid rgba(255,255,255,.18);
-      color: rgba(255,255,255,.5);
-      padding: 8px 22px;
+      border: 1px solid rgba(255,255,255,.15);
+      color: rgba(255,255,255,.45);
+      padding: 8px 20px;
       font-family: var(--font-b);
-      font-size: .72rem;
+      font-size: .68rem;
       font-weight: 500;
       letter-spacing: .1em;
       text-transform: uppercase;
       border-radius: 2px;
       cursor: pointer;
-      transition: all .25s ease;
+      transition: all .22s ease;
     }
     .filter-btn:hover {
-      border-color: rgba(255,255,255,.4);
-      color: rgba(255,255,255,.85);
+      border-color: rgba(255,255,255,.35);
+      color: rgba(255,255,255,.8);
     }
     .filter-btn.active {
       background: var(--gold);
@@ -180,16 +389,12 @@
     }
 
     /* ── PROJECT GRID ── */
-    .projects-section {
-      background: #0c0c0c;
-      padding: 0 32px 80px;
-    }
     .projects-grid {
       max-width: var(--max-w);
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      gap: 20px;
     }
 
     /* ── PROJECT CARD ── */
@@ -205,12 +410,10 @@
       transform: translateY(-4px);
       box-shadow: 0 20px 60px rgba(0,0,0,.5);
     }
-    .project-card.card--featured {
-      grid-column: span 2;
-    }
     .project-card.card--soon {
       cursor: default;
       pointer-events: none;
+      opacity: .6;
     }
     .project-card.card--soon:hover {
       transform: none;
@@ -223,9 +426,6 @@
       overflow: hidden;
       aspect-ratio: 4 / 3;
       background: #1a1a1a;
-    }
-    .card--featured .card-img {
-      aspect-ratio: 16 / 9;
     }
     .card-img img {
       width: 100%; height: 100%;
@@ -257,7 +457,7 @@
       background: rgba(12,12,12,.9);
       border: 1px solid rgba(255,255,255,.25);
       color: #fff;
-      font-size: .72rem;
+      font-size: .7rem;
       font-weight: 500;
       letter-spacing: .12em;
       text-transform: uppercase;
@@ -273,82 +473,69 @@
     }
     .card-view__btn svg { width: 14px; height: 14px; }
 
-    /* Coming soon overlay */
-    .card-soon-label {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0,0,0,.5);
-    }
+    /* Coming soon corner badge */
     .card-soon-badge {
-      border: 1px solid rgba(255,255,255,.15);
-      color: rgba(255,255,255,.35);
-      padding: 10px 24px;
-      font-size: .65rem;
-      letter-spacing: .22em;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(12,12,12,.85);
+      border: 1px solid rgba(184,154,92,.35);
+      color: var(--gold);
+      padding: 5px 12px;
+      font-size: .58rem;
+      letter-spacing: .2em;
       text-transform: uppercase;
       border-radius: 2px;
+      backdrop-filter: blur(6px);
     }
 
     /* Card info (below image) */
     .card-info {
-      padding: 22px 24px 26px;
+      padding: 20px 22px 24px;
       border-top: 1px solid rgba(255,255,255,.06);
     }
     .card-cat {
       display: inline-block;
-      font-size: .6rem;
+      font-size: .58rem;
       letter-spacing: .22em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .card-title {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 400;
       color: #fff;
       line-height: 1.2;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .card-desc {
-      font-size: .8rem;
-      color: rgba(255,255,255,.38);
+      font-size: .78rem;
+      color: rgba(255,255,255,.35);
       line-height: 1.7;
     }
 
-    /* ── STATS ROW ── */
-    .proj-stats {
-      background: #111;
+    /* Card meta strip */
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 12px;
+      padding-top: 12px;
       border-top: 1px solid rgba(255,255,255,.07);
-      border-bottom: 1px solid rgba(255,255,255,.07);
-      padding: 52px 32px;
+      flex-wrap: wrap;
     }
-    .proj-stats__grid {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 32px;
-      text-align: center;
+    .card-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: .65rem;
+      color: rgba(255,255,255,.25);
+      letter-spacing: .04em;
     }
-    .stat-item__number {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: clamp(2.2rem, 4vw, 3.2rem);
-      font-weight: 400;
-      color: #fff;
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-    .stat-item__number span { color: var(--gold); }
-    .stat-item__label {
-      font-size: .72rem;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,.35);
-    }
+    .card-meta-item svg { width: 10px; height: 10px; opacity: .45; flex-shrink: 0; }
+    .card-meta-item strong { color: rgba(255,255,255,.42); font-weight: 500; }
 
     /* ── CTA BAND ── */
     .proj-cta {
@@ -399,18 +586,30 @@
     .footer { border-top: 1px solid rgba(255,255,255,.08); }
 
     /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .featured-case__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .featured-case__img-wrap {
+        aspect-ratio: 16 / 9;
+      }
+    }
     @media (max-width: 900px) {
       .projects-grid { grid-template-columns: repeat(2, 1fr); }
-      .project-card.card--featured { grid-column: span 2; }
       .proj-stats__grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 600px) {
-      .projects-grid { grid-template-columns: 1fr; gap: 16px; padding: 0 16px 60px; }
-      .project-card.card--featured { grid-column: span 1; }
+      .projects-grid { grid-template-columns: 1fr; gap: 14px; }
+      .proj-secondary { padding: 0 16px 60px; }
       .proj-stats__grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-      .filter-bar { padding: 0 16px 40px; gap: 6px; }
-      .filter-btn { padding: 7px 14px; font-size: .68rem; }
+      .filter-bar { gap: 6px; }
+      .filter-btn { padding: 7px 14px; font-size: .65rem; }
       .breadcrumb__inner { padding: 0 16px; }
+      .featured-case { padding: 56px 16px 48px; }
+      .featured-case__facts { grid-template-columns: repeat(3, 1fr); }
+      .featured-case__thumbs { grid-template-columns: repeat(5, 1fr); }
+      .featured-case__actions { flex-direction: column; align-items: flex-start; gap: 14px; }
     }
   </style>
 </head>
@@ -515,106 +714,7 @@
   </div>
 </div>
 
-<!-- ── PAGE INTRO (filter label) ── -->
-<section class="proj-intro proj-intro--slim"></section>
-
-<!-- ── FILTER BAR ── -->
-<div class="filter-bar">
-  <button class="filter-btn active" data-filter="all" data-i18n-de="Alle Projekte" data-i18n-en="All Projects">Alle Projekte</button>
-  <button class="filter-btn" data-filter="sanierung" data-i18n-de="Sanierung" data-i18n-en="Renovation">Sanierung</button>
-  <button class="filter-btn" data-filter="umbau" data-i18n-de="Umbau &amp; Innenausbau" data-i18n-en="Remodelling &amp; Interiors">Umbau &amp; Innenausbau</button>
-  <button class="filter-btn" data-filter="smarthome" data-i18n-de="Smart Home" data-i18n-en="Smart Home">Smart Home</button>
-</div>
-
-<!-- ── PROJECT GRID ── -->
-<div class="projects-section">
-  <div class="projects-grid" id="projectsGrid">
-
-    <!-- LEIMBACH (featured 2/3) -->
-    <a href="projekt-leimbach.html" class="project-card card--featured" data-cat="sanierung umbau smarthome">
-      <div class="card-img">
-        <img src="Leimbach/web/IMG_0783.jpg" alt="Projekt Leimbach – Komplettsanierung Zürich" loading="eager" />
-        <div class="card-view">
-          <span class="card-view__btn">
-            <span data-i18n-de="Projekt ansehen" data-i18n-en="View Project">Projekt ansehen</span>
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </span>
-        </div>
-      </div>
-      <div class="card-info">
-        <span class="card-cat" data-i18n-de="Sanierung · Umbau · Smart Home" data-i18n-en="Renovation · Remodelling · Smart Home">Sanierung · Umbau · Smart Home</span>
-        <div class="card-title">Leimbach, Zürich</div>
-        <p class="card-desc" data-i18n-de="Komplettsanierung, Loxone Smart Home Full Build, Innenausbau" data-i18n-en="Full renovation, Loxone Smart Home full build, interior fit-out">Komplettsanierung, Loxone Smart Home Full Build, Innenausbau</p>
-      </div>
-    </a>
-
-    <!-- MURI -->
-    <a href="projekt-muri.html" class="project-card" data-cat="sanierung smarthome umbau">
-      <div class="card-img">
-        <img src="Muri/web/IMG_4537.jpg" alt="Projekt Muri – Sanierung und Smart Home" loading="lazy" />
-        <div class="card-view">
-          <span class="card-view__btn">
-            <span data-i18n-de="Projekt ansehen" data-i18n-en="View Project">Projekt ansehen</span>
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </span>
-        </div>
-      </div>
-      <div class="card-info">
-        <span class="card-cat" data-i18n-de="Sanierung · Smart Home · Innenausbau" data-i18n-en="Renovation · Smart Home · Interiors">Sanierung · Smart Home · Innenausbau</span>
-        <div class="card-title">Muri, Bern</div>
-        <p class="card-desc" data-i18n-de="Praxis-Fitout, medizinisches Raumkonzept, Smart Home Integration" data-i18n-en="Practice fit-out, medical room concept, Smart Home integration">Praxis-Fitout, medizinisches Raumkonzept, Smart Home Integration</p>
-      </div>
-    </a>
-
-    <!-- COMING SOON 1 -->
-    <div class="project-card card--soon" data-cat="sanierung">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=60&fit=crop" alt="" loading="lazy" style="opacity:.12; filter:grayscale(80%);" />
-        <div class="card-soon-label">
-          <span class="card-soon-badge" data-i18n-de="Demnächst" data-i18n-en="Coming Soon">Demnächst</span>
-        </div>
-      </div>
-      <div class="card-info">
-        <span class="card-cat" data-i18n-de="Sanierung · Zürich" data-i18n-en="Renovation · Zürich">Sanierung · Zürich</span>
-        <div class="card-title" data-i18n-de="Nächstes Projekt" data-i18n-en="Next Project">Nächstes Projekt</div>
-        <p class="card-desc" data-i18n-de="Weitere Referenzen folgen in Kürze." data-i18n-en="More references coming soon.">Weitere Referenzen folgen in Kürze.</p>
-      </div>
-    </div>
-
-    <!-- COMING SOON 2 -->
-    <div class="project-card card--soon" data-cat="umbau">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=60&fit=crop" alt="" loading="lazy" style="opacity:.12; filter:grayscale(80%);" />
-        <div class="card-soon-label">
-          <span class="card-soon-badge" data-i18n-de="Demnächst" data-i18n-en="Coming Soon">Demnächst</span>
-        </div>
-      </div>
-      <div class="card-info">
-        <span class="card-cat" data-i18n-de="Umbau · Innenausbau" data-i18n-en="Remodelling · Interiors">Umbau · Innenausbau</span>
-        <div class="card-title" data-i18n-de="Nächstes Projekt" data-i18n-en="Next Project">Nächstes Projekt</div>
-        <p class="card-desc" data-i18n-de="Weitere Referenzen folgen in Kürze." data-i18n-en="More references coming soon.">Weitere Referenzen folgen in Kürze.</p>
-      </div>
-    </div>
-
-    <!-- COMING SOON 3 -->
-    <div class="project-card card--soon" data-cat="smarthome">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=60&fit=crop" alt="" loading="lazy" style="opacity:.12; filter:grayscale(80%);" />
-        <div class="card-soon-label">
-          <span class="card-soon-badge" data-i18n-de="Demnächst" data-i18n-en="Coming Soon">Demnächst</span>
-        </div>
-      </div>
-      <div class="card-info">
-        <span class="card-cat" data-i18n-de="Smart Home · Loxone" data-i18n-en="Smart Home · Loxone">Smart Home · Loxone</span>
-        <div class="card-title" data-i18n-de="Nächstes Projekt" data-i18n-en="Next Project">Nächstes Projekt</div>
-        <p class="card-desc" data-i18n-de="Weitere Referenzen folgen in Kürze." data-i18n-en="More references coming soon.">Weitere Referenzen folgen in Kürze.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- ── STATS ── -->
+<!-- ── STATS (moved above projects for immediate trust) ── -->
 <section class="proj-stats">
   <div class="proj-stats__grid">
     <div class="stat-item">
@@ -636,11 +736,185 @@
   </div>
 </section>
 
+<!-- ── FEATURED CASE STUDY: LEIMBACH ── -->
+<section class="featured-case">
+  <div class="featured-case__pre">
+    <span class="featured-case__pre-label" data-i18n-de="Fallstudie · Ausgewähltes Projekt" data-i18n-en="Case Study · Featured Project">Fallstudie · Ausgewähltes Projekt</span>
+    <div class="featured-case__pre-line"></div>
+  </div>
+  <div class="featured-case__inner">
+
+    <!-- Left: large image -->
+    <div class="featured-case__img-wrap">
+      <img
+        src="Leimbach/web/IMG_0783.jpg"
+        alt="Komplettsanierung Leimbach Zürich – Wohnzimmer nach der Renovation"
+        loading="eager"
+      />
+      <span class="featured-case__img-count">26 Fotos</span>
+    </div>
+
+    <!-- Right: case study content -->
+    <div class="featured-case__content">
+      <div class="featured-case__tags">
+        <span class="featured-case__tag" data-i18n-de="Sanierung" data-i18n-en="Renovation">Sanierung</span>
+        <span class="featured-case__tag" data-i18n-de="Umbau" data-i18n-en="Remodelling">Umbau</span>
+        <span class="featured-case__tag">Smart Home</span>
+        <span class="featured-case__tag">Loxone</span>
+      </div>
+
+      <h2 class="featured-case__title" data-i18n-de="Komplettsanierung<br>Leimbach, Zürich" data-i18n-en="Full Renovation<br>Leimbach, Zürich">Komplettsanierung<br>Leimbach, Zürich</h2>
+
+      <p class="featured-case__desc" data-i18n-de="Vollständige Kernsanierung eines Einfamilienhauses in Leimbach – von der Elektroplanung bis zum schlüsselfertigen Innenausbau. Parallel dazu eine vollständige Loxone Smart Home Integration: Beleuchtung, Beschattung, Heizung, Zugang und Audio – alles aus einer Hand geplant und umgesetzt." data-i18n-en="Complete gut renovation of a single-family home in Leimbach – from electrical planning to turnkey interior fit-out. In parallel, a full Loxone Smart Home integration: lighting, shading, heating, access and audio – all planned and delivered from a single source.">Vollständige Kernsanierung eines Einfamilienhauses in Leimbach – von der Elektroplanung bis zum schlüsselfertigen Innenausbau. Parallel dazu eine vollständige Loxone Smart Home Integration: Beleuchtung, Beschattung, Heizung, Zugang und Audio – alles aus einer Hand geplant und umgesetzt.</p>
+
+      <!-- Project facts bar -->
+      <div class="featured-case__facts">
+        <div class="featured-case__fact">
+          <div class="featured-case__fact-label" data-i18n-de="Standort" data-i18n-en="Location">Standort</div>
+          <div class="featured-case__fact-value">Leimbach, Zürich</div>
+        </div>
+        <div class="featured-case__fact">
+          <!-- TODO: Replace with real Auftraggeber type -->
+          <div class="featured-case__fact-label" data-i18n-de="Auftraggeber" data-i18n-en="Client">Auftraggeber</div>
+          <div class="featured-case__fact-value" data-i18n-de="Privat" data-i18n-en="Private">Privat</div>
+        </div>
+        <div class="featured-case__fact">
+          <div class="featured-case__fact-label" data-i18n-de="Technologie" data-i18n-en="Technology">Technologie</div>
+          <div class="featured-case__fact-value">Loxone</div>
+        </div>
+      </div>
+
+      <!-- Gallery preview strip -->
+      <div class="featured-case__thumbs">
+        <a href="projekt-leimbach.html" class="featured-case__thumb" aria-label="Projekt Leimbach – Foto 1">
+          <img src="Leimbach/web/IMG_0824.jpg" alt="Leimbach Renovation Zürich – Detail 1" loading="lazy" />
+        </a>
+        <a href="projekt-leimbach.html" class="featured-case__thumb" aria-label="Projekt Leimbach – Foto 2">
+          <img src="Leimbach/web/IMG_0845.jpg" alt="Leimbach Renovation Zürich – Detail 2" loading="lazy" />
+        </a>
+        <a href="projekt-leimbach.html" class="featured-case__thumb" aria-label="Projekt Leimbach – Foto 3">
+          <img src="Leimbach/web/IMG_0948.jpg" alt="Leimbach Renovation Zürich – Detail 3" loading="lazy" />
+        </a>
+        <a href="projekt-leimbach.html" class="featured-case__thumb" aria-label="Projekt Leimbach – Foto 4">
+          <img src="Leimbach/web/IMG_4512.jpg" alt="Leimbach Renovation Zürich – Detail 4" loading="lazy" />
+        </a>
+        <a href="projekt-leimbach.html" class="featured-case__thumb" aria-label="Projekt Leimbach – Foto 5">
+          <img src="Leimbach/web/IMG_4568.jpg" alt="Leimbach Renovation Zürich – Detail 5" loading="lazy" />
+        </a>
+      </div>
+
+      <!-- CTA -->
+      <div class="featured-case__actions">
+        <a href="projekt-leimbach.html" class="featured-case__cta">
+          <span data-i18n-de="Fallstudie ansehen" data-i18n-en="View Case Study">Fallstudie ansehen</span>
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </a>
+        <a href="projekt-leimbach.html" class="featured-case__link" data-i18n-de="Alle 26 Fotos ansehen" data-i18n-en="View all 26 photos">Alle 26 Fotos ansehen</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── WEITERE PROJEKTE ── -->
+<section class="proj-secondary" id="weitereProj">
+
+  <!-- Section header -->
+  <div class="proj-secondary__header">
+    <span class="proj-secondary__title" data-i18n-de="Weitere Projekte" data-i18n-en="More Projects">Weitere Projekte</span>
+    <div class="proj-secondary__line"></div>
+  </div>
+
+  <!-- Filter bar -->
+  <div class="filter-bar" role="group" aria-label="Projektfilter">
+    <button class="filter-btn active" data-filter="all" data-i18n-de="Alle" data-i18n-en="All">Alle</button>
+    <button class="filter-btn" data-filter="sanierung" data-i18n-de="Sanierung" data-i18n-en="Renovation">Sanierung</button>
+    <button class="filter-btn" data-filter="umbau" data-i18n-de="Umbau" data-i18n-en="Remodelling">Umbau</button>
+    <button class="filter-btn" data-filter="smarthome" data-i18n-de="Smart Home" data-i18n-en="Smart Home">Smart Home</button>
+    <button class="filter-btn" data-filter="zuerich" data-i18n-de="Zürich" data-i18n-en="Zürich">Zürich</button>
+  </div>
+
+  <!-- Project grid -->
+  <div class="projects-grid" id="projectsGrid">
+
+    <!-- MURI -->
+    <a href="projekt-muri.html" class="project-card" data-cat="sanierung smarthome umbau">
+      <div class="card-img">
+        <img src="Muri/web/IMG_4537.jpg" alt="Projekt Muri – Sanierung und Smart Home Bern" loading="lazy" />
+        <div class="card-view">
+          <span class="card-view__btn">
+            <span data-i18n-de="Projekt ansehen" data-i18n-en="View Project">Projekt ansehen</span>
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </span>
+        </div>
+      </div>
+      <div class="card-info">
+        <span class="card-cat" data-i18n-de="Sanierung · Smart Home · Innenausbau" data-i18n-en="Renovation · Smart Home · Interiors">Sanierung · Smart Home · Innenausbau</span>
+        <div class="card-title">Muri, Bern</div>
+        <p class="card-desc" data-i18n-de="Praxis-Fitout, medizinisches Raumkonzept, Smart Home Integration" data-i18n-en="Practice fit-out, medical room concept, Smart Home integration">Praxis-Fitout, medizinisches Raumkonzept, Smart Home Integration</p>
+        <div class="card-meta">
+          <span class="card-meta-item">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            <span>Muri, Bern</span>
+          </span>
+          <span class="card-meta-item">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909"/></svg>
+            <span>40 Fotos</span>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- COMING SOON 1: Badsanierung placeholder -->
+    <!-- TODO: Replace with real project when available -->
+    <div class="project-card card--soon" data-cat="sanierung umbau">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8bb9cb4?w=800&q=75&fit=crop" alt="" loading="lazy" />
+        <span class="card-soon-badge" data-i18n-de="Demnächst" data-i18n-en="Coming Soon">Demnächst</span>
+      </div>
+      <div class="card-info">
+        <span class="card-cat" data-i18n-de="Badsanierung · Zürich" data-i18n-en="Bathroom Renovation · Zürich">Badsanierung · Zürich</span>
+        <div class="card-title" data-i18n-de="Nächstes Projekt" data-i18n-en="Next Project">Nächstes Projekt</div>
+        <p class="card-desc" data-i18n-de="Weitere Referenzen werden laufend dokumentiert und veröffentlicht." data-i18n-en="More references are continuously documented and published.">Weitere Referenzen werden laufend dokumentiert und veröffentlicht.</p>
+      </div>
+    </div>
+
+    <!-- COMING SOON 2: Küchen placeholder -->
+    <!-- TODO: Replace with real project when available -->
+    <div class="project-card card--soon" data-cat="umbau">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75&fit=crop" alt="" loading="lazy" />
+        <span class="card-soon-badge" data-i18n-de="Demnächst" data-i18n-en="Coming Soon">Demnächst</span>
+      </div>
+      <div class="card-info">
+        <span class="card-cat" data-i18n-de="Küchensanierung · Umbau" data-i18n-en="Kitchen Renovation · Remodelling">Küchensanierung · Umbau</span>
+        <div class="card-title" data-i18n-de="Nächstes Projekt" data-i18n-en="Next Project">Nächstes Projekt</div>
+        <p class="card-desc" data-i18n-de="Weitere Referenzen werden laufend dokumentiert und veröffentlicht." data-i18n-en="More references are continuously documented and published.">Weitere Referenzen werden laufend dokumentiert und veröffentlicht.</p>
+      </div>
+    </div>
+
+    <!-- COMING SOON 3: Smart Home placeholder -->
+    <!-- TODO: Replace with real project when available -->
+    <div class="project-card card--soon" data-cat="smarthome">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75&fit=crop" alt="" loading="lazy" />
+        <span class="card-soon-badge" data-i18n-de="Demnächst" data-i18n-en="Coming Soon">Demnächst</span>
+      </div>
+      <div class="card-info">
+        <span class="card-cat" data-i18n-de="Smart Home · Loxone" data-i18n-en="Smart Home · Loxone">Smart Home · Loxone</span>
+        <div class="card-title" data-i18n-de="Nächstes Projekt" data-i18n-en="Next Project">Nächstes Projekt</div>
+        <p class="card-desc" data-i18n-de="Weitere Referenzen werden laufend dokumentiert und veröffentlicht." data-i18n-en="More references are continuously documented and published.">Weitere Referenzen werden laufend dokumentiert und veröffentlicht.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- ── CTA ── -->
 <section class="proj-cta">
   <span class="proj-cta__label" data-i18n-de="Jetzt starten" data-i18n-en="Get Started">Jetzt starten</span>
   <h2 class="proj-cta__title" data-i18n-de="Starten Sie Ihr Projekt heute." data-i18n-en="Start Your Project Today.">Starten Sie Ihr Projekt heute.</h2>
-  <p class="proj-cta__sub" data-i18n-de="Teilen Sie uns Ihre Idee mit – wir antworten innerhalb von 24 Stunden mit einem massgeschneiderten Angebot." data-i18n-en="Share your idea with us – we will respond within 24 hours with a tailor-made proposal.">Teilen Sie uns Ihre Idee mit – wir antworten innerhalb von 24 Stunden mit einem massgeschneiderten Angebot. Kostenlos und unverbindlich.</p>
+  <p class="proj-cta__sub" data-i18n-de="Teilen Sie uns Ihre Idee mit – wir antworten innerhalb von 24 Stunden mit einem massgeschneiderten Angebot. Kostenlos und unverbindlich." data-i18n-en="Share your idea with us – we will respond within 24 hours with a tailor-made proposal. Free and non-binding.">Teilen Sie uns Ihre Idee mit – wir antworten innerhalb von 24 Stunden mit einem massgeschneiderten Angebot. Kostenlos und unverbindlich.</p>
   <a href="kontakt.html" class="btn-ghost-w" data-i18n="btn_cta2">Kostenlose Beratung anfragen →</a>
 </section>
 
@@ -696,7 +970,7 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/lang.js"></script>
 <script>
-  /* ── Filter Logic ── */
+  /* ── Filter Logic (applies to secondary grid only) ── */
   const filterBtns = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('#projectsGrid [data-cat]');
 
@@ -707,17 +981,8 @@
       const filter = btn.dataset.filter;
       cards.forEach(card => {
         const cats = card.dataset.cat || '';
-        if (filter === 'all' || cats.includes(filter)) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
+        card.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
       });
-      // Re-handle featured card span on filter
-      const featured = document.querySelector('.card--featured');
-      if (featured && featured.style.display !== 'none') {
-        featured.style.gridColumn = '';
-      }
     });
   });
 </script>

@@ -76,6 +76,27 @@
     @media(max-width:900px) { .gallery-grid { columns: 2; } }
     @media(max-width:500px) { .gallery-grid { columns: 1; } }
 
+    /* ── PROJECT FACTS STRIP ── */
+    .facts-strip { background: #F7F5F0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 0; }
+    .facts-grid { display: grid; grid-template-columns: repeat(5, 1fr); max-width: 1200px; margin: 0 auto; }
+    .fact-item { padding: 32px 28px; border-right: 1px solid var(--border); text-align: center; }
+    .fact-item:last-child { border-right: none; }
+    .fact-label { font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 8px; }
+    .fact-value { font-family: var(--font-h); font-size: 1.55rem; font-weight: 400; color: var(--text); line-height: 1.15; }
+    @media(max-width:900px) { .facts-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media(max-width:600px) { .facts-grid { grid-template-columns: repeat(2, 1fr); } .fact-item { border-right: none; border-bottom: 1px solid var(--border); } }
+
+    /* ── TESTIMONIAL PLACEHOLDER ── */
+    .testimonial-section { background: #fff; padding: 80px 0; }
+    .testimonial-inner { max-width: 760px; margin: 0 auto; text-align: center; padding: 0 40px; }
+    .testimonial-quote { font-family: var(--font-h); font-size: clamp(1.3rem, 2.2vw, 1.8rem); font-weight: 300; font-style: italic; color: var(--text); line-height: 1.65; margin-bottom: 32px; border-left: 3px solid var(--gold); padding-left: 28px; text-align: left; }
+    .testimonial-source { display: flex; align-items: center; gap: 16px; }
+    .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--border); display: flex; align-items: center; justify-content: center; color: var(--text2); font-size: .7rem; flex-shrink: 0; overflow: hidden; }
+    .testimonial-name { font-weight: 600; font-size: .85rem; color: var(--text); }
+    .testimonial-role { font-size: .78rem; color: var(--text2); margin-top: 2px; }
+    .testimonial-placeholder-note { font-size: .72rem; color: #aaa; font-style: italic; border: 1px dashed #ddd; border-radius: 4px; padding: 6px 14px; margin-top: 24px; display: inline-block; }
+
+    /* ── LIGHTBOX ── */
     .lightbox { position: fixed; inset: 0; z-index: 999; background: rgba(0,0,0,.95); display: none; align-items: center; justify-content: center; }
     .lightbox.open { display: flex; }
     .lightbox img { max-height: 90vh; max-width: 90vw; object-fit: contain; border-radius: 2px; }
@@ -83,6 +104,8 @@
     .lb-prev, .lb-next { position: fixed; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,.1); border: none; color: #fff; font-size: 1.6rem; padding: 16px 20px; cursor: pointer; z-index: 1000; transition: background .2s; }
     .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,.2); }
     .lb-prev { left: 16px; } .lb-next { right: 16px; }
+    .lb-caption { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,.6); color: rgba(255,255,255,.75); font-size: .78rem; padding: 7px 18px; border-radius: 2px; z-index: 1001; max-width: 80vw; text-align: center; pointer-events: none; letter-spacing: .04em; }
+    .lb-counter { position: fixed; top: 24px; left: 50%; transform: translateX(-50%); font-size: .72rem; letter-spacing: .15em; color: rgba(255,255,255,.4); z-index: 1001; pointer-events: none; }
 
     .cta-section { background: var(--accent); text-align: center; padding: 72px 0; }
     .cta-section h2 { font-family: var(--font-h); font-size: 2.4rem; font-weight: 400; color: #fff; margin-bottom: 14px; }
@@ -171,6 +194,55 @@
   </div>
 </section>
 
+<!-- PROJECT FACTS STRIP -->
+<section class="facts-strip">
+  <div class="facts-grid">
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Standort" data-i18n-en="Location">Standort</span>
+      <span class="fact-value">Muri, Bern</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Abschluss" data-i18n-en="Completed">Abschluss</span>
+      <!-- TODO: Replace with real completion year -->
+      <span class="fact-value" style="color:var(--text2);font-size:1rem;font-style:italic;">TODO: Jahr</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Fläche" data-i18n-en="Area">Fläche</span>
+      <!-- TODO: Replace with real area in m² -->
+      <span class="fact-value" style="color:var(--text2);font-size:1rem;font-style:italic;">TODO: m²</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Dauer" data-i18n-en="Duration">Dauer</span>
+      <!-- TODO: Replace with real project duration -->
+      <span class="fact-value" style="color:var(--text2);font-size:1rem;font-style:italic;">TODO: Monate</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label" data-i18n-de="Technologie" data-i18n-en="Technology">Technologie</span>
+      <span class="fact-value">Loxone</span>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT TESTIMONIAL -->
+<!-- TODO: Replace this entire section with a real client quote when available -->
+<section class="testimonial-section">
+  <div class="testimonial-inner">
+    <blockquote class="testimonial-quote" data-i18n-de="«TODO: Kundenzitat hier einfügen – was hat der Auftraggeber über das Projekt gesagt?»" data-i18n-en="«TODO: Insert client quote here – what did the client say about the project?»">
+      «TODO: Kundenzitat hier einfügen – was hat der Auftraggeber über das Projekt gesagt?»
+    </blockquote>
+    <div class="testimonial-source">
+      <div class="testimonial-avatar">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+      </div>
+      <div>
+        <div class="testimonial-name">TODO: Name oder «Privater Eigentümer, Muri»</div>
+        <div class="testimonial-role" data-i18n-de="Auftraggeber, Sanierung & Smart Home Muri" data-i18n-en="Client, Renovation & Smart Home Muri">Auftraggeber, Sanierung &amp; Smart Home Muri</div>
+      </div>
+    </div>
+    <span class="testimonial-placeholder-note">TODO: Echtes Kundenzitat einfügen oder diesen Block entfernen</span>
+  </div>
+</section>
+
 <!-- GALLERY -->
 <section class="gallery-section">
   <div class="container">
@@ -178,47 +250,48 @@
       <span class="label" style="justify-content:center;display:block;" data-i18n-de="Projektdokumentation" data-i18n-en="Project Documentation">Projektdokumentation</span>
       <h2 data-i18n-de="Einblicke ins Projekt" data-i18n-en="Project Insights">Einblicke ins Projekt</h2>
     </div>
+    <!-- TODO: Update data-caption values with real room/area descriptions -->
     <div class="gallery-grid">
-      <div class="gallery-item" onclick="openLB(0)"><img src="Muri/web/IMG_0452.jpg" alt="Muri 1" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(1)"><img src="Muri/web/IMG_0454.jpg" alt="Muri 2" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(2)"><img src="Muri/web/IMG_0458.jpg" alt="Muri 3" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(3)"><img src="Muri/web/IMG_0461.jpg" alt="Muri 4" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(4)"><img src="Muri/web/IMG_0462.jpg" alt="Muri 5" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(5)"><img src="Muri/web/IMG_0463.jpg" alt="Muri 6" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(6)"><img src="Muri/web/IMG_0466.jpg" alt="Muri 7" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(7)"><img src="Muri/web/IMG_0470.jpg" alt="Muri 8" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(8)"><img src="Muri/web/IMG_0472.jpg" alt="Muri 9" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(9)"><img src="Muri/web/IMG_4537.jpg" alt="Muri 10" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(10)"><img src="Muri/web/IMG_4555.jpg" alt="Muri 11" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(11)"><img src="Muri/web/IMG_4570.jpg" alt="Muri 12" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(12)"><img src="Muri/web/IMG_4571.jpg" alt="Muri 13" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(13)"><img src="Muri/web/IMG_8931.jpg" alt="Muri 14" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(14)"><img src="Muri/web/IMG_8951.jpg" alt="Muri 15" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(15)"><img src="Muri/web/IMG_8960.jpg" alt="Muri 16" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(16)"><img src="Muri/web/IMG_9012.jpg" alt="Muri 17" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(17)"><img src="Muri/web/IMG_9014.jpg" alt="Muri 18" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(18)"><img src="Muri/web/IMG_9015.jpg" alt="Muri 19" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(19)"><img src="Muri/web/IMG_9048.jpg" alt="Muri 20" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(20)"><img src="Muri/web/IMG_9053.jpg" alt="Muri 21" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(21)"><img src="Muri/web/IMG_9059.jpg" alt="Muri 22" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(22)"><img src="Muri/web/IMG_9065.jpg" alt="Muri 23" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(23)"><img src="Muri/web/IMG_9067.jpg" alt="Muri 24" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(24)"><img src="Muri/web/IMG_9085.jpg" alt="Muri 25" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(25)"><img src="Muri/web/IMG_9090.jpg" alt="Muri 26" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(26)"><img src="Muri/web/IMG_9094.jpg" alt="Muri 27" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(27)"><img src="Muri/web/IMG_9105.jpg" alt="Muri 28" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(28)"><img src="Muri/web/IMG_9109.jpg" alt="Muri 29" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(29)"><img src="Muri/web/IMG_9112.jpg" alt="Muri 30" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(30)"><img src="Muri/web/IMG_9187.jpg" alt="Muri 31" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(31)"><img src="Muri/web/IMG_9306.jpg" alt="Muri 32" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(32)"><img src="Muri/web/IMG_9309.jpg" alt="Muri 33" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(33)"><img src="Muri/web/IMG_9310.jpg" alt="Muri 34" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(34)"><img src="Muri/web/IMG_9317.jpg" alt="Muri 35" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(35)"><img src="Muri/web/IMG_9325.jpg" alt="Muri 36" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(36)"><img src="Muri/web/IMG_9329.jpg" alt="Muri 37" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(37)"><img src="Muri/web/IMG_9330.jpg" alt="Muri 38" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(38)"><img src="Muri/web/IMG_9333.jpg" alt="Muri 39" loading="lazy" /></div>
-      <div class="gallery-item" onclick="openLB(39)"><img src="Muri/web/IMG_9334.jpg" alt="Muri 40" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(0)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (1/40)"><img src="Muri/web/IMG_0452.jpg" alt="Sanierung Muri Bern – Smart Home Integration Loxone – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(1)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (2/40)"><img src="Muri/web/IMG_0454.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(2)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (3/40)"><img src="Muri/web/IMG_0458.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(3)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (4/40)"><img src="Muri/web/IMG_0461.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(4)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (5/40)"><img src="Muri/web/IMG_0462.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(5)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (6/40)"><img src="Muri/web/IMG_0463.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(6)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (7/40)"><img src="Muri/web/IMG_0466.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(7)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (8/40)"><img src="Muri/web/IMG_0470.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(8)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (9/40)"><img src="Muri/web/IMG_0472.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(9)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (10/40)"><img src="Muri/web/IMG_4537.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(10)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (11/40)"><img src="Muri/web/IMG_4555.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(11)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (12/40)"><img src="Muri/web/IMG_4570.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(12)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (13/40)"><img src="Muri/web/IMG_4571.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(13)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (14/40)"><img src="Muri/web/IMG_8931.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(14)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (15/40)"><img src="Muri/web/IMG_8951.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(15)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (16/40)"><img src="Muri/web/IMG_8960.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(16)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (17/40)"><img src="Muri/web/IMG_9012.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(17)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (18/40)"><img src="Muri/web/IMG_9014.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(18)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (19/40)"><img src="Muri/web/IMG_9015.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(19)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (20/40)"><img src="Muri/web/IMG_9048.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(20)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (21/40)"><img src="Muri/web/IMG_9053.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(21)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (22/40)"><img src="Muri/web/IMG_9059.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(22)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (23/40)"><img src="Muri/web/IMG_9065.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(23)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (24/40)"><img src="Muri/web/IMG_9067.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(24)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (25/40)"><img src="Muri/web/IMG_9085.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(25)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (26/40)"><img src="Muri/web/IMG_9090.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(26)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (27/40)"><img src="Muri/web/IMG_9094.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(27)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (28/40)"><img src="Muri/web/IMG_9105.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(28)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (29/40)"><img src="Muri/web/IMG_9109.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(29)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (30/40)"><img src="Muri/web/IMG_9112.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(30)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (31/40)"><img src="Muri/web/IMG_9187.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(31)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (32/40)"><img src="Muri/web/IMG_9306.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(32)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (33/40)"><img src="Muri/web/IMG_9309.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(33)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (34/40)"><img src="Muri/web/IMG_9310.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(34)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (35/40)"><img src="Muri/web/IMG_9317.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(35)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (36/40)"><img src="Muri/web/IMG_9325.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(36)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (37/40)"><img src="Muri/web/IMG_9329.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(37)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (38/40)"><img src="Muri/web/IMG_9330.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(38)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (39/40)"><img src="Muri/web/IMG_9333.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLB(39)" data-caption="Muri – Sanierung &amp; Smart Home, Bern (40/40)"><img src="Muri/web/IMG_9334.jpg" alt="Sanierung Muri Bern – TODO: Raumbezeichnung" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -233,11 +306,13 @@
 </section>
 
 <!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <button class="lb-close" onclick="closeLB()">×</button>
-  <button class="lb-prev" onclick="moveLB(-1)">&#8249;</button>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildvorschau">
+  <button class="lb-close" onclick="closeLB()" aria-label="Schliessen">×</button>
+  <button class="lb-prev" onclick="moveLB(-1)" aria-label="Vorheriges Bild">&#8249;</button>
   <img src="" alt="" id="lb-img" />
-  <button class="lb-next" onclick="moveLB(1)">&#8250;</button>
+  <button class="lb-next" onclick="moveLB(1)" aria-label="Nächstes Bild">&#8250;</button>
+  <div class="lb-counter" id="lb-counter"></div>
+  <div class="lb-caption" id="lb-caption"></div>
 </div>
 
 <footer>
@@ -250,33 +325,42 @@
 </footer>
 
 <script>
-  const imgs = [
-    'Muri/web/IMG_0452.jpg','Muri/web/IMG_0454.jpg','Muri/web/IMG_0458.jpg',
-    'Muri/web/IMG_0461.jpg','Muri/web/IMG_0462.jpg','Muri/web/IMG_0463.jpg',
-    'Muri/web/IMG_0466.jpg','Muri/web/IMG_0470.jpg','Muri/web/IMG_0472.jpg',
-    'Muri/web/IMG_4537.jpg','Muri/web/IMG_4555.jpg','Muri/web/IMG_4570.jpg',
-    'Muri/web/IMG_4571.jpg','Muri/web/IMG_8931.jpg','Muri/web/IMG_8951.jpg',
-    'Muri/web/IMG_8960.jpg','Muri/web/IMG_9012.jpg','Muri/web/IMG_9014.jpg',
-    'Muri/web/IMG_9015.jpg','Muri/web/IMG_9048.jpg','Muri/web/IMG_9053.jpg',
-    'Muri/web/IMG_9059.jpg','Muri/web/IMG_9065.jpg','Muri/web/IMG_9067.jpg',
-    'Muri/web/IMG_9085.jpg','Muri/web/IMG_9090.jpg','Muri/web/IMG_9094.jpg',
-    'Muri/web/IMG_9105.jpg','Muri/web/IMG_9109.jpg','Muri/web/IMG_9112.jpg',
-    'Muri/web/IMG_9187.jpg','Muri/web/IMG_9306.jpg','Muri/web/IMG_9309.jpg',
-    'Muri/web/IMG_9310.jpg','Muri/web/IMG_9317.jpg','Muri/web/IMG_9325.jpg',
-    'Muri/web/IMG_9329.jpg','Muri/web/IMG_9330.jpg','Muri/web/IMG_9333.jpg','Muri/web/IMG_9334.jpg'
-  ];
+  /* ── Gallery data: built from DOM so captions stay in sync ── */
+  const galleryItems = Array.from(document.querySelectorAll('.gallery-item[data-caption]'));
+  const imgs     = galleryItems.map(el => el.querySelector('img').src);
+  const captions = galleryItems.map(el => el.dataset.caption || '');
+
   let cur = 0;
-  const lb = document.getElementById('lightbox');
-  const lbImg = document.getElementById('lb-img');
-  function openLB(i) { cur = i; lbImg.src = imgs[i]; lb.classList.add('open'); document.body.style.overflow='hidden'; }
-  function closeLB() { lb.classList.remove('open'); document.body.style.overflow=''; }
-  function moveLB(d) { cur = (cur + d + imgs.length) % imgs.length; lbImg.src = imgs[cur]; }
+  const lb      = document.getElementById('lightbox');
+  const lbImg   = document.getElementById('lb-img');
+  const lbCap   = document.getElementById('lb-caption');
+  const lbCount = document.getElementById('lb-counter');
+
+  function updateLB() {
+    lbImg.src           = imgs[cur];
+    lbImg.alt           = captions[cur];
+    lbCap.textContent   = captions[cur];
+    lbCount.textContent = (cur + 1) + ' / ' + imgs.length;
+  }
+  function openLB(i)  { cur = i; updateLB(); lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeLB()  { lb.classList.remove('open'); document.body.style.overflow = ''; }
+  function moveLB(d)  { cur = (cur + d + imgs.length) % imgs.length; updateLB(); }
+
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeLB();
-    if (e.key === 'ArrowLeft') moveLB(-1);
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape')     closeLB();
+    if (e.key === 'ArrowLeft')  moveLB(-1);
     if (e.key === 'ArrowRight') moveLB(1);
   });
-  lb.addEventListener('click', e => { if(e.target === lb) closeLB(); });
+  lb.addEventListener('click', e => { if (e.target === lb) closeLB(); });
+
+  /* Touch / swipe */
+  let touchStartX = 0;
+  lb.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend',   e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 50) moveLB(dx < 0 ? 1 : -1);
+  }, { passive: true });
 </script>
 <script src="assets/js/lang.js"></script>
 </body>
