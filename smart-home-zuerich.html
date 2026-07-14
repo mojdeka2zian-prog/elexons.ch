@@ -38,18 +38,40 @@
       --sh-sub: rgba(255,255,255,.42);
     }
 
+    body { background: var(--sh-bg); color: #fff; }
+
+    /* ── HEADER: dark page ── */
+    .header { background: rgba(10,10,10,0.96) !important; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .header.scrolled { background: rgba(10,10,10,0.99) !important; }
+    .header .nav__link,
+    .header .nav__dropdown-toggle { color: rgba(255,255,255,.8); }
+    .header .nav__link:hover,
+    .header .nav__dropdown-toggle:hover { color: #fff; }
+    .header .btn--primary { background: var(--gold); border-color: var(--gold); }
+    .header .btn--primary:hover { background: var(--gold-dark); }
+    .header .logo img { filter: brightness(0) invert(1); }
+    .header .lang-btn { color: rgba(255,255,255,.6); border-color: rgba(255,255,255,.25); }
+    .header .lang-btn.active { color: #fff; border-color: rgba(255,255,255,.55); background: rgba(255,255,255,.1); }
+    .header .hamburger span { background: #fff; }
+    .header .dropdown-menu { background: #1a1a1a; border-color: rgba(255,255,255,.12); }
+    .header .dropdown-item { color: rgba(255,255,255,.75); }
+    .header .dropdown-item:hover { color: #fff; background: rgba(255,255,255,.07); }
+    .header .dropdown-item--all { color: var(--gold); }
+
     /* ── Hero ── */
     .sh-hero {
       min-height: 100vh; display: flex; align-items: center; justify-content: center;
-      background: var(--sh-bg); position: relative; overflow: hidden;
+      background: var(--sh-bg) url('https://images.unsplash.com/photo-1557838923-2985c318be48?w=1800&q=80') center/cover no-repeat;
+      position: relative; overflow: hidden;
       padding: calc(var(--header-h, 80px) + 60px) 40px 80px;
     }
     .sh-hero::before {
       content: '';
       position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(213,43,30,.18) 0%, transparent 65%),
-        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(184,154,92,.07) 0%, transparent 55%);
+        linear-gradient(to bottom, rgba(10,10,10,.7) 0%, rgba(10,10,10,.55) 50%, rgba(10,10,10,.85) 100%),
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(213,43,30,.25) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(184,154,92,.08) 0%, transparent 55%);
     }
     .sh-hero-inner { max-width: 800px; text-align: center; position: relative; z-index: 1; }
     .sh-eyebrow {
@@ -162,20 +184,22 @@
     .sh-cta h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem,4vw,3.2rem); font-weight: 400; color: #fff; margin-bottom: 16px; }
     .sh-cta p { font-size: .9rem; color: var(--sh-sub); max-width: 480px; margin: 0 auto 36px; line-height: 1.8; }
 
-    /* Force dark bg on this page's footer top border */
+    /* Footer dark override */
     .footer { border-top: 1px solid rgba(255,255,255,.04); }
   </style>
 </head>
 <body>
 
-<header class="header" data-transparent="true">
-  <div class="header__inner">
-    <a href="index.html" class="logo" aria-label="elexons.ch Startseite">
-      <img src="assets/images/logo.png" alt="elexons.ch Logo" />
-    </a>
-    <nav class="nav" role="navigation" aria-label="Hauptnavigation">
-      <a href="index.html" class="nav__link" data-i18n="nav_home">Startseite</a>
-      <div class="nav__dropdown">
+<!-- ── HEADER ── -->
+<header class="header" data-transparent="false">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="logo" aria-label="elexons.ch Startseite">
+        <img src="assets/images/logo.png" alt="elexons.ch" />
+      </a>
+      <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+        <a href="index.html" class="nav__link" data-i18n="nav_home">Startseite</a>
+        <div class="nav__dropdown">
           <span class="nav__link nav__dropdown-toggle active">
             <span data-i18n="nav_services">Leistungen</span>
             <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
@@ -207,37 +231,48 @@
             </a>
           </div>
         </div>
-      <a href="projekte.html" class="nav__link" data-i18n="nav_projects">Projekte</a>
-      <a href="ueber-uns.html" class="nav__link" data-i18n="nav_about">Über uns</a>
-      <a href="kontakt.html" class="nav__link" data-i18n="nav_contact">Kontakt</a>
-    </nav>
-    <div class="lang-switch">
-          <button class="lang-btn active" data-lang="de" onclick="setLang('de')">DE</button>
-          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <a href="projekte.html" class="nav__link" data-i18n="nav_projects">Projekte</a>
+        <a href="ueber-uns.html" class="nav__link" data-i18n="nav_about">Über uns</a>
+        <a href="kontakt.html" class="nav__link" data-i18n="nav_contact">Kontakt</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="de">DE</button>
+          <button class="lang-btn" data-lang="en">EN</button>
         </div>
-        <a href="kontakt.html" class="btn btn--primary header__cta" data-i18n="btn_beratung">Beratung anfragen</a>
-    <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+        <a href="kontakt.html" class="btn btn--primary" data-i18n="btn_cta">Kostenlose Beratung</a>
+        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
   </div>
 </header>
 
+<!-- Mobile Menu -->
 <div class="mobile-overlay"></div>
 <div class="mobile-menu" role="dialog" aria-label="Mobilmenü">
-  <a href="index.html" class="mobile-menu__link" data-i18n="nav_home">Startseite</a>
-  <a href="leistungen.html" class="mobile-menu__link" data-i18n="mob_services">Leistungen</a>
-  <a href="projekte.html" class="mobile-menu__link" data-i18n="nav_projects">Projekte</a>
-  <a href="ueber-uns.html" class="mobile-menu__link">Über uns</a>
-  <a href="kontakt.html" class="mobile-menu__link" data-i18n="nav_contact">Kontakt</a>
-  <a href="kontakt.html" class="btn btn--primary" style="margin-top:24px;" data-i18n="btn_beratung">Beratung anfragen</a>
+  <nav class="mobile-menu__nav">
+    <a href="index.html" class="mobile-menu__link" data-i18n="mob_home">Startseite</a>
+    <a href="leistungen.html" class="mobile-menu__link" data-i18n="mob_services">Leistungen</a>
+    <a href="sanierung-zuerich.html" class="mobile-menu__link" data-i18n="mob_renovation">Sanierung Zürich</a>
+    <a href="umbau-zuerich.html" class="mobile-menu__link" data-i18n="mob_umbau">Umbau Zürich</a>
+    <a href="badsanierung-zuerich.html" class="mobile-menu__link" data-i18n="mob_bad">Badsanierung</a>
+    <a href="kuechensanierung-zuerich.html" class="mobile-menu__link" data-i18n="mob_kueche">Küchensanierung</a>
+    <a href="smart-home-zuerich.html" class="mobile-menu__link active">Smart Home</a>
+    <a href="projekte.html" class="mobile-menu__link" data-i18n="mob_projects">Projekte</a>
+    <a href="ueber-uns.html" class="mobile-menu__link" data-i18n="mob_about">Über uns</a>
+    <a href="kontakt.html" class="mobile-menu__link" data-i18n="mob_contact">Kontakt</a>
+  </nav>
+  <a href="kontakt.html" class="btn btn--primary" style="width:100%;justify-content:center;" data-i18n="btn_cta">Kostenlose Beratung</a>
 </div>
 
 <!-- HERO -->
 <section class="sh-hero">
   <div class="sh-hero-inner">
     <div class="sh-eyebrow"><span></span>Certified Loxone Partner · Zürich<span></span></div>
-    <h1 data-i18n-de="Smart Home, intelligent vernetzt" data-i18n-html-en="Smart Home,<br/><em>intelligently connected</em>">Smart Home,<br/><em>intelligent vernetzt</em></h1>
-    <p data-i18n-de="Licht, Heizung, Beschattung, Sicherheit – nahtlos integriert. Elexons plant und installiert Ihr Smart Home System direkt während der Sanierung." data-i18n-en="Lighting, heating, blinds, security – seamlessly integrated. Elexons plans and installs your Smart Home system directly during renovation.">Licht, Heizung, Beschattung, Sicherheit – nahtlos integriert. Elexons plant und installiert Ihr Smart Home mit Loxone direkt während der Sanierung oder im Neubau.</p>
+    <h1 data-i18n-html-de="Smart Home,<br/><em>intelligent vernetzt</em>" data-i18n-html-en="Smart Home,<br/><em>intelligently connected</em>">Smart Home,<br/><em>intelligent vernetzt</em></h1>
+    <p data-i18n-de="Licht, Heizung, Beschattung, Sicherheit – nahtlos integriert. Elexons plant und installiert Ihr Smart Home System direkt während der Sanierung." data-i18n-en="Lighting, heating, blinds, security – seamlessly integrated. Elexons plans and installs your Smart Home system directly during renovation.">Licht, Heizung, Beschattung, Sicherheit – nahtlos integriert. Elexons plant und installiert Ihr Smart Home System direkt während der Sanierung.</p>
     <div class="sh-hero-btns">
       <a href="kontakt.html" class="btn-sh-primary" data-i18n="btn_cta">Kostenlose Beratung</a>
       <a href="projekte.html" class="btn-sh-ghost" data-i18n="btn_refs">Referenzprojekte ansehen</a>
@@ -249,7 +284,7 @@
 <div class="loxone-band">
   <strong>Powered by Loxone</strong>
   <span>·</span>
-  <span class="loxone-pill" data-i18n-de="Certified Partner" data-i18n-en="Certified Partner">Certified Partner</span>
+  <span class="loxone-pill">Certified Partner</span>
   <span>·</span>
   <span data-i18n-de="Planung · Installation · Wartung · Support" data-i18n-en="Planning · Installation · Maintenance · Support">Planung · Installation · Wartung · Support</span>
 </div>
@@ -268,7 +303,7 @@
       <div class="feature-icon">
         <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
       </div>
-      <div class="feature-title">Lichtsteuerung</div>
+      <div class="feature-title" data-i18n-de="Lichtsteuerung" data-i18n-en="Lighting Control">Lichtsteuerung</div>
       <p class="feature-text" data-i18n-de="Stimmungen auf Knopfdruck, automatische Tageslichtsimulation, Präsenzsteuerung und Energiesparmodi – alles intelligent koordiniert." data-i18n-en="Moods at the touch of a button, automatic daylight simulation, presence control and energy-saving modes – all intelligently coordinated.">Stimmungen auf Knopfdruck, automatische Tageslichtsimulation, Präsenzsteuerung und Energiesparmodi – alles intelligent koordiniert.</p>
     </div>
 
@@ -277,7 +312,7 @@
       <div class="feature-icon">
         <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg>
       </div>
-      <div class="feature-title">Heizung &amp; Klima</div>
+      <div class="feature-title" data-i18n-de="Heizung &amp; Klima" data-i18n-en="Heating &amp; Climate">Heizung &amp; Klima</div>
       <p class="feature-text" data-i18n-de="Raumgenaue Temperatursteuerung, Abwesenheitsmodi und Wetterprognose-Integration für optimalen Komfort bei minimalem Energieverbrauch." data-i18n-en="Room-by-room temperature control, absence modes and weather forecast integration for optimum comfort with minimal energy consumption.">Raumgenaue Temperatursteuerung, Abwesenheitsmodi und Wetterprognose-Integration für optimalen Komfort bei minimalem Energieverbrauch.</p>
     </div>
 
@@ -286,8 +321,8 @@
       <div class="feature-icon">
         <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
       </div>
-      <div class="feature-title">Beschattung</div>
-      <p class="feature-text" data-i18n-de="Automatische Storen- und Raffstoresteuerung basierend auf Sonneneinstrahlung, Wind und Uhrzeit – schützt vor Überhitzung und Blend." data-i18n-en="Automatic blind and louvre control based on sunlight, wind and time – protects and saves energy.">Automatische Storen- und Raffstoresteuerung basierend auf Sonneneinstrahlung, Wind und Uhrzeit – schützt vor Überhitzung und Blend.</p>
+      <div class="feature-title" data-i18n-de="Beschattung" data-i18n-en="Shading Control">Beschattung</div>
+      <p class="feature-text" data-i18n-de="Automatische Storen- und Raffstoresteuerung basierend auf Sonneneinstrahlung, Wind und Uhrzeit – schützt vor Überhitzung und Blend." data-i18n-en="Automatic blind and louvre control based on sunlight, wind and time – protects against overheating and glare.">Automatische Storen- und Raffstoresteuerung basierend auf Sonneneinstrahlung, Wind und Uhrzeit – schützt vor Überhitzung und Blend.</p>
     </div>
 
     <!-- Sicherheit -->
@@ -295,8 +330,8 @@
       <div class="feature-icon">
         <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
       </div>
-      <div class="feature-title">Sicherheit &amp; Zugang</div>
-      <p class="feature-text">Videotürsprechanlage, Alarmanlage, Zugangskontrolle und Überwachung – vollständig integriert und remote steuerbar via App.</p>
+      <div class="feature-title" data-i18n-de="Sicherheit &amp; Zugang" data-i18n-en="Security &amp; Access">Sicherheit &amp; Zugang</div>
+      <p class="feature-text" data-i18n-de="Videotürsprechanlage, Alarmanlage, Zugangskontrolle und Überwachung – vollständig integriert und remote steuerbar via App." data-i18n-en="Video intercom, alarm system, access control and surveillance – fully integrated and remotely controllable via app.">Videotürsprechanlage, Alarmanlage, Zugangskontrolle und Überwachung – vollständig integriert und remote steuerbar via App.</p>
     </div>
 
     <!-- Audio -->
@@ -304,8 +339,8 @@
       <div class="feature-icon">
         <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/></svg>
       </div>
-      <div class="feature-title">Multiroom Audio</div>
-      <p class="feature-text">Musik in jedem Raum – koordiniert, mit Lautstärkeregelung per Schalter, App oder Sprachsteuerung. Nahtlos integriert in die Loxone Infrastruktur.</p>
+      <div class="feature-title" data-i18n-de="Multiroom Audio" data-i18n-en="Multiroom Audio">Multiroom Audio</div>
+      <p class="feature-text" data-i18n-de="Musik in jedem Raum – koordiniert, mit Lautstärkeregelung per Schalter, App oder Sprachsteuerung. Nahtlos integriert in die Loxone Infrastruktur." data-i18n-en="Music in every room – coordinated, with volume control via switch, app or voice control. Seamlessly integrated into the Loxone infrastructure.">Musik in jedem Raum – koordiniert, mit Lautstärkeregelung per Schalter, App oder Sprachsteuerung. Nahtlos integriert in die Loxone Infrastruktur.</p>
     </div>
 
     <!-- Energie -->
@@ -313,7 +348,7 @@
       <div class="feature-icon">
         <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
       </div>
-      <div class="feature-title">Energiemanagement</div>
+      <div class="feature-title" data-i18n-de="Energiemanagement" data-i18n-en="Energy Management">Energiemanagement</div>
       <p class="feature-text" data-i18n-de="Photovoltaik-Integration, Wärmepumpensteuerung, Einspeiseoptimierung und Echtzeit-Energiemonitoring für maximale Effizienz." data-i18n-en="Photovoltaic integration, heat pump control, feed-in optimisation and real-time energy monitoring for maximum efficiency.">Photovoltaik-Integration, Wärmepumpensteuerung, Einspeiseoptimierung und Echtzeit-Energiemonitoring für maximale Effizienz.</p>
     </div>
 
@@ -329,22 +364,22 @@
   <div class="sh-steps">
     <div class="sh-step">
       <div class="step-num">01</div>
-      <div class="step-title">Bedarfsanalyse</div>
+      <div class="step-title" data-i18n-de="Bedarfsanalyse" data-i18n-en="Needs Analysis">Bedarfsanalyse</div>
       <p class="step-text" data-i18n-de="Wir analysieren Ihr Gebäude, Ihre Wünsche und den Stand der Technik. Kein Standard – jede Lösung ist massgeschneidert." data-i18n-en="We analyse your building, your wishes and the state of the technology. Nothing standard – every solution is tailor-made.">Wir analysieren Ihr Gebäude, Ihre Wünsche und den Stand der Technik. Kein Standard – jede Lösung ist massgeschneidert.</p>
     </div>
     <div class="sh-step">
       <div class="step-num">02</div>
-      <div class="step-title">Planung &amp; Konzept</div>
+      <div class="step-title" data-i18n-de="Planung &amp; Konzept" data-i18n-en="Planning &amp; Concept">Planung &amp; Konzept</div>
       <p class="step-text" data-i18n-de="Detaillierter Systemplan mit allen Funktionen, Schaltplänen und Integration in die Sanierungsarbeiten." data-i18n-en="Detailed system plan with all functions, wiring diagrams and integration into the renovation work.">Detaillierter Systemplan mit allen Funktionen, Schaltplänen und Integration in die Sanierungsarbeiten.</p>
     </div>
     <div class="sh-step">
       <div class="step-num">03</div>
-      <div class="step-title">Installation</div>
-      <p class="step-text">Professionelle Montage koordiniert mit allen Gewerken – Elektriker, Sanitär, Maler – aus einer Hand durch Elexons.</p>
+      <div class="step-title" data-i18n-de="Installation" data-i18n-en="Installation">Installation</div>
+      <p class="step-text" data-i18n-de="Professionelle Montage koordiniert mit allen Gewerken – Elektriker, Sanitär, Maler – aus einer Hand durch Elexons." data-i18n-en="Professional installation coordinated with all trades – electricians, plumbing, painters – all from a single source through Elexons.">Professionelle Montage koordiniert mit allen Gewerken – Elektriker, Sanitär, Maler – aus einer Hand durch Elexons.</p>
     </div>
     <div class="sh-step">
       <div class="step-num">04</div>
-      <div class="step-title">Übergabe &amp; Support</div>
+      <div class="step-title" data-i18n-de="Übergabe &amp; Support" data-i18n-en="Handover &amp; Support">Übergabe &amp; Support</div>
       <p class="step-text" data-i18n-de="Persönliche Einführung, individuelle Programmierung Ihrer Szenarien und langfristiger Support via App oder vor Ort." data-i18n-en="Personal introduction, individual programming of your scenes and long-term support via app and on-site service.">Persönliche Einführung, individuelle Programmierung Ihrer Szenarien und langfristiger Support via App oder vor Ort.</p>
     </div>
   </div>
@@ -354,7 +389,7 @@
 <section class="sh-areas">
   <div class="sh-areas-inner">
     <span class="sh-label" data-i18n-de="Einsatzgebiete" data-i18n-en="Service Areas">Einsatzgebiete</span>
-    <h2 class="sh-title" style="color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:400;">Smart Home in der ganzen Region</h2>
+    <h2 class="sh-title" data-i18n-de="Smart Home in der ganzen Region" data-i18n-en="Smart Home Across the Entire Region">Smart Home in der ganzen Region</h2>
     <div class="area-chips">
       <span class="area-chip">Zürich Stadt</span>
       <span class="area-chip">Zürichsee</span>
@@ -379,48 +414,59 @@
   <h2 data-i18n-de="Bereit für Ihr Smart Home?" data-i18n-en="Ready for Your Smart Home?">Bereit für Ihr Smart Home?</h2>
   <p data-i18n-de="Lassen Sie sich von uns unverbindlich beraten – wir erklären Ihnen, was in Ihrem Gebäude möglich ist, und was es kostet." data-i18n-en="Let us advise you without obligation – we will explain what is possible in your building and what it costs.">Lassen Sie sich von uns unverbindlich beraten – wir erklären Ihnen, was in Ihrem Gebäude möglich ist, und was es kostet.</p>
   <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
-    <a href="kontakt.html" class="btn-sh-primary" data-i18n="btn_kos_anfr">Kostenlose Beratung anfragen</a>
+    <a href="kontakt.html" class="btn-sh-primary" data-i18n="btn_cta2">Kostenlose Beratung anfragen</a>
     <a href="https://wa.me/41799109999" target="_blank" rel="noopener" class="btn-sh-ghost">
       WhatsApp: +41 79 910 99 99
     </a>
   </div>
 </section>
 
+<!-- ── FOOTER (standard structure matching all other pages) ── -->
 <footer class="footer">
-  <div class="footer__inner">
-    <div class="footer__brand">
-      <a href="index.html" class="logo" aria-label="elexons.ch">
-        <img src="assets/images/logo.png" alt="elexons.ch Logo" />
-      </a>
-      <p class="footer__tagline">Exzellenz in Sanierung &amp; Smart Home</p>
-    </div>
-    <div class="footer__nav">
-      <div class="footer__col">
-        <h4 data-i18n-de="Leistungen" data-i18n-en="Services">Leistungen</h4>
-        <a href="sanierung-zuerich.html">Sanierung Zürich</a>
-        <a href="umbau-zuerich.html">Umbau Zürich</a>
-        <a href="badsanierung-zuerich.html" data-i18n="drop_bad">Badsanierung</a>
-        <a href="kuechensanierung-zuerich.html" data-i18n="drop_kueche">Küchensanierung</a>
-        <a href="smart-home-zuerich.html">Smart Home</a>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="elexons.ch" />
+        </a>
+        <p data-i18n="footer_desc">Professionelle Sanierung, Umbau und Smart Home Integration in Zürich und Umgebung. Schweizer Qualität, transparente Preise, persönliche Betreuung.</p>
       </div>
       <div class="footer__col">
-        <h4 data-i18n-de="Unternehmen" data-i18n-en="Company">Unternehmen</h4>
-        <a href="ueber-uns.html">Über uns</a>
-        <a href="projekte.html" data-i18n="nav_projects">Projekte</a>
-        <a href="kontakt.html" data-i18n="nav_contact">Kontakt</a>
+        <h5 data-i18n="footer_h1">Leistungen</h5>
+        <div class="footer__links">
+          <a href="sanierung-zuerich.html" class="footer__link" data-i18n="fl_sanierung">Sanierung Zürich</a>
+          <a href="umbau-zuerich.html" class="footer__link" data-i18n="fl_umbau">Umbau Zürich</a>
+          <a href="badsanierung-zuerich.html" class="footer__link" data-i18n="drop_bad">Badsanierung</a>
+          <a href="kuechensanierung-zuerich.html" class="footer__link" data-i18n="drop_kueche">Küchensanierung</a>
+          <a href="smart-home-zuerich.html" class="footer__link">Smart Home</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="footer_h2">Unternehmen</h5>
+        <div class="footer__links">
+          <a href="ueber-uns.html" class="footer__link" data-i18n="nav_about">Über uns</a>
+          <a href="projekte.html" class="footer__link" data-i18n="nav_projects">Projekte</a>
+          <a href="kontakt.html" class="footer__link" data-i18n="nav_contact">Kontakt</a>
+          <a href="datenschutz.html" class="footer__link" data-i18n="fl_daten">Datenschutz</a>
+          <a href="impressum.html" class="footer__link" data-i18n="fl_impress">Impressum</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="footer_h3">Kontakt</h5>
+        <div class="footer__links">
+          <span class="footer__link">Alpenblickstrasse 2, 8725 Gebertingen</span>
+          <a href="tel:+41799109999" class="footer__link">+41 79 910 99 99</a>
+          <a href="mailto:info@elexons.com" class="footer__link">info@elexons.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer_copy">© 2026 elexons.ch – Alle Rechte vorbehalten</span>
+      <div class="footer__legal">
         <a href="datenschutz.html">Datenschutz</a>
         <a href="impressum.html">Impressum</a>
       </div>
-      <div class="footer__col">
-        <h4 data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</h4>
-        <a href="tel:+41799109999">+41 79 910 99 99</a>
-        <a href="mailto:info@elexons.com">info@elexons.com</a>
-        <p style="color:rgba(255,255,255,.4);font-size:.8rem;margin-top:4px;">Alpenblickstrasse 2<br/>8725 Gebertingen</p>
-      </div>
     </div>
-  </div>
-  <div class="footer__bottom">
-    <p data-i18n-de="© 2026 elexons.ch – Alle Rechte vorbehalten" data-i18n-en="© 2026 elexons.ch – All rights reserved">© 2026 elexons.ch – Alle Rechte vorbehalten</p>
   </div>
 </footer>
 
