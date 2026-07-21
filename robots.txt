@@ -1,4 +1,33 @@
+# 1. Block AI Scrapers and Crawlers from using content for training
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# 2. Prevent crawling of sensitive folders
 User-agent: *
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /README.md
 Allow: /
 
+# 3. Sitemap location
 Sitemap: https://elexons.ch/sitemap.xml

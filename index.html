@@ -49,6 +49,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 <body>
 
@@ -56,11 +57,11 @@
 <header class="header transparent" data-transparent="true">
   <div class="container">
     <div class="header__inner">
-      <a href="index.html" class="logo">
+      <a href="/" class="logo">
         <img src="assets/images/logo.png" alt="elexons.ch" />
       </a>
       <nav class="nav">
-        <a href="index.html" class="nav__link active" data-i18n="nav_home">Startseite</a>
+        <a href="/" class="nav__link active" data-i18n="nav_home">Startseite</a>
         <div class="nav__dropdown">
           <span class="nav__link nav__dropdown-toggle">
             <span data-i18n="nav_services">Leistungen</span>
@@ -115,7 +116,7 @@
 <div class="mobile-overlay"></div>
 <div class="mobile-menu">
   <nav class="mobile-menu__nav">
-    <a href="index.html" class="mobile-menu__link" data-i18n="mob_home">Startseite</a>
+    <a href="/" class="mobile-menu__link" data-i18n="mob_home">Startseite</a>
     <a href="leistungen.html" class="mobile-menu__link" data-i18n="mob_services">Leistungen</a>
     <a href="sanierung-zuerich.html" class="mobile-menu__link" data-i18n="mob_renovation">Sanierung Zürich</a>
     <a href="umbau-zuerich.html" class="mobile-menu__link" data-i18n="mob_umbau">Umbau Zürich</a>
@@ -539,21 +540,78 @@
   </div>
 </section>
 
+<!-- ── NEUESTE ARTIKEL ── -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section__header section__header--center reveal">
+      <span class="label" data-i18n-de="Blog & Ratgeber" data-i18n-en="Blog & Guide">Blog & Ratgeber</span>
+      <h2 data-i18n-de="Neueste Artikel" data-i18n-en="Latest Articles">Neueste Artikel</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px;">
+      <article class="reveal" style="border:1px solid var(--border);border-radius:4px;overflow:hidden;">
+        <div style="background:var(--section-soft);padding:20px 24px 14px;border-bottom:1px solid var(--border);">
+          <span style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);" data-i18n-de="Sanierung · 15. Juli 2026" data-i18n-en="Renovation · 15 July 2026">Sanierung · 15. Juli 2026</span>
+        </div>
+        <div style="padding:24px;">
+          <h3 style="font-family:var(--font-h);font-size:1.2rem;font-weight:400;margin-bottom:12px;line-height:1.35;" data-i18n-de="Wohnungssanierung Zürich: Kosten & Planung 2026" data-i18n-en="Apartment Renovation Zürich: Costs & Planning 2026">Wohnungssanierung Zürich: Kosten &amp; Planung 2026</h3>
+          <p style="font-size:.85rem;color:var(--text-sec);line-height:1.75;margin-bottom:20px;" data-i18n-de="Was kostet eine Wohnungssanierung in Zürich wirklich? Ein ehrlicher Überblick über Kosten, Planung und Ablauf." data-i18n-en="What does an apartment renovation in Zürich actually cost? An honest overview of costs, planning and process.">Was kostet eine Wohnungssanierung in Zürich wirklich? Ein ehrlicher Überblick über Kosten, Planung und Ablauf.</p>
+          <a href="blog.html" style="font-size:.78rem;font-weight:600;color:var(--accent);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;" data-i18n-de="Weiterlesen →" data-i18n-en="Read More →">Weiterlesen →</a>
+        </div>
+      </article>
+      <article class="reveal reveal-delay-1" style="border:1px solid var(--border);border-radius:4px;overflow:hidden;">
+        <div style="background:var(--section-soft);padding:20px 24px 14px;border-bottom:1px solid var(--border);">
+          <span style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);" data-i18n-de="Smart Home · 2. Juni 2026" data-i18n-en="Smart Home · 2 June 2026">Smart Home · 2. Juni 2026</span>
+        </div>
+        <div style="padding:24px;">
+          <h3 style="font-family:var(--font-h);font-size:1.2rem;font-weight:400;margin-bottom:12px;line-height:1.35;" data-i18n-de="Smart Home 2026: Was Sie vor der Loxone-Installation wissen müssen" data-i18n-en="Smart Home 2026: What You Need to Know Before Loxone Installation">Smart Home 2026: Was Sie vor der Loxone-Installation wissen müssen</h3>
+          <p style="font-size:.85rem;color:var(--text-sec);line-height:1.75;margin-bottom:20px;" data-i18n-de="Intelligente Gebäudetechnik boomt. Wir erklären, was Loxone kann und worauf Sie bei der Planung achten sollten." data-i18n-en="Smart building technology is booming. We explain what Loxone can do and what to watch out for during planning.">Intelligente Gebäudetechnik boomt. Wir erklären, was Loxone kann und worauf Sie bei der Planung achten sollten.</p>
+          <a href="blog.html" style="font-size:.78rem;font-weight:600;color:var(--accent);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;" data-i18n-de="Weiterlesen →" data-i18n-en="Read More →">Weiterlesen →</a>
+        </div>
+      </article>
+      <article class="reveal reveal-delay-2" style="border:1px solid var(--border);border-radius:4px;overflow:hidden;">
+        <div style="background:var(--section-soft);padding:20px 24px 14px;border-bottom:1px solid var(--border);">
+          <span style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);" data-i18n-de="Badsanierung · 18. Mai 2026" data-i18n-en="Bathroom · 18 May 2026">Badsanierung · 18. Mai 2026</span>
+        </div>
+        <div style="padding:24px;">
+          <h3 style="font-family:var(--font-h);font-size:1.2rem;font-weight:400;margin-bottom:12px;line-height:1.35;" data-i18n-de="Badsanierung Zürich: Trends und Tipps für 2026" data-i18n-en="Bathroom Renovation Zürich: Trends and Tips for 2026">Badsanierung Zürich: Trends und Tipps für 2026</h3>
+          <p style="font-size:.85rem;color:var(--text-sec);line-height:1.75;margin-bottom:20px;" data-i18n-de="Welche Materialien und Technologien sind 2026 gefragt? Ein Überblick über aktuelle Trends bei Badrenovierungen in der Schweiz." data-i18n-en="Which materials and technologies are in demand for 2026? An overview of current bathroom renovation trends in Switzerland.">Welche Materialien und Technologien sind 2026 gefragt? Ein Überblick über aktuelle Trends bei Badrenovierungen in der Schweiz.</p>
+          <a href="blog.html" style="font-size:.78rem;font-weight:600;color:var(--accent);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;" data-i18n-de="Weiterlesen →" data-i18n-en="Read More →">Weiterlesen →</a>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="blog.html" class="btn btn--outline" data-i18n-de="Alle Artikel lesen" data-i18n-en="Read All Articles">Alle Artikel lesen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SEO BOX ── -->
+<section style="background:var(--section-soft);padding:64px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div style="max-width:860px;margin:0 auto;">
+      <h2 style="font-family:var(--font-h);font-size:1.45rem;font-weight:400;color:var(--text);margin-bottom:20px;" data-i18n-de="Sanierung & Renovation in Zürich – Ihr verlässlicher Generalunternehmer" data-i18n-en="Renovation & Refurbishment in Zürich – Your Reliable General Contractor">Sanierung &amp; Renovation in Zürich – Ihr verlässlicher Generalunternehmer</h2>
+      <p style="font-size:.88rem;color:var(--text-sec);line-height:1.95;margin-bottom:14px;">Elexons ist Ihr Generalunternehmer für professionelle <a href="sanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Wohnungssanierung in Zürich</a>. Ob vollständige Komplettsanierung, <a href="badsanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Badsanierung</a>, <a href="kuechensanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Küchensanierung</a> oder <a href="umbau-zuerich.html" style="color:var(--accent);text-decoration:none;">Umbau &amp; Innenausbau</a> – wir realisieren Ihr Projekt termingerecht, transparent und in Schweizer Qualität. Von Zürich City über den Zürichsee bis Winterthur: Elexons koordiniert alle Handwerker aus einer Hand.</p>
+      <p style="font-size:.88rem;color:var(--text-sec);line-height:1.95;margin-bottom:14px;">Als zertifizierter Loxone-Partner integrieren wir <a href="smart-home-zuerich.html" style="color:var(--accent);text-decoration:none;">Smart Home-Lösungen</a> direkt während der Renovation: Lichtsteuerung, Heizungsregelung, Beschattung und Sicherheitssysteme – alles vernetzt und per App steuerbar. Unsere Leistungen umfassen zudem Trockenbau, Gipserarbeiten, Parkettverlegung, Fliesenarbeiten und Deckenbeleuchtung in Zürich.</p>
+      <p style="font-size:.88rem;color:var(--text-sec);line-height:1.95;">Von der ersten Idee bis zur schlüsselfertigen Übergabe sind Sie bei Elexons in besten Händen. Kontaktieren Sie uns für eine <a href="kontakt.html" style="color:var(--accent);text-decoration:none;">kostenlose Beratung</a> – unverbindlich, persönlich und ohne versteckte Kosten.</p>
+    </div>
+  </div>
+</section>
+
 <!-- ── FOOTER ── -->
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a href="index.html" class="logo">
+        <a href="/" class="logo">
           <span class="logo__mark">EL</span>
           Elexons
         </a>
         <p data-i18n="footer_desc">Professionelle Sanierung, Umbau und Smart Home Integration in Zürich und Umgebung. Schweizer Qualität, transparente Preise, persönliche Betreuung.</p>
         <div class="footer__socials">
-          <a href="#" class="footer__social" aria-label="Instagram">
+          <a href="https://www.instagram.com/elexons.ae/" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">
             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
-          <a href="#" class="footer__social" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/ahmad-fahim-faghiri/" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener">
             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
         </div>

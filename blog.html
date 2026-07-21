@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EY2GBYZG1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3EY2GBYZG1');
+  </script>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog & Ratgeber | Sanierung, Umbau & Smart Home Tipps – elexons.ch</title>
+  <meta name="description" content="Ratgeber und Fachartikel rund um Sanierung, Umbau, Badsanierung, Küchensanierung und Smart Home in Zürich. Tipps und Inspiration von elexons.ch." />
+  <link rel="canonical" href="https://elexons.ch/blog" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .blog-hero {
+      background: var(--section-soft);
+      border-bottom: 1px solid var(--border);
+      padding: calc(var(--header-h) + 64px) 0 64px;
+      text-align: center;
+    }
+    .blog-hero h1 {
+      font-family: var(--font-h);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+    .blog-hero p {
+      font-size: .95rem;
+      color: var(--text-sec);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 32px;
+      padding: 64px 0;
+    }
+    .blog-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .3s, transform .3s;
+    }
+    .blog-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,.08);
+      transform: translateY(-3px);
+    }
+    .blog-card__img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .blog-card__body {
+      padding: 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .blog-card__cat {
+      font-size: .62rem;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .blog-card__date {
+      font-size: .75rem;
+      color: var(--text-sec);
+    }
+    .blog-card__title {
+      font-family: var(--font-h);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+    .blog-card__excerpt {
+      font-size: .84rem;
+      color: var(--text-sec);
+      line-height: 1.75;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+    .blog-card__link {
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .blog-card__link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="logo"><img src="assets/images/logo.png" alt="elexons.ch" /></a>
+      <nav class="nav">
+        <a href="/" class="nav__link" data-i18n="nav_home">ELEXONS</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-toggle">
+            <span data-i18n="nav_services">Leistungen</span>
+            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </span>
+          <div class="dropdown-menu">
+            <a href="sanierung-zuerich.html" class="dropdown-item"><span data-i18n="drop_sanierung">Sanierung</span></a>
+            <a href="umbau-zuerich.html" class="dropdown-item"><span data-i18n="drop_umbau">Umbau &amp; Innenausbau</span></a>
+            <a href="badsanierung-zuerich.html" class="dropdown-item"><span data-i18n="drop_bad">Badsanierung</span></a>
+            <a href="kuechensanierung-zuerich.html" class="dropdown-item"><span data-i18n="drop_kueche">Küchensanierung</span></a>
+            <a href="smart-home-zuerich.html" class="dropdown-item">Smart Home</a>
+            <div class="dropdown-divider"></div>
+            <a href="leistungen.html" class="dropdown-item dropdown-item--all"><span data-i18n="drop_all">Alle Leistungen ansehen →</span></a>
+          </div>
+        </div>
+        <a href="projekte.html" class="nav__link" data-i18n="nav_projects">Projekte</a>
+        <a href="ueber-uns.html" class="nav__link" data-i18n="nav_about">Über uns</a>
+        <a href="kontakt.html" class="nav__link" data-i18n="nav_contact">Kontakt</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="de" onclick="setLang('de')">DE</button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        </div>
+        <a href="kontakt.html" class="btn btn--primary" data-i18n="btn_cta">Kostenlose Beratung</a>
+        <button class="hamburger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+  <nav class="mobile-menu__nav">
+    <a href="/" class="mobile-menu__link" data-i18n="mob_home">ELEXONS</a>
+    <a href="leistungen.html" class="mobile-menu__link" data-i18n="mob_services">Leistungen</a>
+    <a href="sanierung-zuerich.html" class="mobile-menu__link">Sanierung</a>
+    <a href="umbau-zuerich.html" class="mobile-menu__link">Umbau</a>
+    <a href="badsanierung-zuerich.html" class="mobile-menu__link">Badsanierung</a>
+    <a href="kuechensanierung-zuerich.html" class="mobile-menu__link">Küchensanierung</a>
+    <a href="smart-home-zuerich.html" class="mobile-menu__link">Smart Home</a>
+    <a href="projekte.html" class="mobile-menu__link" data-i18n="mob_projects">Projekte</a>
+    <a href="ueber-uns.html" class="mobile-menu__link" data-i18n="mob_about">Über uns</a>
+    <a href="kontakt.html" class="mobile-menu__link" data-i18n="mob_contact">Kontakt</a>
+  </nav>
+  <a href="kontakt.html" class="btn btn--primary" style="width:100%;justify-content:center;" data-i18n="btn_cta">Kostenlose Beratung</a>
+</div>
+
+<!-- ── BLOG HERO ── -->
+<section class="blog-hero">
+  <div class="container">
+    <span class="label" data-i18n-de="Blog & Ratgeber" data-i18n-en="Blog & Guide">Blog & Ratgeber</span>
+    <h1 data-i18n-de="Tipps & Wissen rund ums Wohnen" data-i18n-en="Tips & Knowledge for Your Home">Tipps & Wissen rund ums Wohnen</h1>
+    <p data-i18n-de="Fachartikel, Ratgeber und Inspiration zu Sanierung, Umbau und Smart Home in Zürich." data-i18n-en="Expert articles, guides and inspiration on renovation, remodelling and smart home in Zürich.">Fachartikel, Ratgeber und Inspiration zu Sanierung, Umbau und Smart Home in Zürich.</p>
+  </div>
+</section>
+
+<!-- ── BLOG GRID ── -->
+<section style="background:#fff;">
+  <div class="container">
+    <div class="blog-grid">
+
+      <!-- Article 1 -->
+      <article class="blog-card">
+        <img class="blog-card__img" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=640&q=80&fit=crop" alt="Wohnungssanierung Kosten" loading="lazy" />
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat" data-i18n-de="Sanierung" data-i18n-en="Renovation">Sanierung</span>
+            <span class="blog-card__date">15. Juli 2025</span>
+          </div>
+          <h2 class="blog-card__title" data-i18n-de="Wohnungssanierung Kosten: Was kostet eine Renovierung in Zürich?" data-i18n-en="Apartment Renovation Costs: What Does a Renovation in Zürich Cost?">Wohnungssanierung Kosten: Was kostet eine Renovierung in Zürich?</h2>
+          <p class="blog-card__excerpt" data-i18n-de="Renovierungskosten in Zürich variieren stark je nach Umfang und Ausstattung. Wir erklären, welche Faktoren den Preis bestimmen und wie Sie realistisch planen." data-i18n-en="Renovation costs in Zürich vary greatly depending on scope and fittings. We explain which factors determine the price and how to plan realistically.">Renovierungskosten in Zürich variieren stark je nach Umfang und Ausstattung. Wir erklären, welche Faktoren den Preis bestimmen und wie Sie realistisch planen.</p>
+          <a href="blog.html" class="blog-card__link" data-i18n-de="Weiterlesen →" data-i18n-en="Read More →">Weiterlesen →</a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="blog-card">
+        <img class="blog-card__img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=640&q=80&fit=crop" alt="Smart Home Zürich" loading="lazy" />
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat">Smart Home</span>
+            <span class="blog-card__date">2. Juni 2025</span>
+          </div>
+          <h2 class="blog-card__title" data-i18n-de="Smart Home nachrüsten: So gelingt die Hausautomation im Altbau" data-i18n-en="Smart Home Retrofit: How to Achieve Home Automation in Older Buildings">Smart Home nachrüsten: So gelingt die Hausautomation im Altbau</h2>
+          <p class="blog-card__excerpt" data-i18n-de="Intelligente Haustechnik muss nicht nur im Neubau funktionieren. Mit den richtigen Systemen lässt sich auch ein Altbau smart und komfortabel machen." data-i18n-en="Intelligent home technology doesn't only work in new builds. With the right systems, older buildings can also be made smart and comfortable.">Intelligente Haustechnik muss nicht nur im Neubau funktionieren. Mit den richtigen Systemen lässt sich auch ein Altbau smart und komfortabel machen.</p>
+          <a href="blog.html" class="blog-card__link" data-i18n-de="Weiterlesen →" data-i18n-en="Read More →">Weiterlesen →</a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="blog-card">
+        <img class="blog-card__img" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=640&q=80&fit=crop" alt="Badsanierung Tipps" loading="lazy" />
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat" data-i18n-de="Badsanierung" data-i18n-en="Bathroom Renovation">Badsanierung</span>
+            <span class="blog-card__date">18. Mai 2025</span>
+          </div>
+          <h2 class="blog-card__title" data-i18n-de="Badsanierung planen: 7 Tipps für Ihr neues Traumbadbad in Zürich" data-i18n-en="Planning a Bathroom Renovation: 7 Tips for Your New Dream Bathroom in Zürich">Badsanierung planen: 7 Tipps für Ihr neues Traumbad in Zürich</h2>
+          <p class="blog-card__excerpt" data-i18n-de="Ein neues Bad ist eine Investition – in Komfort, Design und Wohnqualität. Diese 7 Tipps helfen Ihnen, Ihre Badsanierung optimal zu planen." data-i18n-en="A new bathroom is an investment – in comfort, design and quality of living. These 7 tips help you plan your bathroom renovation optimally.">Ein neues Bad ist eine Investition – in Komfort, Design und Wohnqualität. Diese 7 Tipps helfen Ihnen, Ihre Badsanierung optimal zu planen.</p>
+          <a href="blog.html" class="blog-card__link" data-i18n-de="Weiterlesen →" data-i18n-en="Read More →">Weiterlesen →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="logo"><span class="logo__mark">EL</span> Elexons</a>
+        <p data-i18n="footer_desc">Professionelle Sanierung, Umbau und Smart Home Integration in Zürich und Umgebung. Schweizer Qualität, transparente Preise, persönliche Betreuung.</p>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/elexons.ae/" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmad-fahim-faghiri/" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="footer_h1">Leistungen</h5>
+        <div class="footer__links">
+          <a href="sanierung-zuerich.html" class="footer__link">Sanierung Zürich</a>
+          <a href="umbau-zuerich.html" class="footer__link">Umbau Zürich</a>
+          <a href="badsanierung-zuerich.html" class="footer__link">Badsanierung</a>
+          <a href="kuechensanierung-zuerich.html" class="footer__link">Küchensanierung</a>
+          <a href="smart-home-zuerich.html" class="footer__link">Smart Home</a>
+          <a href="leistungen.html" class="footer__link">Alle Leistungen</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="footer_h2">Unternehmen</h5>
+        <div class="footer__links">
+          <a href="ueber-uns.html" class="footer__link">Über uns</a>
+          <a href="projekte.html" class="footer__link">Projekte</a>
+          <a href="blog.html" class="footer__link">Blog</a>
+          <a href="kontakt.html" class="footer__link">Kontakt</a>
+          <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+          <a href="impressum.html" class="footer__link">Impressum</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</h5>
+        <div class="footer__links">
+          <span class="footer__link">Alpenblickstrasse 2, 8725 Gebertingen</span>
+          <a href="tel:+41799109999" class="footer__link">+41 79 910 99 99</a>
+          <a href="mailto:info@elexons.com" class="footer__link">info@elexons.com</a>
+          <a href="https://wa.me/41799109999" class="footer__link" style="color:#25D366;">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer_copy">© 2026 elexons.ch – Alle Rechte vorbehalten</span>
+      <div class="footer__legal">
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/lang.js"></script>
+</body>
+</html>

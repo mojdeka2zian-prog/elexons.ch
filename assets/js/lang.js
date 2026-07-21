@@ -10,7 +10,7 @@
   const T = {
     de: {
       /* NAV */
-      nav_home:        'Startseite',
+      nav_home:        'ELEXONS',
       nav_services:    'Leistungen',
       nav_renovation:  'Sanierung',
       nav_umbau:       'Umbau',
@@ -29,7 +29,7 @@
       drop_all:        'Alle Leistungen ansehen →',
 
       /* MOBILE NAV */
-      mob_home:        'Startseite',
+      mob_home:        'ELEXONS',
       mob_services:    'Leistungen',
       mob_renovation:  'Sanierung Zürich',
       mob_umbau:       'Umbau Zürich',
@@ -228,7 +228,7 @@
 
     en: {
       /* NAV */
-      nav_home:        'Home',
+      nav_home:        'ELEXONS',
       nav_services:    'Services',
       nav_renovation:  'Renovation',
       nav_umbau:       'Remodelling',
@@ -247,7 +247,7 @@
       drop_all:        'View All Services →',
 
       /* MOBILE NAV */
-      mob_home:        'Home',
+      mob_home:        'ELEXONS',
       mob_services:    'Services',
       mob_renovation:  'Renovation Zürich',
       mob_umbau:       'Remodelling Zürich',
