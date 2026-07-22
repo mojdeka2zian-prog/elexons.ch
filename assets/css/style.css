@@ -195,7 +195,7 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
 .header.transparent .lang-btn:hover:not(.active) { color: rgba(255,255,255,.85); border-color: rgba(255,255,255,.3); }
 
 /* ── Services Dropdown ── */
-.nav__dropdown { position: relative; }
+.nav__dropdown { position: static; }
 .nav__dropdown-toggle {
   cursor: pointer; display: flex; align-items: center; gap: 5px;
   font-size: 0.82rem; font-weight: 400; color: var(--text-sec);
@@ -204,14 +204,10 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
 .nav__dropdown-toggle:hover { color: var(--accent); }
 .nav__dropdown-toggle svg { width: 11px; height: 11px; transition: transform 0.22s ease; flex-shrink: 0; }
 .nav__dropdown:hover .nav__dropdown-toggle svg { transform: rotate(180deg); }
-/* Hover bridge: keeps menu alive as mouse moves from toggle to menu */
-.nav__dropdown::after {
-  content: ''; position: absolute;
-  top: 100%; left: -40px; right: -40px; height: 20px;
-}
-/* ── MEGA MENU (fixed-position full-width panel) ── */
+/* No gap between header and dropdown, so no hover bridge needed */
+/* ── MEGA MENU (absolute, positions relative to fixed header) ── */
 .dropdown-menu {
-  position: fixed; top: var(--header-h);
+  position: absolute; top: var(--header-h);
   left: 0; right: 0; width: 100%;
   background: #fff; border-top: 2px solid var(--accent);
   border-bottom: 1px solid var(--border-light);
