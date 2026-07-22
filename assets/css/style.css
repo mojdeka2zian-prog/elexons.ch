@@ -204,25 +204,27 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
 .nav__dropdown-toggle:hover { color: var(--accent); }
 .nav__dropdown-toggle svg { width: 11px; height: 11px; transition: transform 0.22s ease; flex-shrink: 0; }
 .nav__dropdown:hover .nav__dropdown-toggle svg { transform: rotate(180deg); }
-/* Invisible bridge — not needed for fixed panel, but keep hover zone */
+/* Hover bridge: keeps menu alive as mouse moves from toggle to menu */
 .nav__dropdown::after {
-  content: ''; position: fixed;
-  top: var(--header-h); left: 0; right: 0; height: 0;
+  content: ''; position: absolute;
+  top: 100%; left: -40px; right: -40px; height: 20px;
 }
-/* ── MEGA MENU (Loxone-style full-width panel) ── */
-.nav__dropdown { position: relative; }
+/* ── MEGA MENU (fixed-position full-width panel) ── */
 .dropdown-menu {
-  position: fixed; top: var(--header-h); left: 0; right: 0;
-  background: #fff; border-top: 1px solid var(--border-light);
+  position: fixed; top: var(--header-h);
+  left: 0; right: 0; width: 100%;
+  background: #fff; border-top: 2px solid var(--accent);
   border-bottom: 1px solid var(--border-light);
-  box-shadow: 0 12px 40px rgba(0,0,0,.10);
-  padding: 32px 0 28px;
+  box-shadow: 0 16px 48px rgba(0,0,0,.12);
+  padding: 28px 0 24px;
   opacity: 0; visibility: hidden; pointer-events: none;
-  transition: opacity 0.2s ease, visibility 0.2s;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  transform: translateY(-6px);
   z-index: 200;
 }
 .nav__dropdown:hover .dropdown-menu {
   opacity: 1; visibility: visible; pointer-events: all;
+  transform: translateY(0);
 }
 .dropdown-menu__grid {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px;
