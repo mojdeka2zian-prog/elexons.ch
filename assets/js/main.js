@@ -172,6 +172,18 @@
     document.body.appendChild(backBtn);
   }
 
+  /* ── Desktop Dropdown (hover with delay — prevents gap-close) ── */
+  document.querySelectorAll('.nav__dropdown').forEach(el => {
+    let t;
+    el.addEventListener('mouseenter', () => {
+      clearTimeout(t);
+      el.classList.add('is-open');
+    });
+    el.addEventListener('mouseleave', () => {
+      t = setTimeout(() => el.classList.remove('is-open'), 220);
+    });
+  });
+
   /* ── Mobile Services Accordion ── */
   const mobToggle = document.getElementById('mobServicesToggle');
   const mobList = document.getElementById('mobServicesList');

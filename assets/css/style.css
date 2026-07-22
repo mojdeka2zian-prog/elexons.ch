@@ -203,7 +203,7 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
 }
 .nav__dropdown-toggle:hover { color: var(--accent); }
 .nav__dropdown-toggle svg { width: 11px; height: 11px; transition: transform 0.22s ease; flex-shrink: 0; }
-.nav__dropdown:hover .nav__dropdown-toggle svg { transform: rotate(180deg); }
+.nav__dropdown.is-open .nav__dropdown-toggle svg { transform: rotate(180deg); }
 /* No gap between header and dropdown, so no hover bridge needed */
 /* ── MEGA MENU (absolute, positions relative to fixed header) ── */
 .dropdown-menu {
@@ -218,7 +218,7 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
   transform: translateY(-6px);
   z-index: 200;
 }
-.nav__dropdown:hover .dropdown-menu {
+.nav__dropdown.is-open .dropdown-menu {
   opacity: 1; visibility: visible; pointer-events: all;
   transform: translateY(0);
 }
@@ -357,13 +357,15 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
   display: none; flex-direction: column; padding: 6px 0 6px 8px;
   border-bottom: 1px solid var(--border-light);
 }
-.mob-services-list.open { display: flex; }
+.mob-services-list.open { display: flex; flex-direction: column; }
 .mob-services-item {
   display: flex; align-items: center; gap: 10px;
   padding: 9px 4px; text-decoration: none; color: var(--text-sec);
   font-size: 0.88rem; font-weight: 400; letter-spacing: 0.02em;
   border-bottom: 1px solid rgba(0,0,0,.04); transition: color 0.15s;
+  min-width: 0; width: 100%;
 }
+.mob-services-item > span { flex: 1; min-width: 0; }
 .mob-services-item:last-child { border-bottom: none; }
 .mob-services-item:hover { color: var(--accent); }
 .mob-services-item__icon {
