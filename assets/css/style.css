@@ -195,7 +195,7 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
 .header.transparent .lang-btn:hover:not(.active) { color: rgba(255,255,255,.85); border-color: rgba(255,255,255,.3); }
 
 /* ── Services Dropdown ── */
-.nav__dropdown { position: static; }
+.nav__dropdown { position: relative; }
 .nav__dropdown-toggle {
   cursor: pointer; display: flex; align-items: center; gap: 5px;
   font-size: 0.82rem; font-weight: 400; color: var(--text-sec);
@@ -210,7 +210,7 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
   top: var(--header-h); left: 0; right: 0; height: 0;
 }
 /* ── MEGA MENU (Loxone-style full-width panel) ── */
-.nav__dropdown { position: static; }
+.nav__dropdown { position: relative; }
 .dropdown-menu {
   position: fixed; top: var(--header-h); left: 0; right: 0;
   background: #fff; border-top: 1px solid var(--border-light);
