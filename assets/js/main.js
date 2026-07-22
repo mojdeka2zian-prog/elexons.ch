@@ -172,4 +172,14 @@
     document.body.appendChild(backBtn);
   }
 
+  /* ── Mobile Services Accordion ── */
+  const mobToggle = document.getElementById('mobServicesToggle');
+  const mobList = document.getElementById('mobServicesList');
+  if (mobToggle && mobList) {
+    mobToggle.addEventListener('click', () => {
+      const isOpen = mobList.classList.toggle('open');
+      mobToggle.classList.toggle('open', isOpen);
+    });
+  }
+
 })();
