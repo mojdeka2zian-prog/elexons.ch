@@ -1497,12 +1497,28 @@ p  { font-size: 1rem; color: var(--text-sec); line-height: 1.8; }
   .team-section { grid-template-columns: 1fr; gap: 48px; }
 }
 
+/* ── Content split (text + image 2-col) ── */
+.content-split {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+}
+.kontakt-split {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;
+}
+
 @media (max-width: 768px) {
   :root { --header-h: 68px; }
   .container { padding: 0 20px; }
   .section { padding: 72px 0; }
   .nav, .header__actions .btn { display: none; }
   .hamburger { display: flex; }
+
+  /* Two-col sections → single column */
+  .content-split { grid-template-columns: 1fr; gap: 36px; }
+  .content-split .hide-mobile { display: none; }
+  /* Kontakt: single col, form first */
+  .kontakt-split { grid-template-columns: 1fr; gap: 32px; }
+  .kontakt-split > div:first-child { order: 2; }
+  .kontakt-split > div:last-child { order: 1; }
 
   /* ═══ HERO MOBILE ═══════════════════════════════════════════
      padding-top on .hero itself pushes flex children below the
