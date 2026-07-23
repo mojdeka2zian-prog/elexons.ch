@@ -10,9 +10,9 @@
     gtag('config', 'G-3EY2GBYZG1');
   </script>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wohnungssanierung Zürich | Professionelle Renovierung &amp; Umbau von Wohnungen</title>
-  <meta name="description" content="Professionelle Wohnungssanierung in Zürich für moderne Wohnräume. Elexons übernimmt Renovierung, Umbau und Innenausbau mit individueller Planung und hochwertiger Ausführung." />
-  <link rel="canonical" href="https://elexons.ch/sanierung-zuerich.html" />
+  <title>Küchensanierung Zürich | Moderne Küchenrenovierung &amp; individueller Küchenumbau</title>
+  <meta name="description" content="Küchensanierung in Zürich mit moderner Planung und hochwertiger Umsetzung. Elexons renoviert Küchen individuell und schafft funktionale sowie stilvolle Wohnbereiche." />
+  <link rel="canonical" href="https://elexons.ch/kuechensanierung-zuerich.html" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <style>
@@ -91,10 +91,8 @@
     }
   </style>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 </head>
 <body>
 
@@ -215,14 +213,14 @@
 <!-- ── HERO ── -->
 <section class="svc-hero">
   <div class="svc-hero__bg">
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=85&fit=crop" alt="Sanierung Zürich – elexons.ch" loading="eager" />
+    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=85&fit=crop" alt="Küchensanierung Zürich – elexons.ch" loading="eager" />
     <div class="svc-hero__overlay"></div>
   </div>
   <div class="svc-hero__content">
     <div class="container">
-      <span class="svc-hero__label">Sanierung Zürich</span>
-      <h1 class="svc-hero__title" data-i18n-html-de="Wohnungssanierung Zürich | Professionelle Renovierung &amp; Umbau von Wohnungen" data-i18n-html-en="Apartment Renovation Zürich | Professional Renovation &amp; Remodelling">Wohnungssanierung Zürich | Professionelle Renovierung &amp; Umbau von Wohnungen</h1>
-      <p class="svc-hero__sub" data-i18n-de="Professionelle Wohnungs- und Haussanierungen in Zürich – von der Erstberatung bis zur schlüsselfertigen Übergabe. Schweizer Qualität, ein Ansprechpartner." data-i18n-en="Professional apartment and house renovations in Zürich – from initial consultation to turnkey handover. Swiss quality, one point of contact.">Professionelle Wohnungs- und Haussanierungen in Zürich – von der Erstberatung bis zur schlüsselfertigen Übergabe. Schweizer Qualität, ein Ansprechpartner.</p>
+      <span class="svc-hero__label">Küchensanierung Zürich</span>
+      <h1 class="svc-hero__title" data-i18n-html-de="Küchensanierung Zürich | Moderne Küchenrenovierung &amp; individueller Küchenumbau" data-i18n-html-en="Kitchen Renovation Zürich | Modern Kitchen Refurbishment &amp; Individual Kitchen Remodelling">Küchensanierung Zürich | Moderne Küchenrenovierung &amp; individueller Küchenumbau</h1>
+      <p class="svc-hero__sub" data-i18n-de="Funktionale und elegante Küchen nach Mass – von der Planung über Arbeitsplatten und Beleuchtung bis zur vollständigen Montage." data-i18n-en="Functional and elegant kitchens to measure – from planning through worktops and lighting to complete installation.">Funktionale und elegante Küchen nach Mass – von der Planung über Arbeitsplatten und Beleuchtung bis zur vollständigen Montage.</p>
       <div style="display:flex;gap:16px;flex-wrap:wrap;">
         <a href="kontakt.html" class="btn btn--primary" data-i18n="btn_cta">Kostenlose Beratung</a>
         <a href="projekte.html" class="btn btn--outline-light" data-i18n="nav_projects">Projekte ansehen</a>
@@ -233,23 +231,23 @@
 
 <!-- ── PHOTO STRIP 1 ── -->
 <div class="photo-strip">
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900&q=80&fit=crop" alt="Renovation Zürich" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&q=80&fit=crop" alt="Sanierung Innen" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1604014237744-2cd6c3f7f7e6?w=600&q=80&fit=crop" alt="Handwerk Zürich" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1556909075-5302e8e30aa0?w=900&q=80&fit=crop" alt="Küchensanierung Zürich" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80&fit=crop" alt="Küchenrenovation" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&q=80&fit=crop" alt="Küche modern" loading="lazy" /></div>
 </div>
 <!-- ── INTRO ── -->
 <section class="section">
   <div class="container">
     <div class="content-split">
       <div class="reveal">
-        <span class="label" data-i18n-de="Sanierung Zürich" data-i18n-en="Renovation Zürich">Sanierung Zürich</span>
-        <h2 data-i18n-de="Professionelle Sanierung – von der Idee bis zur Übergabe" data-i18n-en="Professional Renovation – From Idea to Handover">Professionelle Sanierung – von der Idee bis zur Übergabe</h2>
-        <p style="margin-top:18px;" data-i18n-de="Elexons ist Ihr Spezialist für hochwertige Sanierungsprojekte in Zürich und Umgebung. Ob Altbausanierung, Wohnungssanierung oder Komplettrenovation – wir koordinieren alle Gewerke, halten Termine ein und liefern Qualität ohne Kompromisse." data-i18n-en="Elexons is your specialist for high-quality renovation projects in Zürich and the surrounding area. Whether old building, apartment or complete renovation – we coordinate all trades, meet deadlines and deliver quality without compromise.">Elexons ist Ihr Spezialist für hochwertige Sanierungsprojekte in Zürich und Umgebung. Ob Altbausanierung, Wohnungssanierung oder Komplettrenovation – wir koordinieren alle Gewerke, halten Termine ein und liefern Qualität ohne Kompromisse.</p>
-        <p style="margin-top:14px;" data-i18n-de="Jedes Projekt erhält einen persönlichen Projektleiter – von der ersten Beratung bis zur schlüsselfertigen Übergabe. Keine Überraschungskosten, klare Kommunikation." data-i18n-en="Each project has a dedicated project manager – from first consultation to turnkey handover. No surprise costs, clear communication.">Jedes Projekt erhält einen persönlichen Projektleiter – von der ersten Beratung bis zur schlüsselfertigen Übergabe. Keine Überraschungskosten, klare Kommunikation.</p>
+        <span class="label" data-i18n-de="Küchensanierung Zürich" data-i18n-en="Kitchen Renovation Zürich">Küchensanierung Zürich</span>
+        <h2 data-i18n-de="Die Küche, die zu Ihrem Leben passt" data-i18n-en="The Kitchen That Fits Your Life">Die Küche, die zu Ihrem Leben passt</h2>
+        <p style="margin-top:18px;">Eine neue Küche ist eine Investition in Lebensqualität. Elexons plant und realisiert Küchensanierungen in Zürich – von der ersten Idee bis zur vollständigen Montage inklusive Elektro, Sanitär und Beleuchtung.</p>
+        <p style="margin-top:14px;" data-i18n-de="Wir arbeiten mit hochwertigen Schweizer und europäischen Küchenherstellern zusammen und begleiten Sie bei jedem Schritt der Materialauswahl." data-i18n-en="We work with premium Swiss and European kitchen manufacturers and accompany you from the idea to the turnkey kitchen.">Wir arbeiten mit hochwertigen Schweizer und europäischen Küchenherstellern zusammen und begleiten Sie bei jedem Schritt der Materialauswahl.</p>
         <a href="kontakt.html" class="btn btn--primary" style="margin-top:32px;" data-i18n="btn_cta">Kostenlose Beratung</a>
       </div>
       <div class="reveal reveal-delay-1 hide-mobile" style="height:520px;border-radius:8px;overflow:hidden;">
-        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&q=85&fit=crop" alt="Professionelle Sanierung – von der Idee bis zur Übergabe" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1565183997392-2f6f122e5912?w=900&q=85&fit=crop" alt="Die Küche, die zu Ihrem Leben passt" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
       </div>
     </div>
   </div>
@@ -259,40 +257,40 @@
 <section class="section section--soft">
   <div class="container">
     <div class="section__header section__header--center reveal">
-      <span class="label" data-i18n-de="Unser Angebot" data-i18n-en="Our Services">Unser Angebot</span>
-      <h2 data-i18n-de="Sanierungsleistungen in Zürich" data-i18n-en="Renovation Services in Zürich">Sanierungsleistungen in Zürich</h2>
-      <p data-i18n-de="Von der Teilsanierung bis zur Komplettrenovation – wir bieten das gesamte Spektrum der Sanierung." data-i18n-en="From partial to complete renovation – we offer the full spectrum of renovation services.">Von der Teilsanierung bis zur Komplettrenovation – wir bieten das gesamte Spektrum der Sanierung.</p>
+      <span class="label" data-i18n-de="Küchen-Leistungen" data-i18n-en="Kitchen Services">Küchen-Leistungen</span>
+      <h2 data-i18n-de="Was wir für Ihre Küche leisten" data-i18n-en="What We Do for Your Kitchen">Was wir für Ihre Küche leisten</h2>
+      <p data-i18n-de="Vollständige Küchensanierung aus einer Hand – von der Planung bis zur schlüsselfertigen Übergabe." data-i18n-en="Complete kitchen renovation from a single source – from planning to turnkey handover.">Vollständige Küchensanierung aus einer Hand – von der Planung bis zur schlüsselfertigen Übergabe.</p>
     </div>
     <div class="leistungen-grid" style="margin-top:56px;">
       <div class="leistung-card reveal">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.125 1.125 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Wohnungssanierung Zürich" data-i18n-en="Apartment Renovation Zürich">Wohnungssanierung Zürich</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Komplette oder teilweise Renovierung Ihrer Wohnung. Bad, Küche, Böden, Wände – alles aus einer Hand, alles koordiniert." data-i18n-en="Complete or partial renovation of your apartment. Bathroom, kitchen, floors, walls – all from one source, all coordinated.">Komplette oder teilweise Renovierung Ihrer Wohnung. Bad, Küche, Böden, Wände – alles aus einer Hand, alles koordiniert.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Küchenplanung" data-i18n-en="Kitchen Planning">Küchenplanung</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Individuelle Planung Ihrer Traumküche – Grundriss, Ergonomie, Materialauswahl und Lichtplanung inklusive." data-i18n-en="Individual planning of your dream kitchen – floor plan, ergonomics, material selection and lighting planning included.">Individuelle Planung Ihrer Traumküche – Grundriss, Ergonomie, Materialauswahl und Lichtplanung inklusive.</p>
       </div>
       <div class="leistung-card reveal reveal-delay-1">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Haussanierung Zürich" data-i18n-en="House Renovation Zürich">Haussanierung Zürich</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Umfassende Sanierung von Einfamilienhäusern und Mehrfamilienhäusern – innen und aussen, energieeffizient und wertsteigernd." data-i18n-en="Comprehensive renovation of single-family and apartment buildings – inside and outside, energy-efficient and value-enhancing.">Umfassende Sanierung von Einfamilienhäusern und Mehrfamilienhäusern – innen und aussen, energieeffizient und wertsteigernd.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Kücheneinbau & Montage" data-i18n-en="Kitchen Installation & Assembly">Kücheneinbau & Montage</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Professionelle Montage der Küchenmöbel, Geräte und Armaturen – präzise, sauber und termingerecht." data-i18n-en="Professional installation of kitchen furniture, appliances and fittings – precise, clean and on schedule.">Professionelle Montage der Küchenmöbel, Geräte und Armaturen – präzise, sauber und termingerecht.</p>
       </div>
       <div class="leistung-card reveal reveal-delay-2">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Altbausanierung" data-i18n-en="Historic Building Renovation">Altbausanierung</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Sanierung von Altbauten mit Respekt für die Bausubstanz – moderne Ausstattung, zeitgemässer Komfort, nachhaltige Ausführung." data-i18n-en="Renovation of historic buildings respecting existing structures – modern fittings, contemporary comfort, sustainable execution.">Sanierung von Altbauten mit Respekt für die Bausubstanz – moderne Ausstattung, zeitgemässer Komfort, nachhaltige Ausführung.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Arbeitsplatten" data-i18n-en="Worktops">Arbeitsplatten</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Hochwertige Arbeitsplatten aus Stein, Quarzkomposit, Keramik oder Holz – massgenau gefertigt und verlegt." data-i18n-en="Premium worktops in stone, quartz composite, ceramic or wood – made to measure and installed.">Hochwertige Arbeitsplatten aus Stein, Quarzkomposit, Keramik oder Holz – massgenau gefertigt und verlegt.</p>
       </div>
       <div class="leistung-card reveal">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Komplettsanierung" data-i18n-en="Complete Renovation">Komplettsanierung</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Vollständige Renovation aller Bereiche – Bad, Küche, Böden, Wände, Elektro, Sanitär – alles aus einer Hand und termintreu." data-i18n-en="Full renovation of all areas – bathroom, kitchen, floors, walls, electrical, plumbing – all from one source, on schedule.">Vollständige Renovation aller Bereiche – Bad, Küche, Böden, Wände, Elektro, Sanitär – alles aus einer Hand und termintreu.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Beleuchtung & Elektro" data-i18n-en="Lighting & Electrical">Beleuchtung & Elektro</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Küchenbeleuchtung, Steckdosen, Elektrogeräte-Anschlüsse – vollständige Elektroplanung und Installation." data-i18n-en="Kitchen lighting, sockets, appliance connections – complete electrical planning and installation.">Küchenbeleuchtung, Steckdosen, Elektrogeräte-Anschlüsse – vollständige Elektroplanung und Installation.</p>
       </div>
       <div class="leistung-card reveal reveal-delay-1">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Teilsanierung" data-i18n-en="Partial Renovation">Teilsanierung</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Gezielte Renovation einzelner Bereiche – Budget-optimiert, schnell und ohne unnötigen Aufwand." data-i18n-en="Targeted renovation of individual areas – budget-optimised, fast and without unnecessary effort.">Gezielte Renovation einzelner Bereiche – Budget-optimiert, schnell und ohne unnötigen Aufwand.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Sanitär & Wasserhähne" data-i18n-en="Plumbing & Taps">Sanitär & Wasserhähne</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Küchen-Sanitär, Spülbecken, Design-Armaturen – professionelle Installation inkl. Wasseranschluss." data-i18n-en="Kitchen plumbing, sinks, design taps – professional installation including water connection.">Küchen-Sanitär, Spülbecken, Design-Armaturen – professionelle Installation inkl. Wasseranschluss.</p>
       </div>
       <div class="leistung-card reveal reveal-delay-2">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Mietwohnungssanierung" data-i18n-en="Rental Apartment Renovation">Mietwohnungssanierung</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Effiziente Aufwertung von Mietobjekten zwischen den Mietverhältnissen – schnell, sauber und budgetgerecht." data-i18n-en="Efficient upgrade of rental properties between tenancies – fast, clean and within budget.">Effiziente Aufwertung von Mietobjekten zwischen den Mietverhältnissen – schnell, sauber und budgetgerecht.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Küche & Smart Home" data-i18n-en="Kitchen & Smart Home">Küche & Smart Home</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Automatische Lüftungssteuerung, Beleuchtungsszenen und Energiemonitoring für Ihre Küche." data-i18n-en="Automatic ventilation control, lighting scenes and energy monitoring for your kitchen.">Automatische Lüftungssteuerung, Beleuchtungsszenen und Energiemonitoring für Ihre Küche.</p>
       </div>
     </div>
   </div>
@@ -300,10 +298,10 @@
 
 <!-- ── PHOTO STRIP 2 ── -->
 <div class="photo-strip photo-strip--4">
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=500&q=80&fit=crop" alt="Innenausbau" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=500&q=80&fit=crop" alt="Renovation Detail" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&q=80&fit=crop" alt="Umbau Zürich" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=500&q=80&fit=crop" alt="Sanierung Qualität" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=500&q=80&fit=crop" alt="Kücheneinbau" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1556909195-7c47b2f5a93f?w=500&q=80&fit=crop" alt="Arbeitsplatten" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&q=80&fit=crop" alt="Küche Design minimalistisch" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=500&q=80&fit=crop" alt="Küche Zürich modern" loading="lazy" /></div>
 </div>
 <!-- ── PROCESS ── -->
 <section class="section">
@@ -345,23 +343,23 @@
 <!-- ── FAQ ── -->
 <section class="section section--soft">
   <div class="container">
-    <div class="section__header section__header--center reveal"><span class="label" data-i18n-de="Häufige Fragen" data-i18n-en="Frequently Asked Questions">Häufige Fragen</span><h2 data-i18n-de="FAQ – Sanierung Zürich" data-i18n-en="FAQ – Renovation Zürich">FAQ – Sanierung Zürich</h2></div>
+    <div class="section__header section__header--center reveal"><span class="label" data-i18n-de="Häufige Fragen" data-i18n-en="Frequently Asked Questions">Häufige Fragen</span><h2 data-i18n-de="FAQ – Küchensanierung Zürich" data-i18n-en="FAQ – Kitchen Renovation Zürich">FAQ – Küchensanierung Zürich</h2></div>
     <div class="faq-list" style="margin-top:48px;">
       <div class="faq-item">
-        <button class="faq-question" data-i18n-de="Wie lange dauert eine Wohnungssanierung in Zürich?" data-i18n-en="How long does an apartment renovation in Zürich take?">Wie lange dauert eine Wohnungssanierung in Zürich?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
-        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Die Dauer hängt vom Umfang ab. Eine Teilsanierung (z.B. nur Bad oder Küche) dauert typischerweise 2–4 Wochen. Eine Komplettsanierung einer 3- bis 4.5-Zimmer-Wohnung in Zürich kann 6–12 Wochen in Anspruch nehmen. Wir erstellen für jedes Projekt einen verbindlichen Zeitplan." data-i18n-en="The duration depends on the scope. A partial renovation (e.g. bathroom or kitchen only) typically takes 2–4 weeks. A complete renovation of a 3- to 4.5-room apartment in Zürich can take 6–12 weeks. We create a binding schedule for every project.">Die Dauer hängt vom Umfang ab. Eine Teilsanierung (z.B. nur Bad oder Küche) dauert typischerweise 2–4 Wochen. Eine Komplettsanierung einer 3- bis 4.5-Zimmer-Wohnung in Zürich kann 6–12 Wochen in Anspruch nehmen. Wir erstellen für jedes Projekt einen verbindlichen Zeitplan.</span></div></div>
+        <button class="faq-question">Was kostet eine Küchensanierung in Zürich?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Eine neue Küche in Zürich kostet je nach Ausstattung zwischen CHF 15'000 und CHF 60'000+. Wir erstellen eine detaillierte Offerte nach der ersten Beratung." data-i18n-en="A new kitchen in Zürich costs between CHF 15,000 and CHF 60,000+ depending on the specification. We prepare a detailed quote after the initial consultation.">Eine neue Küche in Zürich kostet je nach Ausstattung zwischen CHF 15'000 und CHF 60'000+. Wir erstellen eine detaillierte, kostenlose Offerte nach Ihrer Küchen-Planung.</span></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question" data-i18n-de="Was kostet eine Wohnungssanierung in Zürich?" data-i18n-en="What does an apartment renovation in Zürich cost?">Was kostet eine Wohnungssanierung in Zürich?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
-        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Die Kosten variieren je nach Zustand, Grösse und Ausstattungswunsch. Eine Teilsanierung beginnt ab ca. CHF 15'000–30'000. Eine Komplettsanierung liegt typischerweise zwischen CHF 80'000 und CHF 200'000+." data-i18n-en="Costs vary depending on condition, size and desired finish. A partial renovation starts from around CHF 15,000–30,000. A complete renovation typically ranges between CHF 80,000 and CHF 200,000+.">Die Kosten variieren je nach Zustand, Grösse und Ausstattungswunsch. Eine Teilsanierung beginnt ab ca. CHF 15'000–30'000. Eine Komplettsanierung liegt typischerweise zwischen CHF 80'000 und CHF 200'000+.</span></div></div>
+        <button class="faq-question" data-i18n-de="Wie lange dauert eine Küchensanierung?" data-i18n-en="How long does a kitchen renovation take?">Wie lange dauert eine Küchensanierung?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Von Planung bis Abschluss dauert eine Küchensanierung typischerweise 4–8 Wochen. Der eigentliche Einbau erfolgt in 1–2 Wochen." data-i18n-en="From planning to completion, a kitchen renovation typically takes 4–8 weeks. The actual installation takes 1–2 weeks.">Von Planung bis Abschluss dauert eine Küchensanierung typischerweise 4–8 Wochen. Der eigentliche Einbau erfolgt in 1–2 Wochen.</span></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question" data-i18n-de="Bietet Elexons Komplettsanierungen an?" data-i18n-en="Does Elexons offer complete renovations?">Bietet Elexons Komplettsanierungen an?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
-        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ja, die Komplettsanierung ist unser Kerngeschäft. Wir koordinieren alle Gewerke – Bad, Küche, Böden, Malerarbeiten, Elektro, Sanitär – aus einer Hand." data-i18n-en="Yes, complete renovation is our core business. We coordinate all trades – bathroom, kitchen, flooring, painting, electrical, plumbing – from a single source.">Ja, die Komplettsanierung ist unser Kerngeschäft. Wir koordinieren alle Gewerke – Bad, Küche, Böden, Malerarbeiten, Elektro, Sanitär – aus einer Hand.</span></div></div>
+        <button class="faq-question" data-i18n-de="Liefert Elexons auch die Küche?" data-i18n-en="Does Elexons also supply the kitchen?">Liefert Elexons auch die Küche?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ja, wir koordinieren Küchenlieferung, Montage, Elektro und Sanitär aus einer Hand. Oder wir montieren Ihre bereits gewählte Küche fachgerecht." data-i18n-en="Yes, we coordinate kitchen delivery, installation, electrical and plumbing from a single source. Or we professionally install a kitchen you have already chosen.">Ja, wir koordinieren Küchenlieferung, Montage, Elektro und Sanitär aus einer Hand. Oder wir montieren Ihre bereits gewählte Küche.</span></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question" data-i18n-de="Kann Smart Home während der Sanierung integriert werden?" data-i18n-en="Can Smart Home be integrated during renovation?">Kann Smart Home während der Sanierung integriert werden?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
-        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ja, eine Sanierung ist der ideale Zeitpunkt für eine Smart Home Integration. Wir planen und installieren Lichtsteuerung, Heizung, Beschattung und Sicherheit parallel zur Sanierung." data-i18n-en="Yes, renovation is the ideal time for Smart Home integration. We plan and install lighting control, heating, blinds and security systems in parallel with the renovation.">Ja, eine Sanierung ist der ideale Zeitpunkt für eine Smart Home Integration. Wir planen und installieren Lichtsteuerung, Heizung, Beschattung und Sicherheit parallel zur Sanierung.</span></div></div>
+        <button class="faq-question" data-i18n-de="Kann ich während der Küchensanierung zu Hause bleiben?" data-i18n-en="Can I stay at home during the kitchen renovation?">Kann ich während der Küchensanierung zu Hause bleiben?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ja, in den meisten Fällen ist das möglich. Wir planen den Ablauf so, dass die Unannehmlichkeiten für Sie minimal sind." data-i18n-en="Yes, in most cases this is possible. We plan the process so that disruption to you is minimal.">Ja, in den meisten Fällen ist das möglich. Wir planen den Ablauf so, dass die Unannehmlichkeiten für Sie minimal sind.</span></div></div>
       </div>
     </div>
   </div>
@@ -371,8 +369,8 @@
 <section class="cta-banner">
   <div class="container">
     <span class="label"  data-i18n-de="Kostenlos & unverbindlich" data-i18n-en="Free & No Obligation">Kostenlos &amp; unverbindlich</span>
-    <h2 data-i18n-de="Sanierung in Zürich geplant?" data-i18n-en="Planning Renovation in Zürich?">Sanierung in Zürich geplant?</h2>
-    <p data-i18n-de="Kontaktieren Sie uns für eine kostenlose Erstberatung – wir kommen zu Ihnen vor Ort und erstellen eine detaillierte Offerte." data-i18n-en="Contact us for a free initial consultation – we come to you on-site and prepare a detailed quote.">Kontaktieren Sie uns für eine kostenlose Erstberatung – wir kommen zu Ihnen vor Ort und erstellen eine detaillierte Offerte.</p>
+    <h2 data-i18n-de="Küchensanierung in Zürich geplant?" data-i18n-en="Planning Kitchen Renovation in Zürich?">Küchensanierung in Zürich geplant?</h2>
+    <p data-i18n-de="Kontaktieren Sie uns für eine kostenlose Beratung – wir planen Ihre Traumküche und erstellen eine detaillierte Offerte." data-i18n-en="Contact us for a free consultation – we will plan your dream kitchen and prepare a detailed quote.">Kontaktieren Sie uns für eine kostenlose Beratung – wir planen Ihre Traumküche und erstellen eine detaillierte Offerte.</p>
     <div class="btn-group"><a href="kontakt.html" class="btn btn--primary btn--lg" data-i18n="btn_cta">Kostenlose Beratung anfragen</a></div>
   </div>
 </section>

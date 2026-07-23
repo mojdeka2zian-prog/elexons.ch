@@ -10,14 +10,12 @@
     gtag('config', 'G-3EY2GBYZG1');
   </script>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Altbausanierung Zürich | Renovierung & Modernisierung alter Gebäude</title>
-  <meta name="description" content="Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision." />
-  <link rel="canonical" href="https://elexons.ch/altbausanierung-zuerich" />
+  <title>Fliesenleger Zürich | Fliesen & Keramik für Bad, Küche & Boden</title>
+  <meta name="description" content="Professioneller Fliesenleger in Zürich: Elexons verlegt Fliesen, Keramik und Naturstein für Bäder, Küchen und Böden. Präzise, sauber und termingerecht." />
+  <link rel="canonical" href="https://elexons.ch/fliesenleger-zuerich" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -47,10 +45,10 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>",
+    "name": "Fliesenleger Zürich –<br><em>Fliesen & Keramik vom Profi</em>",
     "provider": { "@type": "LocalBusiness", "name": "elexons.ch", "url": "https://elexons.ch" },
     "areaServed": { "@type": "City", "name": "Zürich" },
-    "description": "Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision."
+    "description": "Professioneller Fliesenleger in Zürich: Elexons verlegt Fliesen, Keramik und Naturstein für Bäder, Küchen und Böden. Präzise, sauber und termingerecht."
   }
   </script>
 </head>
@@ -173,16 +171,16 @@
 
 <section class="svc-hero">
   <div class="svc-hero__bg">
-    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=85&fit=crop" alt="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em> – elexons.ch" loading="eager" />
+    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1920&q=85&fit=crop" alt="Fliesenleger Zürich –<br><em>Fliesen & Keramik vom Profi</em> – elexons.ch" loading="eager" />
     <div class="svc-hero__overlay"></div>
   </div>
   <div class="svc-hero__content">
     <div class="svc-hero__eyebrow">
       <span style="width:5px;height:5px;border-radius:50%;background:#B89A5C;display:block;"></span>
-      <span data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
+      <span data-i18n-de="Fliesenarbeiten · Zürich" data-i18n-en="Tiling Work · Zürich">Fliesenarbeiten · Zürich</span>
     </div>
-    <h1 class="svc-hero__title" data-i18n-html-de="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>" data-i18n-html-en="Old Building Renovation Zürich –<br><em>Refurbishment & Modernisation</em>">Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em></h1>
-    <p class="svc-hero__sub" data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
+    <h1 class="svc-hero__title" data-i18n-html-de="Fliesenleger Zürich –<br><em>Fliesen & Keramik vom Profi</em>" data-i18n-html-en="Tiler Zürich –<br><em>Tiles & Ceramics by Professionals</em>">Fliesenleger Zürich –<br><em>Fliesen & Keramik vom Profi</em></h1>
+    <p class="svc-hero__sub" data-i18n-de="Perfekte Fugen, ebene Flächen, hochwertige Materialien: Elexons legt Fliesen in Zürich mit Präzision und Sorgfalt – für Bäder, Küchen, Böden und Terrassen." data-i18n-en="Perfect grout lines, level surfaces, high-quality materials: Elexons lays tiles in Zürich with precision and care – for bathrooms, kitchens, floors and terraces.">Perfekte Fugen, ebene Flächen, hochwertige Materialien: Elexons legt Fliesen in Zürich mit Präzision und Sorgfalt – für Bäder, Küchen, Böden und Terrassen.</p>
     <a href="kontakt.html" class="svc-hero__cta" data-i18n-de="Kostenlose Beratung anfragen" data-i18n-en="Request Free Consultation">Kostenlose Beratung anfragen</a>
   </div>
 </section>
@@ -190,27 +188,27 @@
 <section class="content-section">
   <div class="container">
     <div style="max-width:760px;margin:0 auto;">
-      <span class="label" data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
+      <span class="label" data-i18n-de="Fliesenarbeiten · Zürich" data-i18n-en="Tiling Work · Zürich">Fliesenarbeiten · Zürich</span>
       <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;margin:16px 0 24px;" data-i18n-de="Professionell. Zuverlässig. Schweizer Qualität." data-i18n-en="Professional. Reliable. Swiss Quality.">Professionell. Zuverlässig. Schweizer Qualität.</h2>
-      <p data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
+      <p data-i18n-de="Perfekte Fugen, ebene Flächen, hochwertige Materialien: Elexons legt Fliesen in Zürich mit Präzision und Sorgfalt – für Bäder, Küchen, Böden und Terrassen." data-i18n-en="Perfect grout lines, level surfaces, high-quality materials: Elexons lays tiles in Zürich with precision and care – for bathrooms, kitchens, floors and terraces.">Perfekte Fugen, ebene Flächen, hochwertige Materialien: Elexons legt Fliesen in Zürich mit Präzision und Sorgfalt – für Bäder, Küchen, Böden und Terrassen.</p>
       <p data-i18n-de="Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision." data-i18n-en="Elexons coordinates all tradespeople from a single point of contact – from planning through execution to turnkey handover. Transparent quotes, no hidden costs, Swiss precision.">Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision.</p>
     </div>
     <div class="services-list">
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Substanzanalyse & Planung" data-i18n-en="Structural Analysis & Planning">Substanzanalyse & Planung</div>
-        <p class="service-item__text" data-i18n-de="Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts." data-i18n-en="Expert assessment of the old building and development of a tailored renovation concept.">Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts.</p>
+        <div class="service-item__title" data-i18n-de="Badezimmer-Verfliesung" data-i18n-en="Bathroom Tiling">Badezimmer-Verfliesung</div>
+        <p class="service-item__text" data-i18n-de="Professionelle Verfliesung von Bäder – Wände, Böden, Duschen und Badewannenumrandungen." data-i18n-en="Professional tiling of bathrooms – walls, floors, showers and bath surrounds.">Professionelle Verfliesung von Bäder – Wände, Böden, Duschen und Badewannenumrandungen.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Energetische Sanierung" data-i18n-en="Energy-Efficient Renovation">Energetische Sanierung</div>
-        <p class="service-item__text" data-i18n-de="Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort." data-i18n-en="Insulation, modern heating systems and window replacement for improved energy efficiency and comfort.">Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort.</p>
+        <div class="service-item__title" data-i18n-de="Küchen & Küchenrückwände" data-i18n-en="Kitchen & Splashbacks">Küchen & Küchenrückwände</div>
+        <p class="service-item__text" data-i18n-de="Strapazierfähige und pflegeleichte Fliesenlösungen für Küchenbereiche und Kochnischen." data-i18n-en="Durable and easy-care tile solutions for kitchen areas and cooking niches.">Strapazierfähige und pflegeleichte Fliesenlösungen für Küchenbereiche und Kochnischen.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Innenausbau & Modernisierung" data-i18n-en="Interior Fit-Out & Modernisation">Innenausbau & Modernisierung</div>
-        <p class="service-item__text" data-i18n-de="Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen." data-i18n-en="Floors, walls, ceilings, kitchens and bathrooms – complete interior renovation to your wishes.">Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen.</p>
+        <div class="service-item__title" data-i18n-de="Bodenfliesen & Naturstein" data-i18n-en="Floor Tiles & Natural Stone">Bodenfliesen & Naturstein</div>
+        <p class="service-item__text" data-i18n-de="Grossformatige Bodenfliesen, Feinsteinzeug und Naturstein für repräsentative Böden." data-i18n-en="Large-format floor tiles, porcelain stoneware and natural stone for representative floors.">Grossformatige Bodenfliesen, Feinsteinzeug und Naturstein für repräsentative Böden.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Denkmalschutz & Substanzerhalt" data-i18n-en="Heritage & Structural Preservation">Denkmalschutz & Substanzerhalt</div>
-        <p class="service-item__text" data-i18n-de="Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten." data-i18n-en="Sensitive handling of historical building fabric and respect for architectural characteristics.">Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten.</p>
+        <div class="service-item__title" data-i18n-de="Aussenbereich & Terrasse" data-i18n-en="Outdoor & Terrace">Aussenbereich & Terrasse</div>
+        <p class="service-item__text" data-i18n-de="Frostsichere und rutschfeste Fliesen für Terrassen, Balkone und Eingangsbereiche." data-i18n-en="Frost-resistant and non-slip tiles for terraces, balconies and entrance areas.">Frostsichere und rutschfeste Fliesen für Terrassen, Balkone und Eingangsbereiche.</p>
       </div>
 
     </div>

@@ -10,14 +10,12 @@
     gtag('config', 'G-3EY2GBYZG1');
   </script>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Altbausanierung Zürich | Renovierung & Modernisierung alter Gebäude</title>
-  <meta name="description" content="Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision." />
-  <link rel="canonical" href="https://elexons.ch/altbausanierung-zuerich" />
+  <title>Parkett verlegen Zürich | Parkettboden & Holzboden vom Profi</title>
+  <meta name="description" content="Parkett verlegen in Zürich: Elexons legt Parkettböden, Laminat und Holzböden professionell und sauber. Beratung, Lieferung und Verlegung aus einer Hand." />
+  <link rel="canonical" href="https://elexons.ch/parkett-zuerich" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -47,10 +45,10 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>",
+    "name": "Parkett verlegen Zürich –<br><em>Parkettboden & Holzboden</em>",
     "provider": { "@type": "LocalBusiness", "name": "elexons.ch", "url": "https://elexons.ch" },
     "areaServed": { "@type": "City", "name": "Zürich" },
-    "description": "Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision."
+    "description": "Parkett verlegen in Zürich: Elexons legt Parkettböden, Laminat und Holzböden professionell und sauber. Beratung, Lieferung und Verlegung aus einer Hand."
   }
   </script>
 </head>
@@ -173,16 +171,16 @@
 
 <section class="svc-hero">
   <div class="svc-hero__bg">
-    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=85&fit=crop" alt="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em> – elexons.ch" loading="eager" />
+    <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1920&q=85&fit=crop" alt="Parkett verlegen Zürich –<br><em>Parkettboden & Holzboden</em> – elexons.ch" loading="eager" />
     <div class="svc-hero__overlay"></div>
   </div>
   <div class="svc-hero__content">
     <div class="svc-hero__eyebrow">
       <span style="width:5px;height:5px;border-radius:50%;background:#B89A5C;display:block;"></span>
-      <span data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
+      <span data-i18n-de="Parkettverlegung · Zürich" data-i18n-en="Parquet Laying · Zürich">Parkettverlegung · Zürich</span>
     </div>
-    <h1 class="svc-hero__title" data-i18n-html-de="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>" data-i18n-html-en="Old Building Renovation Zürich –<br><em>Refurbishment & Modernisation</em>">Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em></h1>
-    <p class="svc-hero__sub" data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
+    <h1 class="svc-hero__title" data-i18n-html-de="Parkett verlegen Zürich –<br><em>Parkettboden & Holzboden</em>" data-i18n-html-en="Parquet Flooring Zürich –<br><em>Wood Floors Professionally Laid</em>">Parkett verlegen Zürich –<br><em>Parkettboden & Holzboden</em></h1>
+    <p class="svc-hero__sub" data-i18n-de="Parkettböden verleihen jedem Raum Wärme und Charakter. Elexons verlegt Parkett, Laminat und Holzböden aller Art in Zürich – von der Beratung bis zur Fertigstellung." data-i18n-en="Parquet floors give every room warmth and character. Elexons lays parquet, laminate and all types of wooden floors in Zürich – from consultation to completion.">Parkettböden verleihen jedem Raum Wärme und Charakter. Elexons verlegt Parkett, Laminat und Holzböden aller Art in Zürich – von der Beratung bis zur Fertigstellung.</p>
     <a href="kontakt.html" class="svc-hero__cta" data-i18n-de="Kostenlose Beratung anfragen" data-i18n-en="Request Free Consultation">Kostenlose Beratung anfragen</a>
   </div>
 </section>
@@ -190,27 +188,27 @@
 <section class="content-section">
   <div class="container">
     <div style="max-width:760px;margin:0 auto;">
-      <span class="label" data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
+      <span class="label" data-i18n-de="Parkettverlegung · Zürich" data-i18n-en="Parquet Laying · Zürich">Parkettverlegung · Zürich</span>
       <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;margin:16px 0 24px;" data-i18n-de="Professionell. Zuverlässig. Schweizer Qualität." data-i18n-en="Professional. Reliable. Swiss Quality.">Professionell. Zuverlässig. Schweizer Qualität.</h2>
-      <p data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
+      <p data-i18n-de="Parkettböden verleihen jedem Raum Wärme und Charakter. Elexons verlegt Parkett, Laminat und Holzböden aller Art in Zürich – von der Beratung bis zur Fertigstellung." data-i18n-en="Parquet floors give every room warmth and character. Elexons lays parquet, laminate and all types of wooden floors in Zürich – from consultation to completion.">Parkettböden verleihen jedem Raum Wärme und Charakter. Elexons verlegt Parkett, Laminat und Holzböden aller Art in Zürich – von der Beratung bis zur Fertigstellung.</p>
       <p data-i18n-de="Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision." data-i18n-en="Elexons coordinates all tradespeople from a single point of contact – from planning through execution to turnkey handover. Transparent quotes, no hidden costs, Swiss precision.">Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision.</p>
     </div>
     <div class="services-list">
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Substanzanalyse & Planung" data-i18n-en="Structural Analysis & Planning">Substanzanalyse & Planung</div>
-        <p class="service-item__text" data-i18n-de="Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts." data-i18n-en="Expert assessment of the old building and development of a tailored renovation concept.">Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts.</p>
+        <div class="service-item__title" data-i18n-de="Massivparkett & Fertigparkett" data-i18n-en="Solid & Engineered Parquet">Massivparkett & Fertigparkett</div>
+        <p class="service-item__text" data-i18n-de="Hochwertige Parkettböden in Eiche, Buche, Nuss und vielen weiteren Holzarten." data-i18n-en="High-quality parquet floors in oak, beech, walnut and many other wood species.">Hochwertige Parkettböden in Eiche, Buche, Nuss und vielen weiteren Holzarten.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Energetische Sanierung" data-i18n-en="Energy-Efficient Renovation">Energetische Sanierung</div>
-        <p class="service-item__text" data-i18n-de="Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort." data-i18n-en="Insulation, modern heating systems and window replacement for improved energy efficiency and comfort.">Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort.</p>
+        <div class="service-item__title" data-i18n-de="Laminat & Vinylböden" data-i18n-en="Laminate & Vinyl Flooring">Laminat & Vinylböden</div>
+        <p class="service-item__text" data-i18n-de="Strapazierfähige und kostengünstige Alternativen mit optisch ansprechender Holzoptik." data-i18n-en="Durable and cost-effective alternatives with visually appealing wood look.">Strapazierfähige und kostengünstige Alternativen mit optisch ansprechender Holzoptik.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Innenausbau & Modernisierung" data-i18n-en="Interior Fit-Out & Modernisation">Innenausbau & Modernisierung</div>
-        <p class="service-item__text" data-i18n-de="Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen." data-i18n-en="Floors, walls, ceilings, kitchens and bathrooms – complete interior renovation to your wishes.">Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen.</p>
+        <div class="service-item__title" data-i18n-de="Schleifen & Versiegeln" data-i18n-en="Sanding & Sealing">Schleifen & Versiegeln</div>
+        <p class="service-item__text" data-i18n-de="Aufarbeitung alter Parkettböden – schleifen, spachteln, versiegeln oder ölen für neuen Glanz." data-i18n-en="Refurbishment of old parquet floors – sanding, filling, sealing or oiling for a new shine.">Aufarbeitung alter Parkettböden – schleifen, spachteln, versiegeln oder ölen für neuen Glanz.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Denkmalschutz & Substanzerhalt" data-i18n-en="Heritage & Structural Preservation">Denkmalschutz & Substanzerhalt</div>
-        <p class="service-item__text" data-i18n-de="Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten." data-i18n-en="Sensitive handling of historical building fabric and respect for architectural characteristics.">Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten.</p>
+        <div class="service-item__title" data-i18n-de="Fussbodenheizung" data-i18n-en="Underfloor Heating">Fussbodenheizung</div>
+        <p class="service-item__text" data-i18n-de="Parkettverlegung auf Fussbodenheizung – wir beraten Sie zu geeigneten Materialien und Aufbauten." data-i18n-en="Parquet laying on underfloor heating – we advise you on suitable materials and constructions.">Parkettverlegung auf Fussbodenheizung – wir beraten Sie zu geeigneten Materialien und Aufbauten.</p>
       </div>
 
     </div>

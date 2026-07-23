@@ -10,54 +10,121 @@
     gtag('config', 'G-3EY2GBYZG1');
   </script>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Altbausanierung Zürich | Renovierung & Modernisierung alter Gebäude</title>
-  <meta name="description" content="Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision." />
-  <link rel="canonical" href="https://elexons.ch/altbausanierung-zuerich" />
+  <title>Blog & Ratgeber | Sanierung, Umbau & Smart Home Tipps – elexons.ch</title>
+  <meta name="description" content="Ratgeber und Fachartikel rund um Sanierung, Umbau, Badsanierung, Küchensanierung und Smart Home in Zürich. Tipps und Inspiration von elexons.ch." />
+  <link rel="canonical" href="https://elexons.ch/blog" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
-    .svc-hero { position:relative; min-height:85vh; display:flex; align-items:flex-end; overflow:hidden; }
-    .svc-hero__bg { position:absolute; inset:0; }
-    .svc-hero__bg img { width:100%; height:100%; object-fit:cover; }
-    .svc-hero__overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,.82) 0%, rgba(0,0,0,.45) 50%, rgba(0,0,0,.15) 100%); }
-    .svc-hero__content { position:relative; z-index:1; padding:80px 40px 72px; max-width:1200px; margin:0 auto; width:100%; }
-    .svc-hero__eyebrow { display:inline-flex; align-items:center; gap:10px; border:1px solid rgba(184,154,92,.4); border-radius:100px; padding:6px 16px; margin-bottom:24px; font-size:.65rem; letter-spacing:.22em; text-transform:uppercase; color:#B89A5C; }
-    .svc-hero__title { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(2.4rem,6vw,4.2rem); font-weight:300; color:#fff; line-height:1.08; margin-bottom:20px; }
-    .svc-hero__title em { font-style:italic; color:#B89A5C; }
-    .svc-hero__sub { font-size:.95rem; color:rgba(255,255,255,.65); max-width:540px; line-height:1.8; margin-bottom:36px; }
-    .svc-hero__cta { display:inline-flex; align-items:center; gap:10px; background:var(--accent); color:#fff; padding:14px 32px; font-size:.8rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; border-radius:3px; text-decoration:none; transition:background .3s; }
-    .svc-hero__cta:hover { background:#b5221a; }
-    .content-section { padding:80px 0; }
-    .content-section p { font-size:.92rem; color:var(--text-sec); line-height:1.9; margin-bottom:16px; }
-    .services-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:24px; margin-top:48px; }
-    .service-item { background:var(--section-soft); border:1px solid var(--border); padding:28px; border-radius:4px; }
-    .service-item__title { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.1rem; font-weight:500; color:var(--text); margin-bottom:10px; }
-    .service-item__text { font-size:.85rem; color:var(--text-sec); line-height:1.75; }
-    .cta-simple { background:var(--section-soft); border-top:1px solid var(--border); padding:64px 0; text-align:center; }
-    .cta-simple h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.6rem,3vw,2.4rem); font-weight:400; margin-bottom:14px; }
-    .cta-simple p { font-size:.9rem; color:var(--text-sec); max-width:480px; margin:0 auto 32px; line-height:1.8; }
+    .blog-hero {
+      background: var(--section-soft);
+      border-bottom: 1px solid var(--border);
+      padding: calc(var(--header-h) + 64px) 0 64px;
+      text-align: center;
+    }
+    .blog-hero h1 {
+      font-family: var(--font-h);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+    .blog-hero p {
+      font-size: .95rem;
+      color: var(--text-sec);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 32px;
+      padding: 64px 0;
+    }
+    .blog-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .3s, transform .3s;
+      position: relative;
+      cursor: pointer;
+    }
+    .blog-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,.08);
+      transform: translateY(-3px);
+    }
+    .blog-card__img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .blog-card__body {
+      padding: 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .blog-card__cat {
+      font-size: .62rem;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .blog-card__date {
+      font-size: .75rem;
+      color: var(--text-sec);
+    }
+    .blog-card__title {
+      font-family: var(--font-h);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+    .blog-card__excerpt {
+      font-size: .84rem;
+      color: var(--text-sec);
+      line-height: 1.75;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+    .blog-card__link {
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .blog-card__link:hover { text-decoration: underline; }
+    /* Stretched overlay — positions relative to .blog-card (position:relative) */
+    .blog-card__link::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>",
-    "provider": { "@type": "LocalBusiness", "name": "elexons.ch", "url": "https://elexons.ch" },
-    "areaServed": { "@type": "City", "name": "Zürich" },
-    "description": "Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision."
-  }
-  </script>
 </head>
 <body>
 
 <!-- ── HEADER ── -->
-<header class="header" data-transparent="true">
+<header class="header">
   <div class="container">
     <div class="header__inner">
       <a href="/" class="logo"><img src="assets/images/logo.png" alt="elexons.ch" /></a>
@@ -171,57 +238,63 @@
   <a href="kontakt.html" class="btn btn--primary" style="width:100%;justify-content:center;" data-i18n="btn_cta">Kostenlose Beratung</a>
 </div>
 
-<section class="svc-hero">
-  <div class="svc-hero__bg">
-    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=85&fit=crop" alt="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em> – elexons.ch" loading="eager" />
-    <div class="svc-hero__overlay"></div>
-  </div>
-  <div class="svc-hero__content">
-    <div class="svc-hero__eyebrow">
-      <span style="width:5px;height:5px;border-radius:50%;background:#B89A5C;display:block;"></span>
-      <span data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
-    </div>
-    <h1 class="svc-hero__title" data-i18n-html-de="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>" data-i18n-html-en="Old Building Renovation Zürich –<br><em>Refurbishment & Modernisation</em>">Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em></h1>
-    <p class="svc-hero__sub" data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
-    <a href="kontakt.html" class="svc-hero__cta" data-i18n-de="Kostenlose Beratung anfragen" data-i18n-en="Request Free Consultation">Kostenlose Beratung anfragen</a>
+<!-- ── BLOG HERO ── -->
+<section class="blog-hero">
+  <div class="container">
+    <span class="label" data-i18n-de="Blog & Ratgeber" data-i18n-en="Blog & Guide">Blog & Ratgeber</span>
+    <h1 data-i18n-de="Tipps & Wissen rund ums Wohnen" data-i18n-en="Tips & Knowledge for Your Home">Tipps & Wissen rund ums Wohnen</h1>
+    <p data-i18n-de="Fachartikel, Ratgeber und Inspiration zu Sanierung, Umbau und Smart Home in Zürich." data-i18n-en="Expert articles, guides and inspiration on renovation, remodelling and smart home in Zürich.">Fachartikel, Ratgeber und Inspiration zu Sanierung, Umbau und Smart Home in Zürich.</p>
   </div>
 </section>
 
-<section class="content-section">
+<!-- ── BLOG GRID ── -->
+<section style="background:#fff;">
   <div class="container">
-    <div style="max-width:760px;margin:0 auto;">
-      <span class="label" data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
-      <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;margin:16px 0 24px;" data-i18n-de="Professionell. Zuverlässig. Schweizer Qualität." data-i18n-en="Professional. Reliable. Swiss Quality.">Professionell. Zuverlässig. Schweizer Qualität.</h2>
-      <p data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
-      <p data-i18n-de="Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision." data-i18n-en="Elexons coordinates all tradespeople from a single point of contact – from planning through execution to turnkey handover. Transparent quotes, no hidden costs, Swiss precision.">Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision.</p>
-    </div>
-    <div class="services-list">
-      <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Substanzanalyse & Planung" data-i18n-en="Structural Analysis & Planning">Substanzanalyse & Planung</div>
-        <p class="service-item__text" data-i18n-de="Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts." data-i18n-en="Expert assessment of the old building and development of a tailored renovation concept.">Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts.</p>
-      </div>
-      <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Energetische Sanierung" data-i18n-en="Energy-Efficient Renovation">Energetische Sanierung</div>
-        <p class="service-item__text" data-i18n-de="Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort." data-i18n-en="Insulation, modern heating systems and window replacement for improved energy efficiency and comfort.">Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort.</p>
-      </div>
-      <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Innenausbau & Modernisierung" data-i18n-en="Interior Fit-Out & Modernisation">Innenausbau & Modernisierung</div>
-        <p class="service-item__text" data-i18n-de="Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen." data-i18n-en="Floors, walls, ceilings, kitchens and bathrooms – complete interior renovation to your wishes.">Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen.</p>
-      </div>
-      <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Denkmalschutz & Substanzerhalt" data-i18n-en="Heritage & Structural Preservation">Denkmalschutz & Substanzerhalt</div>
-        <p class="service-item__text" data-i18n-de="Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten." data-i18n-en="Sensitive handling of historical building fabric and respect for architectural characteristics.">Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten.</p>
-      </div>
+    <div class="blog-grid">
+
+      <!-- Article 1 -->
+      <article class="blog-card">
+        <img class="blog-card__img" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=640&q=80&fit=crop" alt="Wohnungssanierung Kosten" loading="lazy" />
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat" data-i18n-de="Sanierung" data-i18n-en="Renovation">Sanierung</span>
+            <span class="blog-card__date">15. Juli 2025</span>
+          </div>
+          <h2 class="blog-card__title" data-i18n-de="Wohnungssanierung Kosten: Was kostet eine Renovierung in Zürich?" data-i18n-en="Apartment Renovation Costs: What Does a Renovation in Zürich Cost?">Wohnungssanierung Kosten: Was kostet eine Renovierung in Zürich?</h2>
+          <p class="blog-card__excerpt" data-i18n-de="Renovierungskosten in Zürich variieren stark je nach Umfang und Ausstattung. Wir erklären, welche Faktoren den Preis bestimmen und wie Sie realistisch planen." data-i18n-en="Renovation costs in Zürich vary greatly depending on scope and fittings. We explain which factors determine the price and how to plan realistically.">Renovierungskosten in Zürich variieren stark je nach Umfang und Ausstattung. Wir erklären, welche Faktoren den Preis bestimmen und wie Sie realistisch planen.</p>
+          <a href="blog.html" class="blog-card__link" data-i18n-de="Weiterlesen →" data-i18n-en="Read More →">Weiterlesen →</a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="blog-card">
+        <img class="blog-card__img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=640&q=80&fit=crop" alt="Smart Home Zürich" loading="lazy" />
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat">Smart Home</span>
+            <span class="blog-card__date">2. Juni 2025</span>
+          </div>
+          <h2 class="blog-card__title" data-i18n-de="Smart Home nachrüsten: So gelingt die Hausautomation im Altbau" data-i18n-en="Smart Home Retrofit: How to Achieve Home Automation in Older Buildings">Smart Home nachrüsten: So gelingt die Hausautomation im Altbau</h2>
+          <p class="blog-card__excerpt" data-i18n-de="Intelligente Haustechnik muss nicht nur im Neubau funktionieren. Mit den richtigen Systemen lässt sich auch ein Altbau smart und komfortabel machen." data-i18n-en="Intelligent home technology doesn't only work in new builds. With the right systems, older buildings can also be made smart and comfortable.">Intelligente Haustechnik muss nicht nur im Neubau funktionieren. Mit den richtigen Systemen lässt sich auch ein Altbau smart und komfortabel machen.</p>
+          <a href="blog.html" class="blog-card__link" data-i18n-de="Weiterlesen →" data-i18n-en="Read More →">Weiterlesen →</a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="blog-card">
+        <img class="blog-card__img" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=640&q=80&fit=crop" alt="Badsanierung Tipps" loading="lazy" />
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__cat" data-i18n-de="Badsanierung" data-i18n-en="Bathroom Renovation">Badsanierung</span>
+            <span class="blog-card__date">18. Mai 2025</span>
+          </div>
+          <h2 class="blog-card__title" data-i18n-de="Badsanierung planen: 7 Tipps für Ihr neues Traumbadbad in Zürich" data-i18n-en="Planning a Bathroom Renovation: 7 Tips for Your New Dream Bathroom in Zürich">Badsanierung planen: 7 Tipps für Ihr neues Traumbad in Zürich</h2>
+          <p class="blog-card__excerpt" data-i18n-de="Ein neues Bad ist eine Investition – in Komfort, Design und Wohnqualität. Diese 7 Tipps helfen Ihnen, Ihre Badsanierung optimal zu planen." data-i18n-en="A new bathroom is an investment – in comfort, design and quality of living. These 7 tips help you plan your bathroom renovation optimally.">Ein neues Bad ist eine Investition – in Komfort, Design und Wohnqualität. Diese 7 Tipps helfen Ihnen, Ihre Badsanierung optimal zu planen.</p>
+          <a href="blog.html" class="blog-card__link" data-i18n-de="Weiterlesen →" data-i18n-en="Read More →">Weiterlesen →</a>
+        </div>
+      </article>
 
     </div>
-  </div>
-</section>
-
-<section class="cta-simple">
-  <div class="container">
-    <h2 data-i18n-de="Bereit für Ihr Projekt?" data-i18n-en="Ready for Your Project?">Bereit für Ihr Projekt?</h2>
-    <p data-i18n-de="Kontaktieren Sie uns für eine kostenlose Erstberatung – unverbindlich, persönlich und ohne versteckte Kosten." data-i18n-en="Contact us for a free initial consultation – no obligation, personal and without hidden costs.">Kontaktieren Sie uns für eine kostenlose Erstberatung – unverbindlich, persönlich und ohne versteckte Kosten.</p>
-    <a href="kontakt.html" class="btn btn--primary btn--lg" data-i18n="btn_cta">Kostenlose Beratung</a>
   </div>
 </section>
 

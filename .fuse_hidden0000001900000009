@@ -10,14 +10,12 @@
     gtag('config', 'G-3EY2GBYZG1');
   </script>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Altbausanierung Zürich | Renovierung & Modernisierung alter Gebäude</title>
-  <meta name="description" content="Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision." />
-  <link rel="canonical" href="https://elexons.ch/altbausanierung-zuerich" />
+  <title>Deckenbeleuchtung Zürich | LED Einbaustrahler & Lichtplanung</title>
+  <meta name="description" content="Deckenbeleuchtung in Zürich installieren lassen: Elexons plant und installiert LED-Einbaustrahler, indirekte Beleuchtung und Smart-Home-Lichtlösungen für Ihre Räume." />
+  <link rel="canonical" href="https://elexons.ch/deckenbeleuchtung-zuerich" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -47,10 +45,10 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>",
+    "name": "Deckenbeleuchtung Zürich –<br><em>LED Einbaustrahler & Lichtplanung</em>",
     "provider": { "@type": "LocalBusiness", "name": "elexons.ch", "url": "https://elexons.ch" },
     "areaServed": { "@type": "City", "name": "Zürich" },
-    "description": "Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision."
+    "description": "Deckenbeleuchtung in Zürich installieren lassen: Elexons plant und installiert LED-Einbaustrahler, indirekte Beleuchtung und Smart-Home-Lichtlösungen für Ihre Räume."
   }
   </script>
 </head>
@@ -173,16 +171,16 @@
 
 <section class="svc-hero">
   <div class="svc-hero__bg">
-    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=85&fit=crop" alt="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em> – elexons.ch" loading="eager" />
+    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1920&q=85&fit=crop" alt="Deckenbeleuchtung Zürich –<br><em>LED Einbaustrahler & Lichtplanung</em> – elexons.ch" loading="eager" />
     <div class="svc-hero__overlay"></div>
   </div>
   <div class="svc-hero__content">
     <div class="svc-hero__eyebrow">
       <span style="width:5px;height:5px;border-radius:50%;background:#B89A5C;display:block;"></span>
-      <span data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
+      <span data-i18n-de="Deckenbeleuchtung · Zürich" data-i18n-en="Ceiling Lighting · Zürich">Deckenbeleuchtung · Zürich</span>
     </div>
-    <h1 class="svc-hero__title" data-i18n-html-de="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>" data-i18n-html-en="Old Building Renovation Zürich –<br><em>Refurbishment & Modernisation</em>">Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em></h1>
-    <p class="svc-hero__sub" data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
+    <h1 class="svc-hero__title" data-i18n-html-de="Deckenbeleuchtung Zürich –<br><em>LED Einbaustrahler & Lichtplanung</em>" data-i18n-html-en="Ceiling Lighting Zürich –<br><em>LED Spotlights & Lighting Design</em>">Deckenbeleuchtung Zürich –<br><em>LED Einbaustrahler & Lichtplanung</em></h1>
+    <p class="svc-hero__sub" data-i18n-de="Licht schafft Atmosphäre. Elexons plant und installiert Deckenbeleuchtung in Zürich – von LED-Einbaustrahlern über indirekte Lichtlösungen bis zur intelligenten Smart Home-Steuerung." data-i18n-en="Light creates atmosphere. Elexons plans and installs ceiling lighting in Zürich – from LED spotlights to indirect lighting solutions and intelligent smart home controls.">Licht schafft Atmosphäre. Elexons plant und installiert Deckenbeleuchtung in Zürich – von LED-Einbaustrahlern über indirekte Lichtlösungen bis zur intelligenten Smart Home-Steuerung.</p>
     <a href="kontakt.html" class="svc-hero__cta" data-i18n-de="Kostenlose Beratung anfragen" data-i18n-en="Request Free Consultation">Kostenlose Beratung anfragen</a>
   </div>
 </section>
@@ -190,27 +188,27 @@
 <section class="content-section">
   <div class="container">
     <div style="max-width:760px;margin:0 auto;">
-      <span class="label" data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
+      <span class="label" data-i18n-de="Deckenbeleuchtung · Zürich" data-i18n-en="Ceiling Lighting · Zürich">Deckenbeleuchtung · Zürich</span>
       <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;margin:16px 0 24px;" data-i18n-de="Professionell. Zuverlässig. Schweizer Qualität." data-i18n-en="Professional. Reliable. Swiss Quality.">Professionell. Zuverlässig. Schweizer Qualität.</h2>
-      <p data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
+      <p data-i18n-de="Licht schafft Atmosphäre. Elexons plant und installiert Deckenbeleuchtung in Zürich – von LED-Einbaustrahlern über indirekte Lichtlösungen bis zur intelligenten Smart Home-Steuerung." data-i18n-en="Light creates atmosphere. Elexons plans and installs ceiling lighting in Zürich – from LED spotlights to indirect lighting solutions and intelligent smart home controls.">Licht schafft Atmosphäre. Elexons plant und installiert Deckenbeleuchtung in Zürich – von LED-Einbaustrahlern über indirekte Lichtlösungen bis zur intelligenten Smart Home-Steuerung.</p>
       <p data-i18n-de="Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision." data-i18n-en="Elexons coordinates all tradespeople from a single point of contact – from planning through execution to turnkey handover. Transparent quotes, no hidden costs, Swiss precision.">Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision.</p>
     </div>
     <div class="services-list">
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Substanzanalyse & Planung" data-i18n-en="Structural Analysis & Planning">Substanzanalyse & Planung</div>
-        <p class="service-item__text" data-i18n-de="Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts." data-i18n-en="Expert assessment of the old building and development of a tailored renovation concept.">Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts.</p>
+        <div class="service-item__title" data-i18n-de="LED Einbaustrahler" data-i18n-en="LED Recessed Spotlights">LED Einbaustrahler</div>
+        <p class="service-item__text" data-i18n-de="Effiziente und stylische Einbaustrahler für Wohnräume, Küchen, Bäder und Flure." data-i18n-en="Efficient and stylish recessed spotlights for living rooms, kitchens, bathrooms and corridors.">Effiziente und stylische Einbaustrahler für Wohnräume, Küchen, Bäder und Flure.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Energetische Sanierung" data-i18n-en="Energy-Efficient Renovation">Energetische Sanierung</div>
-        <p class="service-item__text" data-i18n-de="Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort." data-i18n-en="Insulation, modern heating systems and window replacement for improved energy efficiency and comfort.">Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort.</p>
+        <div class="service-item__title" data-i18n-de="Indirekte Beleuchtung" data-i18n-en="Indirect Lighting">Indirekte Beleuchtung</div>
+        <p class="service-item__text" data-i18n-de="Lichtvouten, LED-Stripes und hinterleuchtete Decken für eine wohnliche Atmosphäre." data-i18n-en="Cove lighting, LED strips and backlit ceilings for a homely atmosphere.">Lichtvouten, LED-Stripes und hinterleuchtete Decken für eine wohnliche Atmosphäre.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Innenausbau & Modernisierung" data-i18n-en="Interior Fit-Out & Modernisation">Innenausbau & Modernisierung</div>
-        <p class="service-item__text" data-i18n-de="Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen." data-i18n-en="Floors, walls, ceilings, kitchens and bathrooms – complete interior renovation to your wishes.">Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen.</p>
+        <div class="service-item__title" data-i18n-de="Smart Home Lichtsteuerung" data-i18n-en="Smart Home Light Control">Smart Home Lichtsteuerung</div>
+        <p class="service-item__text" data-i18n-de="Vollständige Integration in Loxone oder andere Smart Home-Systeme – Szenen, Dimmung, Zeitsteuerung." data-i18n-en="Full integration into Loxone or other smart home systems – scenes, dimming, time control.">Vollständige Integration in Loxone oder andere Smart Home-Systeme – Szenen, Dimmung, Zeitsteuerung.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Denkmalschutz & Substanzerhalt" data-i18n-en="Heritage & Structural Preservation">Denkmalschutz & Substanzerhalt</div>
-        <p class="service-item__text" data-i18n-de="Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten." data-i18n-en="Sensitive handling of historical building fabric and respect for architectural characteristics.">Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten.</p>
+        <div class="service-item__title" data-i18n-de="Lichtplanung & Beratung" data-i18n-en="Lighting Design & Consultation">Lichtplanung & Beratung</div>
+        <p class="service-item__text" data-i18n-de="Individuelle Lichtkonzepte für jeden Raum – funktional, ästhetisch und energieeffizient." data-i18n-en="Individual lighting concepts for every room – functional, aesthetic and energy-efficient.">Individuelle Lichtkonzepte für jeden Raum – funktional, ästhetisch und energieeffizient.</p>
       </div>
 
     </div>

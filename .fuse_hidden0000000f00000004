@@ -10,14 +10,12 @@
     gtag('config', 'G-3EY2GBYZG1');
   </script>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Altbausanierung Zürich | Renovierung & Modernisierung alter Gebäude</title>
-  <meta name="description" content="Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision." />
-  <link rel="canonical" href="https://elexons.ch/altbausanierung-zuerich" />
+  <title>Gipser Zürich | Verputzen, Spachteln & Innenputz vom Fachmann</title>
+  <meta name="description" content="Gipserarbeiten in Zürich vom Profi: Innenputz, Verputzen, Spachteln und Oberflächenbehandlung. Elexons liefert perfekte Untergründe für Ihr Zuhause." />
+  <link rel="canonical" href="https://elexons.ch/gipser-zuerich" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -47,10 +45,10 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>",
+    "name": "Gipser Zürich –<br><em>Verputzen & Spachteln vom Fachmann</em>",
     "provider": { "@type": "LocalBusiness", "name": "elexons.ch", "url": "https://elexons.ch" },
     "areaServed": { "@type": "City", "name": "Zürich" },
-    "description": "Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision."
+    "description": "Gipserarbeiten in Zürich vom Profi: Innenputz, Verputzen, Spachteln und Oberflächenbehandlung. Elexons liefert perfekte Untergründe für Ihr Zuhause."
   }
   </script>
 </head>
@@ -173,16 +171,16 @@
 
 <section class="svc-hero">
   <div class="svc-hero__bg">
-    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=85&fit=crop" alt="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em> – elexons.ch" loading="eager" />
+    <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=1920&q=85&fit=crop" alt="Gipser Zürich –<br><em>Verputzen & Spachteln vom Fachmann</em> – elexons.ch" loading="eager" />
     <div class="svc-hero__overlay"></div>
   </div>
   <div class="svc-hero__content">
     <div class="svc-hero__eyebrow">
       <span style="width:5px;height:5px;border-radius:50%;background:#B89A5C;display:block;"></span>
-      <span data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
+      <span data-i18n-de="Gipserarbeiten · Zürich" data-i18n-en="Plastering Work · Zürich">Gipserarbeiten · Zürich</span>
     </div>
-    <h1 class="svc-hero__title" data-i18n-html-de="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>" data-i18n-html-en="Old Building Renovation Zürich –<br><em>Refurbishment & Modernisation</em>">Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em></h1>
-    <p class="svc-hero__sub" data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
+    <h1 class="svc-hero__title" data-i18n-html-de="Gipser Zürich –<br><em>Verputzen & Spachteln vom Fachmann</em>" data-i18n-html-en="Plasterer Zürich –<br><em>Plastering & Skimming by Professionals</em>">Gipser Zürich –<br><em>Verputzen & Spachteln vom Fachmann</em></h1>
+    <p class="svc-hero__sub" data-i18n-de="Glatte Wände und perfekte Oberflächen: Elexons führt Gipserarbeiten in Zürich auf höchstem Niveau aus – von Innenputz über Spachtelarbeiten bis zu dekorativen Oberflächen." data-i18n-en="Smooth walls and perfect surfaces: Elexons carries out plastering work in Zürich at the highest level – from interior plaster to skimming and decorative surfaces.">Glatte Wände und perfekte Oberflächen: Elexons führt Gipserarbeiten in Zürich auf höchstem Niveau aus – von Innenputz über Spachtelarbeiten bis zu dekorativen Oberflächen.</p>
     <a href="kontakt.html" class="svc-hero__cta" data-i18n-de="Kostenlose Beratung anfragen" data-i18n-en="Request Free Consultation">Kostenlose Beratung anfragen</a>
   </div>
 </section>
@@ -190,27 +188,27 @@
 <section class="content-section">
   <div class="container">
     <div style="max-width:760px;margin:0 auto;">
-      <span class="label" data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
+      <span class="label" data-i18n-de="Gipserarbeiten · Zürich" data-i18n-en="Plastering Work · Zürich">Gipserarbeiten · Zürich</span>
       <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;margin:16px 0 24px;" data-i18n-de="Professionell. Zuverlässig. Schweizer Qualität." data-i18n-en="Professional. Reliable. Swiss Quality.">Professionell. Zuverlässig. Schweizer Qualität.</h2>
-      <p data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
+      <p data-i18n-de="Glatte Wände und perfekte Oberflächen: Elexons führt Gipserarbeiten in Zürich auf höchstem Niveau aus – von Innenputz über Spachtelarbeiten bis zu dekorativen Oberflächen." data-i18n-en="Smooth walls and perfect surfaces: Elexons carries out plastering work in Zürich at the highest level – from interior plaster to skimming and decorative surfaces.">Glatte Wände und perfekte Oberflächen: Elexons führt Gipserarbeiten in Zürich auf höchstem Niveau aus – von Innenputz über Spachtelarbeiten bis zu dekorativen Oberflächen.</p>
       <p data-i18n-de="Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision." data-i18n-en="Elexons coordinates all tradespeople from a single point of contact – from planning through execution to turnkey handover. Transparent quotes, no hidden costs, Swiss precision.">Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision.</p>
     </div>
     <div class="services-list">
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Substanzanalyse & Planung" data-i18n-en="Structural Analysis & Planning">Substanzanalyse & Planung</div>
-        <p class="service-item__text" data-i18n-de="Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts." data-i18n-en="Expert assessment of the old building and development of a tailored renovation concept.">Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts.</p>
+        <div class="service-item__title" data-i18n-de="Innenputz & Verputzen" data-i18n-en="Interior Plastering">Innenputz & Verputzen</div>
+        <p class="service-item__text" data-i18n-de="Traditionelle und moderne Putzsysteme für perfekte Wandoberflächen in Innenräumen." data-i18n-en="Traditional and modern plastering systems for perfect wall surfaces in interior spaces.">Traditionelle und moderne Putzsysteme für perfekte Wandoberflächen in Innenräumen.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Energetische Sanierung" data-i18n-en="Energy-Efficient Renovation">Energetische Sanierung</div>
-        <p class="service-item__text" data-i18n-de="Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort." data-i18n-en="Insulation, modern heating systems and window replacement for improved energy efficiency and comfort.">Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort.</p>
+        <div class="service-item__title" data-i18n-de="Spachtelarbeiten" data-i18n-en="Skimming & Filling">Spachtelarbeiten</div>
+        <p class="service-item__text" data-i18n-de="Fugenlose Oberflächen durch professionelles Spachteln – ideal als Grundlage für Anstriche und Tapeten." data-i18n-en="Seamless surfaces through professional skimming – ideal as a base for paint and wallpaper.">Fugenlose Oberflächen durch professionelles Spachteln – ideal als Grundlage für Anstriche und Tapeten.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Innenausbau & Modernisierung" data-i18n-en="Interior Fit-Out & Modernisation">Innenausbau & Modernisierung</div>
-        <p class="service-item__text" data-i18n-de="Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen." data-i18n-en="Floors, walls, ceilings, kitchens and bathrooms – complete interior renovation to your wishes.">Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen.</p>
+        <div class="service-item__title" data-i18n-de="Dekorative Oberflächen" data-i18n-en="Decorative Surfaces">Dekorative Oberflächen</div>
+        <p class="service-item__text" data-i18n-de="Kreativputze, Marmorputz und Strukturoberflächen für individuelle Raumgestaltung." data-i18n-en="Creative plaster, marble plaster and textured surfaces for individual room design.">Kreativputze, Marmorputz und Strukturoberflächen für individuelle Raumgestaltung.</p>
       </div>
       <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Denkmalschutz & Substanzerhalt" data-i18n-en="Heritage & Structural Preservation">Denkmalschutz & Substanzerhalt</div>
-        <p class="service-item__text" data-i18n-de="Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten." data-i18n-en="Sensitive handling of historical building fabric and respect for architectural characteristics.">Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten.</p>
+        <div class="service-item__title" data-i18n-de="Reparatur & Ausbesserung" data-i18n-en="Repair & Restoration">Reparatur & Ausbesserung</div>
+        <p class="service-item__text" data-i18n-de="Fachkundige Reparatur von Rissen, Schäden und unebenen Oberflächen in Bestandsgebäuden." data-i18n-en="Expert repair of cracks, damage and uneven surfaces in existing buildings.">Fachkundige Reparatur von Rissen, Schäden und unebenen Oberflächen in Bestandsgebäuden.</p>
       </div>
 
     </div>

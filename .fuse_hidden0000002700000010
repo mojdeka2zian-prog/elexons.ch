@@ -10,9 +10,9 @@
     gtag('config', 'G-3EY2GBYZG1');
   </script>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wohnungssanierung Zürich | Professionelle Renovierung &amp; Umbau von Wohnungen</title>
-  <meta name="description" content="Professionelle Wohnungssanierung in Zürich für moderne Wohnräume. Elexons übernimmt Renovierung, Umbau und Innenausbau mit individueller Planung und hochwertiger Ausführung." />
-  <link rel="canonical" href="https://elexons.ch/sanierung-zuerich.html" />
+  <title>Innenausbau Zürich | Individueller Umbau &amp; moderne Raumgestaltung für Ihr Zuhause</title>
+  <meta name="description" content="Ihr Experte für Innenausbau und Umbau in Zürich. Von der Planung bis zur Umsetzung realisiert Elexons moderne Raumkonzepte, Renovierungen und individuelle Wohnlösungen." />
+  <link rel="canonical" href="https://elexons.ch/umbau-zuerich.html" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <style>
@@ -91,10 +91,8 @@
     }
   </style>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 </head>
 <body>
 
@@ -215,14 +213,14 @@
 <!-- ── HERO ── -->
 <section class="svc-hero">
   <div class="svc-hero__bg">
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=85&fit=crop" alt="Sanierung Zürich – elexons.ch" loading="eager" />
+    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1920&q=85&fit=crop" alt="Umbau Zürich – elexons.ch" loading="eager" />
     <div class="svc-hero__overlay"></div>
   </div>
   <div class="svc-hero__content">
     <div class="container">
-      <span class="svc-hero__label">Sanierung Zürich</span>
-      <h1 class="svc-hero__title" data-i18n-html-de="Wohnungssanierung Zürich | Professionelle Renovierung &amp; Umbau von Wohnungen" data-i18n-html-en="Apartment Renovation Zürich | Professional Renovation &amp; Remodelling">Wohnungssanierung Zürich | Professionelle Renovierung &amp; Umbau von Wohnungen</h1>
-      <p class="svc-hero__sub" data-i18n-de="Professionelle Wohnungs- und Haussanierungen in Zürich – von der Erstberatung bis zur schlüsselfertigen Übergabe. Schweizer Qualität, ein Ansprechpartner." data-i18n-en="Professional apartment and house renovations in Zürich – from initial consultation to turnkey handover. Swiss quality, one point of contact.">Professionelle Wohnungs- und Haussanierungen in Zürich – von der Erstberatung bis zur schlüsselfertigen Übergabe. Schweizer Qualität, ein Ansprechpartner.</p>
+      <span class="svc-hero__label">Umbau Zürich</span>
+      <h1 class="svc-hero__title" data-i18n-html-de="Innenausbau Zürich | Individueller Umbau &amp; moderne Raumgestaltung für Ihr Zuhause" data-i18n-html-en="Interior Fit-Out Zürich | Individual Remodelling &amp; Modern Interior Design">Innenausbau Zürich | Individueller Umbau &amp; moderne Raumgestaltung für Ihr Zuhause</h1>
+      <p class="svc-hero__sub" data-i18n-de="Grundrissänderungen, Raumoptimierungen und hochwertiger Innenausbau – kreativ geplant, sorgfältig ausgeführt, pünktlich übergeben." data-i18n-en="Floor plan changes, space optimisation and premium interior fit-out – creatively planned, carefully executed, delivered on time.">Grundrissänderungen, Raumoptimierungen und hochwertiger Innenausbau – kreativ geplant, sorgfältig ausgeführt, pünktlich übergeben.</p>
       <div style="display:flex;gap:16px;flex-wrap:wrap;">
         <a href="kontakt.html" class="btn btn--primary" data-i18n="btn_cta">Kostenlose Beratung</a>
         <a href="projekte.html" class="btn btn--outline-light" data-i18n="nav_projects">Projekte ansehen</a>
@@ -233,23 +231,23 @@
 
 <!-- ── PHOTO STRIP 1 ── -->
 <div class="photo-strip">
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900&q=80&fit=crop" alt="Renovation Zürich" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&q=80&fit=crop" alt="Sanierung Innen" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1604014237744-2cd6c3f7f7e6?w=600&q=80&fit=crop" alt="Handwerk Zürich" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80&fit=crop" alt="Innenausbau Zürich" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80&fit=crop" alt="Umbau Wohnung" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80&fit=crop" alt="Raumgestaltung" loading="lazy" /></div>
 </div>
 <!-- ── INTRO ── -->
 <section class="section">
   <div class="container">
     <div class="content-split">
       <div class="reveal">
-        <span class="label" data-i18n-de="Sanierung Zürich" data-i18n-en="Renovation Zürich">Sanierung Zürich</span>
-        <h2 data-i18n-de="Professionelle Sanierung – von der Idee bis zur Übergabe" data-i18n-en="Professional Renovation – From Idea to Handover">Professionelle Sanierung – von der Idee bis zur Übergabe</h2>
-        <p style="margin-top:18px;" data-i18n-de="Elexons ist Ihr Spezialist für hochwertige Sanierungsprojekte in Zürich und Umgebung. Ob Altbausanierung, Wohnungssanierung oder Komplettrenovation – wir koordinieren alle Gewerke, halten Termine ein und liefern Qualität ohne Kompromisse." data-i18n-en="Elexons is your specialist for high-quality renovation projects in Zürich and the surrounding area. Whether old building, apartment or complete renovation – we coordinate all trades, meet deadlines and deliver quality without compromise.">Elexons ist Ihr Spezialist für hochwertige Sanierungsprojekte in Zürich und Umgebung. Ob Altbausanierung, Wohnungssanierung oder Komplettrenovation – wir koordinieren alle Gewerke, halten Termine ein und liefern Qualität ohne Kompromisse.</p>
-        <p style="margin-top:14px;" data-i18n-de="Jedes Projekt erhält einen persönlichen Projektleiter – von der ersten Beratung bis zur schlüsselfertigen Übergabe. Keine Überraschungskosten, klare Kommunikation." data-i18n-en="Each project has a dedicated project manager – from first consultation to turnkey handover. No surprise costs, clear communication.">Jedes Projekt erhält einen persönlichen Projektleiter – von der ersten Beratung bis zur schlüsselfertigen Übergabe. Keine Überraschungskosten, klare Kommunikation.</p>
+        <span class="label" data-i18n-de="Umbau Zürich" data-i18n-en="Conversion Zürich">Umbau Zürich</span>
+        <h2 data-i18n-de="Mehr Raum, mehr Qualität, mehr Wohnkomfort" data-i18n-en="More Space, More Quality, More Living Comfort">Mehr Raum, mehr Qualität, mehr Wohnkomfort</h2>
+        <p style="margin-top:18px;">Ein Umbau verändert nicht nur Wände – er verändert die Art, wie Sie leben. Elexons realisiert Umbauprojekte in Zürich mit Kreativität, Fachkompetenz und Präzision.</p>
+        <p style="margin-top:14px;" data-i18n-de="Ob Grundrissänderung, Zusammenlegung von Zimmern oder vollständiger Innenausbau – wir beraten Sie ehrlich, planen sorgfältig und führen termingerecht aus." data-i18n-en="Whether floor plan change, merging rooms or complete interior fit-out – we advise you honestly, plan carefully and execute on time.">Ob Grundrissänderung, Zusammenlegung von Zimmern oder vollständiger Innenausbau – wir beraten Sie ehrlich, planen sorgfältig und führen termingerecht aus.</p>
         <a href="kontakt.html" class="btn btn--primary" style="margin-top:32px;" data-i18n="btn_cta">Kostenlose Beratung</a>
       </div>
       <div class="reveal reveal-delay-1 hide-mobile" style="height:520px;border-radius:8px;overflow:hidden;">
-        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&q=85&fit=crop" alt="Professionelle Sanierung – von der Idee bis zur Übergabe" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=900&q=85&fit=crop" alt="Mehr Raum, mehr Qualität, mehr Wohnkomfort" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
       </div>
     </div>
   </div>
@@ -259,40 +257,40 @@
 <section class="section section--soft">
   <div class="container">
     <div class="section__header section__header--center reveal">
-      <span class="label" data-i18n-de="Unser Angebot" data-i18n-en="Our Services">Unser Angebot</span>
-      <h2 data-i18n-de="Sanierungsleistungen in Zürich" data-i18n-en="Renovation Services in Zürich">Sanierungsleistungen in Zürich</h2>
-      <p data-i18n-de="Von der Teilsanierung bis zur Komplettrenovation – wir bieten das gesamte Spektrum der Sanierung." data-i18n-en="From partial to complete renovation – we offer the full spectrum of renovation services.">Von der Teilsanierung bis zur Komplettrenovation – wir bieten das gesamte Spektrum der Sanierung.</p>
+      <span class="label" data-i18n-de="Umbau-Leistungen" data-i18n-en="Conversion Services">Umbau-Leistungen</span>
+      <h2 data-i18n-de="Was wir für Sie umbauen" data-i18n-en="What We Convert for You">Was wir für Sie umbauen</h2>
+      <p data-i18n-de="Von der Grundrissänderung bis zum massgeschneiderten Innenausbau – wir realisieren Ihre Vision." data-i18n-en="From floor plan changes to bespoke interior fit-out – we bring your vision to life.">Von der Grundrissänderung bis zum massgeschneiderten Innenausbau – wir realisieren Ihre Vision.</p>
     </div>
     <div class="leistungen-grid" style="margin-top:56px;">
       <div class="leistung-card reveal">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.125 1.125 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Wohnungssanierung Zürich" data-i18n-en="Apartment Renovation Zürich">Wohnungssanierung Zürich</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Komplette oder teilweise Renovierung Ihrer Wohnung. Bad, Küche, Böden, Wände – alles aus einer Hand, alles koordiniert." data-i18n-en="Complete or partial renovation of your apartment. Bathroom, kitchen, floors, walls – all from one source, all coordinated.">Komplette oder teilweise Renovierung Ihrer Wohnung. Bad, Küche, Böden, Wände – alles aus einer Hand, alles koordiniert.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Wohnungsumbau" data-i18n-en="Apartment Conversion">Wohnungsumbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Raumaufteilung optimieren, Zimmer zusammenlegen, Durchbrüche erstellen – für mehr Wohnqualität in Ihrer Zürcher Woh" data-i18n-en="Optimise room layout, merge rooms, create openings – for greater quality of living.">Raumaufteilung optimieren, Zimmer zusammenlegen, Durchbrüche erstellen – für mehr Wohnqualität in Ihrer Zürcher Wohnung.</p>
       </div>
       <div class="leistung-card reveal reveal-delay-1">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Haussanierung Zürich" data-i18n-en="House Renovation Zürich">Haussanierung Zürich</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Umfassende Sanierung von Einfamilienhäusern und Mehrfamilienhäusern – innen und aussen, energieeffizient und wertsteigernd." data-i18n-en="Comprehensive renovation of single-family and apartment buildings – inside and outside, energy-efficient and value-enhancing.">Umfassende Sanierung von Einfamilienhäusern und Mehrfamilienhäusern – innen und aussen, energieeffizient und wertsteigernd.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Hausumbau" data-i18n-en="House Conversion">Hausumbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);">Strukturelle Anpassungen, Grundrissveränderungen und Neugestaltung von Einfamilienhäusern und Villen in der Region Zürich.</p>
       </div>
       <div class="leistung-card reveal reveal-delay-2">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Altbausanierung" data-i18n-en="Historic Building Renovation">Altbausanierung</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Sanierung von Altbauten mit Respekt für die Bausubstanz – moderne Ausstattung, zeitgemässer Komfort, nachhaltige Ausführung." data-i18n-en="Renovation of historic buildings respecting existing structures – modern fittings, contemporary comfort, sustainable execution.">Sanierung von Altbauten mit Respekt für die Bausubstanz – moderne Ausstattung, zeitgemässer Komfort, nachhaltige Ausführung.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Grundrissänderung" data-i18n-en="Floor Plan Modification">Grundrissänderung</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Wände verschieben oder entfernen, neue Öffnungen schaffen – mit statischer Beratung und koordinierter Ausführung." data-i18n-en="Moving or removing walls, creating new openings – with structural advice and coordinated execution.">Wände verschieben oder entfernen, neue Öffnungen schaffen – mit statischer Beratung und koordinierter Ausführung.</p>
       </div>
       <div class="leistung-card reveal">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Komplettsanierung" data-i18n-en="Complete Renovation">Komplettsanierung</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Vollständige Renovation aller Bereiche – Bad, Küche, Böden, Wände, Elektro, Sanitär – alles aus einer Hand und termintreu." data-i18n-en="Full renovation of all areas – bathroom, kitchen, floors, walls, electrical, plumbing – all from one source, on schedule.">Vollständige Renovation aller Bereiche – Bad, Küche, Böden, Wände, Elektro, Sanitär – alles aus einer Hand und termintreu.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Gewerbeumbau" data-i18n-en="Commercial Conversion">Gewerbeumbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Umbau von Büros, Arztpraxen, Restaurants und Geschäften – diskret, termingerecht und mit minimalem Unterbruch." data-i18n-en="Conversion of offices, medical practices, restaurants and shops – discreet, on schedule and with minimal disruption.">Umbau von Büros, Arztpraxen, Restaurants und Geschäften – diskret, termingerecht und mit minimalem Unterbruch.</p>
       </div>
       <div class="leistung-card reveal reveal-delay-1">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Teilsanierung" data-i18n-en="Partial Renovation">Teilsanierung</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Gezielte Renovation einzelner Bereiche – Budget-optimiert, schnell und ohne unnötigen Aufwand." data-i18n-en="Targeted renovation of individual areas – budget-optimised, fast and without unnecessary effort.">Gezielte Renovation einzelner Bereiche – Budget-optimiert, schnell und ohne unnötigen Aufwand.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Innenausbau" data-i18n-en="Interior Fit-Out">Innenausbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Massgeschneiderter Innenausbau mit hochwertigen Materialien – Schreinerei, Einbaumöbel, Bodenbeläge, Beleuchtung." data-i18n-en="Bespoke interior fit-out with premium materials – carpentry, fitted furniture, flooring and paintwork.">Massgeschneiderter Innenausbau mit hochwertigen Materialien – Schreinerei, Einbaumöbel, Bodenbeläge, Beleuchtung.</p>
       </div>
       <div class="leistung-card reveal reveal-delay-2">
         <div class="leistung-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189"/></svg></div>
-        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Mietwohnungssanierung" data-i18n-en="Rental Apartment Renovation">Mietwohnungssanierung</h3>
-        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Effiziente Aufwertung von Mietobjekten zwischen den Mietverhältnissen – schnell, sauber und budgetgerecht." data-i18n-en="Efficient upgrade of rental properties between tenancies – fast, clean and within budget.">Effiziente Aufwertung von Mietobjekten zwischen den Mietverhältnissen – schnell, sauber und budgetgerecht.</p>
+        <h3 style="font-family:var(--font-b);font-size:1rem;margin-bottom:10px;" data-i18n-de="Smart Home beim Umbau" data-i18n-en="Smart Home During Conversion">Smart Home beim Umbau</h3>
+        <p style="font-size:.88rem;color:var(--text-sec);" data-i18n-de="Der Umbau ist die ideale Gelegenheit für Smart Home Integration – Licht, Heizung, Beschattung und Sicherheit nahtl" data-i18n-en="Conversion is the ideal opportunity for Smart Home integration – lighting, heating, blinds.">Der Umbau ist die ideale Gelegenheit für Smart Home Integration – Licht, Heizung, Beschattung und Sicherheit nahtlos geplant.</p>
       </div>
     </div>
   </div>
@@ -300,10 +298,10 @@
 
 <!-- ── PHOTO STRIP 2 ── -->
 <div class="photo-strip photo-strip--4">
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=500&q=80&fit=crop" alt="Innenausbau" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=500&q=80&fit=crop" alt="Renovation Detail" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&q=80&fit=crop" alt="Umbau Zürich" loading="lazy" /></div>
-  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=500&q=80&fit=crop" alt="Sanierung Qualität" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&q=80&fit=crop" alt="Wohnzimmer Umbau" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&q=80&fit=crop" alt="Innendesign" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80&fit=crop" alt="Ausbau Zürich" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&q=80&fit=crop" alt="Raumplanung" loading="lazy" /></div>
 </div>
 <!-- ── PROCESS ── -->
 <section class="section">
@@ -345,23 +343,23 @@
 <!-- ── FAQ ── -->
 <section class="section section--soft">
   <div class="container">
-    <div class="section__header section__header--center reveal"><span class="label" data-i18n-de="Häufige Fragen" data-i18n-en="Frequently Asked Questions">Häufige Fragen</span><h2 data-i18n-de="FAQ – Sanierung Zürich" data-i18n-en="FAQ – Renovation Zürich">FAQ – Sanierung Zürich</h2></div>
+    <div class="section__header section__header--center reveal"><span class="label" data-i18n-de="Häufige Fragen" data-i18n-en="Frequently Asked Questions">Häufige Fragen</span><h2 data-i18n-de="FAQ – Umbau Zürich" data-i18n-en="FAQ – Conversion Zürich">FAQ – Umbau Zürich</h2></div>
     <div class="faq-list" style="margin-top:48px;">
       <div class="faq-item">
-        <button class="faq-question" data-i18n-de="Wie lange dauert eine Wohnungssanierung in Zürich?" data-i18n-en="How long does an apartment renovation in Zürich take?">Wie lange dauert eine Wohnungssanierung in Zürich?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
-        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Die Dauer hängt vom Umfang ab. Eine Teilsanierung (z.B. nur Bad oder Küche) dauert typischerweise 2–4 Wochen. Eine Komplettsanierung einer 3- bis 4.5-Zimmer-Wohnung in Zürich kann 6–12 Wochen in Anspruch nehmen. Wir erstellen für jedes Projekt einen verbindlichen Zeitplan." data-i18n-en="The duration depends on the scope. A partial renovation (e.g. bathroom or kitchen only) typically takes 2–4 weeks. A complete renovation of a 3- to 4.5-room apartment in Zürich can take 6–12 weeks. We create a binding schedule for every project.">Die Dauer hängt vom Umfang ab. Eine Teilsanierung (z.B. nur Bad oder Küche) dauert typischerweise 2–4 Wochen. Eine Komplettsanierung einer 3- bis 4.5-Zimmer-Wohnung in Zürich kann 6–12 Wochen in Anspruch nehmen. Wir erstellen für jedes Projekt einen verbindlichen Zeitplan.</span></div></div>
+        <button class="faq-question">Was kostet ein Wohnungsumbau in Zürich?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Die Kosten variieren stark je nach Umfang. Eine einfache Grundrissänderung beginnt ab ca. CHF 10'000. Ein umfassender Wohnungsumbau kann CHF 50'000–150'000+ kosten." data-i18n-en="Costs vary greatly depending on scope. A simple floor plan change starts from around CHF 10,000. A comprehensive apartment conversion can cost CHF 50,000–150,000+.">Die Kosten variieren stark je nach Umfang. Eine einfache Grundrissänderung beginnt ab ca. CHF 10'000. Ein umfassender Wohnungsumbau liegt typischerweise zwischen CHF 40'000 und CHF 150'000+.</span></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question" data-i18n-de="Was kostet eine Wohnungssanierung in Zürich?" data-i18n-en="What does an apartment renovation in Zürich cost?">Was kostet eine Wohnungssanierung in Zürich?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
-        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Die Kosten variieren je nach Zustand, Grösse und Ausstattungswunsch. Eine Teilsanierung beginnt ab ca. CHF 15'000–30'000. Eine Komplettsanierung liegt typischerweise zwischen CHF 80'000 und CHF 200'000+." data-i18n-en="Costs vary depending on condition, size and desired finish. A partial renovation starts from around CHF 15,000–30,000. A complete renovation typically ranges between CHF 80,000 and CHF 200,000+.">Die Kosten variieren je nach Zustand, Grösse und Ausstattungswunsch. Eine Teilsanierung beginnt ab ca. CHF 15'000–30'000. Eine Komplettsanierung liegt typischerweise zwischen CHF 80'000 und CHF 200'000+.</span></div></div>
+        <button class="faq-question">Brauche ich eine Baubewilligung für einen Umbau in Zürich?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Für tragende Wände, Nutzungsänderungen und grössere Eingriffe kann eine Baubewilligung nötig sein. Wir beraten Sie dazu und unterstützen Sie im Bewilligungsverfahren." data-i18n-en="For load-bearing walls, changes of use and major interventions, a building permit may be required. We advise you on this and support you in the permit process.">Für tragende Wände, Nutzungsänderungen und grössere Eingriffe kann eine Baubewilligung nötig sein. Wir beraten Sie dazu und übernehmen auf Wunsch die Kommunikation mit den Behörden.</span></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question" data-i18n-de="Bietet Elexons Komplettsanierungen an?" data-i18n-en="Does Elexons offer complete renovations?">Bietet Elexons Komplettsanierungen an?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
-        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ja, die Komplettsanierung ist unser Kerngeschäft. Wir koordinieren alle Gewerke – Bad, Küche, Böden, Malerarbeiten, Elektro, Sanitär – aus einer Hand." data-i18n-en="Yes, complete renovation is our core business. We coordinate all trades – bathroom, kitchen, flooring, painting, electrical, plumbing – from a single source.">Ja, die Komplettsanierung ist unser Kerngeschäft. Wir koordinieren alle Gewerke – Bad, Küche, Böden, Malerarbeiten, Elektro, Sanitär – aus einer Hand.</span></div></div>
+        <button class="faq-question" data-i18n-de="Wie lange dauert ein typischer Umbau?" data-i18n-en="How long does a typical conversion take?">Wie lange dauert ein typischer Umbau?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ein Wohnungsumbau dauert je nach Umfang 3–10 Wochen. Kleinere Umbaumassnahmen können in 1–3 Wochen realisiert werden." data-i18n-en="An apartment conversion takes 3–10 weeks depending on scope. Minor conversion measures can be completed in 1–3 weeks.">Ein Wohnungsumbau dauert je nach Umfang 3–10 Wochen. Kleinere Umbaumassnahmen können in 1–3 Wochen realisiert werden.</span></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question" data-i18n-de="Kann Smart Home während der Sanierung integriert werden?" data-i18n-en="Can Smart Home be integrated during renovation?">Kann Smart Home während der Sanierung integriert werden?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
-        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ja, eine Sanierung ist der ideale Zeitpunkt für eine Smart Home Integration. Wir planen und installieren Lichtsteuerung, Heizung, Beschattung und Sicherheit parallel zur Sanierung." data-i18n-en="Yes, renovation is the ideal time for Smart Home integration. We plan and install lighting control, heating, blinds and security systems in parallel with the renovation.">Ja, eine Sanierung ist der ideale Zeitpunkt für eine Smart Home Integration. Wir planen und installieren Lichtsteuerung, Heizung, Beschattung und Sicherheit parallel zur Sanierung.</span></div></div>
+        <button class="faq-question" data-i18n-de="Übernimmt Elexons Planung und Materialbeschaffung?" data-i18n-en="Does Elexons handle planning and material procurement?">Übernimmt Elexons Planung und Materialbeschaffung?<div class="faq-question__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div></button>
+        <div class="faq-answer"><div class="faq-answer__inner"><span data-i18n-de="Ja, wir übernehmen die vollständige Planung, Materialauswahl und Beschaffung – von der ersten Beratung bis zur Lieferung auf die Baustelle." data-i18n-en="Yes, we handle complete planning, material selection and procurement – from the initial consultation to delivery to the construction site.">Ja, wir übernehmen die vollständige Planung, Materialauswahl und Beschaffung – von der ersten Beratung bis zur Lieferung auf die Baustelle.</span></div></div>
       </div>
     </div>
   </div>
@@ -371,8 +369,8 @@
 <section class="cta-banner">
   <div class="container">
     <span class="label"  data-i18n-de="Kostenlos & unverbindlich" data-i18n-en="Free & No Obligation">Kostenlos &amp; unverbindlich</span>
-    <h2 data-i18n-de="Sanierung in Zürich geplant?" data-i18n-en="Planning Renovation in Zürich?">Sanierung in Zürich geplant?</h2>
-    <p data-i18n-de="Kontaktieren Sie uns für eine kostenlose Erstberatung – wir kommen zu Ihnen vor Ort und erstellen eine detaillierte Offerte." data-i18n-en="Contact us for a free initial consultation – we come to you on-site and prepare a detailed quote.">Kontaktieren Sie uns für eine kostenlose Erstberatung – wir kommen zu Ihnen vor Ort und erstellen eine detaillierte Offerte.</p>
+    <h2 data-i18n-de="Planen Sie einen Umbau in Zürich?" data-i18n-en="Planning a Conversion in Zürich?">Planen Sie einen Umbau in Zürich?</h2>
+    <p data-i18n-de="Kontaktieren Sie uns – wir beraten Sie kostenlos und unverbindlich zu Ihrem Projekt." data-i18n-en="Contact us – we advise you free of charge and without obligation regarding your project.">Kontaktieren Sie uns – wir beraten Sie kostenlos und unverbindlich zu Ihrem Projekt.</p>
     <div class="btn-group"><a href="kontakt.html" class="btn btn--primary btn--lg" data-i18n="btn_cta">Kostenlose Beratung anfragen</a></div>
   </div>
 </section>

@@ -10,60 +10,21 @@
     gtag('config', 'G-3EY2GBYZG1');
   </script>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Altbausanierung Zürich | Renovierung & Modernisierung alter Gebäude</title>
-  <meta name="description" content="Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision." />
-  <link rel="canonical" href="https://elexons.ch/altbausanierung-zuerich" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <title>Über uns | elexons.ch – Ihr Renovationspartner in Zürich</title>
+  <meta name="description" content="Lernen Sie elexons.ch kennen – Ihr zuverlässiger Partner für Sanierung, Umbau, Innenausbau und Smart Home in Zürich. Schweizer Präzision, persönliche Betreuung, transparente Preise." />
+  <link rel="canonical" href="https://elexons.ch/ueber-uns.html" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    .svc-hero { position:relative; min-height:85vh; display:flex; align-items:flex-end; overflow:hidden; }
-    .svc-hero__bg { position:absolute; inset:0; }
-    .svc-hero__bg img { width:100%; height:100%; object-fit:cover; }
-    .svc-hero__overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,.82) 0%, rgba(0,0,0,.45) 50%, rgba(0,0,0,.15) 100%); }
-    .svc-hero__content { position:relative; z-index:1; padding:80px 40px 72px; max-width:1200px; margin:0 auto; width:100%; }
-    .svc-hero__eyebrow { display:inline-flex; align-items:center; gap:10px; border:1px solid rgba(184,154,92,.4); border-radius:100px; padding:6px 16px; margin-bottom:24px; font-size:.65rem; letter-spacing:.22em; text-transform:uppercase; color:#B89A5C; }
-    .svc-hero__title { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(2.4rem,6vw,4.2rem); font-weight:300; color:#fff; line-height:1.08; margin-bottom:20px; }
-    .svc-hero__title em { font-style:italic; color:#B89A5C; }
-    .svc-hero__sub { font-size:.95rem; color:rgba(255,255,255,.65); max-width:540px; line-height:1.8; margin-bottom:36px; }
-    .svc-hero__cta { display:inline-flex; align-items:center; gap:10px; background:var(--accent); color:#fff; padding:14px 32px; font-size:.8rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; border-radius:3px; text-decoration:none; transition:background .3s; }
-    .svc-hero__cta:hover { background:#b5221a; }
-    .content-section { padding:80px 0; }
-    .content-section p { font-size:.92rem; color:var(--text-sec); line-height:1.9; margin-bottom:16px; }
-    .services-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:24px; margin-top:48px; }
-    .service-item { background:var(--section-soft); border:1px solid var(--border); padding:28px; border-radius:4px; }
-    .service-item__title { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.1rem; font-weight:500; color:var(--text); margin-bottom:10px; }
-    .service-item__text { font-size:.85rem; color:var(--text-sec); line-height:1.75; }
-    .cta-simple { background:var(--section-soft); border-top:1px solid var(--border); padding:64px 0; text-align:center; }
-    .cta-simple h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.6rem,3vw,2.4rem); font-weight:400; margin-bottom:14px; }
-    .cta-simple p { font-size:.9rem; color:var(--text-sec); max-width:480px; margin:0 auto 32px; line-height:1.8; }
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>",
-    "provider": { "@type": "LocalBusiness", "name": "elexons.ch", "url": "https://elexons.ch" },
-    "areaServed": { "@type": "City", "name": "Zürich" },
-    "description": "Professionelle Altbausanierung in Zürich. Elexons modernisiert ältere Gebäude und Wohnungen – energieeffizient, werterhaltend und mit Schweizer Präzision."
-  }
-  </script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 </head>
 <body>
-
-<!-- ── HEADER ── -->
-<header class="header" data-transparent="true">
-  <div class="container">
-    <div class="header__inner">
-      <a href="/" class="logo"><img src="assets/images/logo.png" alt="elexons.ch" /></a>
-      <nav class="nav">
-        <a href="/" class="nav__link" data-i18n="nav_home">ELEXONS</a>
-        <div class="nav__dropdown">
+<header class="header scrolled">
+  <div class="container"><div class="header__inner">
+    <a href="/" class="logo"><img src="assets/images/logo.png" alt="elexons.ch" style="height:48px;width:auto;display:block;" /></a>
+    <nav class="nav">
+      <a href="/" class="nav__link" data-i18n="nav_home">Startseite</a><div class="nav__dropdown">
           <span class="nav__link nav__dropdown-toggle">
             <span data-i18n="nav_services">Leistungen</span>
             <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
@@ -171,120 +132,101 @@
   <a href="kontakt.html" class="btn btn--primary" style="width:100%;justify-content:center;" data-i18n="btn_cta">Kostenlose Beratung</a>
 </div>
 
-<section class="svc-hero">
-  <div class="svc-hero__bg">
-    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=85&fit=crop" alt="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em> – elexons.ch" loading="eager" />
-    <div class="svc-hero__overlay"></div>
-  </div>
-  <div class="svc-hero__content">
-    <div class="svc-hero__eyebrow">
-      <span style="width:5px;height:5px;border-radius:50%;background:#B89A5C;display:block;"></span>
-      <span data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
-    </div>
-    <h1 class="svc-hero__title" data-i18n-html-de="Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em>" data-i18n-html-en="Old Building Renovation Zürich –<br><em>Refurbishment & Modernisation</em>">Altbausanierung Zürich –<br><em>Renovierung & Modernisierung</em></h1>
-    <p class="svc-hero__sub" data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
-    <a href="kontakt.html" class="svc-hero__cta" data-i18n-de="Kostenlose Beratung anfragen" data-i18n-en="Request Free Consultation">Kostenlose Beratung anfragen</a>
-  </div>
-</section>
-
-<section class="content-section">
+<section class="section" style="padding-top:calc(var(--header-h) + 60px);background:#fff;">
   <div class="container">
-    <div style="max-width:760px;margin:0 auto;">
-      <span class="label" data-i18n-de="Altbausanierung · Zürich" data-i18n-en="Old Building Renovation · Zürich">Altbausanierung · Zürich</span>
-      <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;margin:16px 0 24px;" data-i18n-de="Professionell. Zuverlässig. Schweizer Qualität." data-i18n-en="Professional. Reliable. Swiss Quality.">Professionell. Zuverlässig. Schweizer Qualität.</h2>
-      <p data-i18n-de="Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd." data-i18n-en="Old buildings have character. Elexons renovates older apartments and houses in Zürich with expertise – energy-efficient, substance-preserving and value-enhancing.">Altbauten sind Charaktersache. Elexons saniert ältere Wohnungen und Häuser in Zürich mit Fachkompetenz – energieeffizient, substanzerhaltend und wertsteigernd.</p>
-      <p data-i18n-de="Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision." data-i18n-en="Elexons coordinates all tradespeople from a single point of contact – from planning through execution to turnkey handover. Transparent quotes, no hidden costs, Swiss precision.">Elexons koordiniert alle Handwerker aus einer Hand – von der Planung über die Ausführung bis zur schlüsselfertigen Übergabe. Transparente Offerten, keine versteckten Kosten, Schweizer Präzision.</p>
-    </div>
-    <div class="services-list">
-      <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Substanzanalyse & Planung" data-i18n-en="Structural Analysis & Planning">Substanzanalyse & Planung</div>
-        <p class="service-item__text" data-i18n-de="Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts." data-i18n-en="Expert assessment of the old building and development of a tailored renovation concept.">Fachkundige Beurteilung des Altbaus und Entwicklung eines massgeschneiderten Sanierungskonzepts.</p>
+    <div class="content-split">
+      <div class="reveal">
+        <span class="label" data-i18n-de="Über uns" data-i18n-en="About us">Über uns</span>
+        <h1 data-i18n-de="Ihr Partner für Sanierung in Zürich" data-i18n-en="Your partner for renovation in Zürich">Ihr Partner für Sanierung in Zürich</h1>
+        <p data-i18n-de="elexons.ch steht für professionelle Sanierung, Umbau und Smart Home Integration in der Region Zürich. Wir realisieren Projekte mit Schweizer Qualitätsanspruch – persönlich, transparent und zuverlässig." data-i18n-en="elexons.ch stands for professional renovation, remodelling and Smart Home integration in the Zürich region. We realise projects to Swiss quality standards – personal, transparent and reliable.">elexons.ch steht für professionelle Sanierung, Umbau und Smart Home Integration in der Region Zürich. Wir realisieren Projekte mit Schweizer Qualitätsanspruch – persönlich, transparent und zuverlässig.</p>
       </div>
-      <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Energetische Sanierung" data-i18n-en="Energy-Efficient Renovation">Energetische Sanierung</div>
-        <p class="service-item__text" data-i18n-de="Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort." data-i18n-en="Insulation, modern heating systems and window replacement for improved energy efficiency and comfort.">Dämmung, moderne Heizsysteme und Fensterersatz für mehr Energieeffizienz und Komfort.</p>
+      <div class="reveal reveal-delay-1 hide-mobile" style="height:520px;border-radius:8px;overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=80" alt="elexons.ch Team Zürich" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
       </div>
-      <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Innenausbau & Modernisierung" data-i18n-en="Interior Fit-Out & Modernisation">Innenausbau & Modernisierung</div>
-        <p class="service-item__text" data-i18n-de="Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen." data-i18n-en="Floors, walls, ceilings, kitchens and bathrooms – complete interior renovation to your wishes.">Böden, Wände, Decken, Küchen und Bäder – vollständige Innensanierung nach Ihren Wünschen.</p>
-      </div>
-      <div class="service-item">
-        <div class="service-item__title" data-i18n-de="Denkmalschutz & Substanzerhalt" data-i18n-en="Heritage & Structural Preservation">Denkmalschutz & Substanzerhalt</div>
-        <p class="service-item__text" data-i18n-de="Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten." data-i18n-en="Sensitive handling of historical building fabric and respect for architectural characteristics.">Einfühlsamer Umgang mit historischer Bausubstanz und Respekt vor architektonischen Eigenheiten.</p>
-      </div>
-
     </div>
   </div>
 </section>
 
-<section class="cta-simple">
+<!-- Values -->
+<section class="section section--soft">
   <div class="container">
-    <h2 data-i18n-de="Bereit für Ihr Projekt?" data-i18n-en="Ready for Your Project?">Bereit für Ihr Projekt?</h2>
-    <p data-i18n-de="Kontaktieren Sie uns für eine kostenlose Erstberatung – unverbindlich, persönlich und ohne versteckte Kosten." data-i18n-en="Contact us for a free initial consultation – no obligation, personal and without hidden costs.">Kontaktieren Sie uns für eine kostenlose Erstberatung – unverbindlich, persönlich und ohne versteckte Kosten.</p>
-    <a href="kontakt.html" class="btn btn--primary btn--lg" data-i18n="btn_cta">Kostenlose Beratung</a>
+    <div class="section__header section__header--center reveal">
+      <span class="label" data-i18n-de="Unsere Werte" data-i18n-en="Our Values">Unsere Werte</span>
+      <h2 data-i18n-de="Was uns antreibt" data-i18n-en="What Drives Us">Was uns antreibt</h2>
+      <p data-i18n-de="Diese Grundsätze leiten uns bei jedem Projekt – von der ersten Beratung bis zur Übergabe." data-i18n-en="These principles guide us in every project – from first consultation to handover.">Diese Grundsätze leiten uns bei jedem Projekt – von der ersten Beratung bis zur Übergabe.</p>
+    </div>
+    <div class="values-grid" style="margin-top:56px;">
+      <div class="value-card reveal">
+        <div class="value-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <div class="value-card__title" data-i18n-de="Präzision" data-i18n-en="Precision">Präzision</div>
+        <p class="value-card__text" data-i18n-de="Schweizer Handwerksqualität mit Liebe zum Detail – jeder Handgriff sitzt, jede Fuge stimmt." data-i18n-en="Swiss craftsmanship with attention to detail – every move is precise, every joint is perfect.">Schweizer Handwerksqualität mit Liebe zum Detail – jeder Handgriff sitzt, jede Fuge stimmt.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <div class="value-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+        <div class="value-card__title" data-i18n-de="Transparenz" data-i18n-en="Transparency">Transparenz</div>
+        <p class="value-card__text" data-i18n-de="Klare Offerten, offene Kommunikation und keine versteckten Kosten – immer und bei jedem Projekt." data-i18n-en="Clear quotes, open communication and no hidden costs – always and on every project.">Klare Offerten, offene Kommunikation und keine versteckten Kosten – immer und bei jedem Projekt.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <div class="value-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <div class="value-card__title" data-i18n-de="Zuverlässigkeit" data-i18n-en="Reliability">Zuverlässigkeit</div>
+        <p class="value-card__text" data-i18n-de="Termine werden eingehalten. Versprechen werden gehalten. So einfach ist das bei Elexons." data-i18n-en="Deadlines are met. Promises are kept. It is that simple at Elexons.">Termine werden eingehalten. Versprechen werden gehalten. So einfach ist das bei Elexons.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg></div>
+        <div class="value-card__title" data-i18n-de="Qualität" data-i18n-en="Quality">Qualität</div>
+        <p class="value-card__text" data-i18n-de="Nur geprüfte Materialien, erfahrene Handwerker und höchste Ausführungsstandards." data-i18n-en="Only vetted materials, experienced tradespeople and the highest execution standards.">Nur geprüfte Materialien, erfahrene Handwerker und höchste Ausführungsstandards.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <div class="value-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg></div>
+        <div class="value-card__title" data-i18n-de="Moderne Technik" data-i18n-en="Modern Technology">Moderne Technik</div>
+        <p class="value-card__text" data-i18n-de="Smart Home, Gebäudeautomation und zeitgemässe Technologie nahtlos integriert." data-i18n-en="Smart Home, building automation and contemporary technology seamlessly integrated.">Smart Home, Gebäudeautomation und zeitgemässe Technologie nahtlos integriert.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <div class="value-card__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"/></svg></div>
+        <div class="value-card__title" data-i18n-de="Saubere Ausführung" data-i18n-en="Clean Execution">Saubere Ausführung</div>
+        <p class="value-card__text" data-i18n-de="Respekt für Ihr Zuhause: saubere Baustellen, sorgfältiger Umgang mit Ihrem Eigentum." data-i18n-en="Respect for your home: clean sites and careful handling of your property.">Respekt für Ihr Zuhause: saubere Baustellen, sorgfältiger Umgang mit Ihrem Eigentum.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
-<footer class="footer">
+<!-- Serviceregionen -->
+<section class="section">
   <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <a href="/" class="logo"><span class="logo__mark">EL</span> Elexons</a>
-        <p data-i18n="footer_desc">Professionelle Sanierung, Umbau und Smart Home Integration in Zürich und Umgebung. Schweizer Qualität, transparente Preise, persönliche Betreuung.</p>
-        <div class="footer__socials">
-          <a href="https://www.instagram.com/elexons.ae/" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">
-            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/ahmad-fahim-faghiri/" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener">
-            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h5 data-i18n="footer_h1">Leistungen</h5>
-        <div class="footer__links">
-          <a href="sanierung-zuerich.html" class="footer__link">Sanierung Zürich</a>
-          <a href="umbau-zuerich.html" class="footer__link">Umbau Zürich</a>
-          <a href="badsanierung-zuerich.html" class="footer__link">Badsanierung</a>
-          <a href="kuechensanierung-zuerich.html" class="footer__link">Küchensanierung</a>
-          <a href="smart-home-zuerich.html" class="footer__link">Smart Home</a>
-          <a href="leistungen.html" class="footer__link">Alle Leistungen</a>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h5 data-i18n="footer_h2">Unternehmen</h5>
-        <div class="footer__links">
-          <a href="ueber-uns.html" class="footer__link">Über uns</a>
-          <a href="projekte.html" class="footer__link">Projekte</a>
-          <a href="blog.html" class="footer__link">Blog</a>
-          <a href="kontakt.html" class="footer__link">Kontakt</a>
-          <a href="datenschutz.html" class="footer__link">Datenschutz</a>
-          <a href="impressum.html" class="footer__link">Impressum</a>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h5 data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</h5>
-        <div class="footer__links">
-          <span class="footer__link">Alpenblickstrasse 2, 8725 Gebertingen</span>
-          <a href="tel:+41799109999" class="footer__link">+41 79 910 99 99</a>
-          <a href="mailto:info@elexons.com" class="footer__link">info@elexons.com</a>
-          <a href="https://wa.me/41799109999" class="footer__link" style="color:#25D366;">WhatsApp</a>
-        </div>
-      </div>
+    <div class="section__header section__header--center reveal">
+      <span class="label" data-i18n-de="Unser Einzugsgebiet" data-i18n-en="Our Service Area">Unser Einzugsgebiet</span>
+      <h2 data-i18n-de="Tätig in Zürich & Umgebung" data-i18n-en="Active in Zürich & Surroundings">Tätig in Zürich &amp; Umgebung</h2>
+      <p data-i18n-de="Wir realisieren Projekte in der ganzen Zürich-Region – von der Stadt bis an den See und darüber hinaus." data-i18n-en="We realise projects across the Zürich region – from the city to the lake and beyond.">Wir realisieren Projekte in der ganzen Zürich-Region – von der Stadt bis an den See und darüber hinaus.</p>
     </div>
-    <div class="footer__bottom">
-      <span data-i18n="footer_copy">© 2026 elexons.ch – Alle Rechte vorbehalten</span>
-      <div class="footer__legal">
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="impressum.html">Impressum</a>
-        <a href="sitemap.xml">Sitemap</a>
-      </div>
+    <div class="areas-grid" style="margin-top:40px;justify-content:center;">
+      <span class="area-chip">Zürich City</span><span class="area-chip">Zürichsee</span>
+      <span class="area-chip">Küsnacht</span><span class="area-chip">Zollikon</span>
+      <span class="area-chip">Meilen</span><span class="area-chip">Herrliberg</span>
+      <span class="area-chip">Zug</span><span class="area-chip">Winterthur</span>
+      <span class="area-chip">Uster</span><span class="area-chip">Dübendorf</span>
+      <span class="area-chip">Horgen</span><span class="area-chip">Adliswil</span>
     </div>
   </div>
-</footer>
+</section>
 
+<section class="cta-banner">
+  <div class="container">
+    <span class="label" style="color:rgba(255,255,255,0.6);" data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</span>
+    <h2 data-i18n-de="Lernen Sie uns persönlich kennen" data-i18n-en="Get to Know Us Personally">Lernen Sie uns persönlich kennen</h2>
+    <p data-i18n-de="Vereinbaren Sie eine kostenlose Erstberatung – wir kommen zu Ihnen vor Ort oder beraten Sie per Videocall." data-i18n-en="Schedule a free initial consultation – we come to your location or advise you via video call.">Vereinbaren Sie eine kostenlose Erstberatung – wir kommen zu Ihnen vor Ort oder beraten Sie per Videocall.</p>
+    <div class="btn-group"><a href="kontakt.html" class="btn btn--outline-light btn--lg" data-i18n="btn_beratung">Beratung anfragen</a></div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer__grid">
+    <div class="footer__brand"><a href="/" class="logo"><img src="assets/images/logo.png" alt="elexons.ch" style="height:48px;width:auto;display:block;" /></a><p data-i18n-de="Professionelle Sanierung, Umbau und Smart Home Integration in Zürich. Schweizer Qualität – persönlich, transparent, zuverlässig." data-i18n-en="Professional renovation, remodelling and Smart Home integration in Zürich. Swiss quality – personal, transparent, reliable.">Professionelle Sanierung, Umbau und Smart Home Integration in Zürich. Schweizer Qualität – persönlich, transparent, zuverlässig.</p></div>
+    <div class="footer__col"><h5 data-i18n-de="Leistungen" data-i18n-en="Services">Leistungen</h5><div class="footer__links"><a href="sanierung-zuerich.html" class="footer__link" data-i18n="fl_sanierung">Sanierung Zürich</a><a href="umbau-zuerich.html" class="footer__link" data-i18n="fl_umbau">Umbau Zürich</a><a href="badsanierung-zuerich.html" class="footer__link" data-i18n="drop_bad">Badsanierung</a><a href="kuechensanierung-zuerich.html" class="footer__link" data-i18n="drop_kueche">Küchensanierung</a><a href="smart-home-zuerich.html" class="footer__link">Smart Home</a></div></div>
+    <div class="footer__col"><h5 data-i18n-de="Unternehmen" data-i18n-en="Company">Unternehmen</h5><div class="footer__links"><a href="ueber-uns.html" class="footer__link" data-i18n="nav_about">Über uns</a><a href="projekte.html" class="footer__link" data-i18n="nav_projects">Projekte</a><a href="kontakt.html" class="footer__link" data-i18n="nav_contact">Kontakt</a><a href="datenschutz.html" class="footer__link" data-i18n="fl_daten">Datenschutz</a><a href="impressum.html" class="footer__link" data-i18n="fl_impress">Impressum</a></div></div>
+    <div class="footer__col"><h5 data-i18n-de="Kontakt" data-i18n-en="Contact">Kontakt</h5><div class="footer__links"><span class="footer__link">Alpenblickstrasse 2, 8725 Gebertingen</span><a href="tel:+41799109999" class="footer__link">+41 79 910 99 99</a><a href="mailto:info@elexons.com" class="footer__link">info@elexons.com</a></div></div>
+  </div>
+  <div class="footer__bottom"><span data-i18n-de="© 2026 elexons.ch – Alle Rechte vorbehalten" data-i18n-en="© 2026 elexons.ch – All rights reserved">© 2026 elexons.ch – Alle Rechte vorbehalten</span><div class="footer__legal"><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></div></div>
+</div></footer>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/lang.js"></script>
-</body>
-</html>
+</body></html>
