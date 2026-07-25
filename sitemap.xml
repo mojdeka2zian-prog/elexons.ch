@@ -88,5 +88,33 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.elexons.ch/magazin/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.elexons.ch/magazin/kuechenrenovation-zuerich</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.elexons.ch/magazin/smart-home-kosten-zuerich</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.elexons.ch/magazin/badezimmer-renovation-zuerich</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 
 </urlset>
