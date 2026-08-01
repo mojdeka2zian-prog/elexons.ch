@@ -135,13 +135,16 @@
     /* Article body */
     .article-wrap {
       display: grid;
-      grid-template-columns: 1fr 320px;
-      gap: 64px;
+      grid-template-columns: 1fr 260px;
+      gap: 40px;
       padding: 64px 0 80px;
+      align-items: start;
     }
     @media (max-width: 900px) {
       .article-wrap { grid-template-columns: 1fr; gap: 40px; }
     }
+    .article-img { width:100%; height:auto; border-radius:4px; margin:32px 0; display:block; }
+    .article-body img { width:100%; height:auto; display:block; }
     .article-body h2 {
       font-family: var(--font-h);
       font-size: 1.55rem;
@@ -195,7 +198,7 @@
     .article-cost-table tr:last-child td { border-bottom: none; }
     .article-cost-table td:last-child { font-weight: 600; color: var(--text); }
     /* Sidebar */
-    .article-sidebar { }
+    .article-sidebar { position:sticky; top:90px; }
     .sidebar-cta {
       background: var(--text);
       color: #fff;
@@ -380,7 +383,7 @@
 
 <!-- ── ARTICLE CONTENT ── -->
 <section style="background:#fff;">
-  <div class="container">
+  <div class="container" style="max-width:1280px;padding:0 40px;">
     <div class="article-wrap">
 
       <!-- Main content -->
