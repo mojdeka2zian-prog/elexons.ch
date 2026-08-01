@@ -97,15 +97,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
-    .article-hero { position:relative; height:clamp(320px,50vh,520px); overflow:hidden; display:flex; align-items:flex-end; }
-    .article-hero__img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-    .article-hero__overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(0,0,0,.72) 0%,rgba(0,0,0,.2) 55%,transparent 100%); }
-    .article-hero__content { position:relative; z-index:1; padding:calc(var(--header-h) + 24px) 0 48px; color:#fff; width:100%; }
+    .article-hero { background:#1a1a1a; padding:calc(var(--header-h) + 14px) 0 14px; }
+    .article-hero__content { position:relative; color:#fff; }
     .article-hero__breadcrumb { font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; opacity:.75; margin-bottom:16px; }
     .article-hero__breadcrumb a { color:#fff; text-decoration:none; }
     .article-hero__breadcrumb a:hover { text-decoration:underline; }
     .article-hero__cat { display:inline-block; font-size:.62rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); margin-bottom:12px; }
     .article-hero h1 { font-family:var(--font-h); font-size:clamp(1.75rem,4.5vw,3rem); font-weight:300; line-height:1.2; margin-bottom:16px; max-width:760px; }
+    .article-body h1 { font-family:var(--font-h); font-size:clamp(1.6rem,2.8vw,2.2rem); font-weight:300; line-height:1.25; color:var(--text); margin:0 0 10px; }
+    .article-body .article-cat { display:inline-block; font-size:.62rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin-bottom:14px; }
+    .article-body .article-meta { font-size:.78rem; color:var(--text-sec); margin:0 0 28px; display:block; }
     .article-hero__meta { font-size:.78rem; opacity:.75; }
     .article-wrap { display:grid; grid-template-columns:1fr 260px; gap:40px; padding:64px 0 80px; align-items:start; }
     @media(max-width:900px){ .article-wrap{grid-template-columns:1fr;gap:40px;} }
@@ -213,16 +214,13 @@
   <a href="/kontakt.html" class="btn btn--primary" style="width:100%;justify-content:center;">Kostenlose Beratung</a>
 </div>
 
-<!-- ── ARTICLE HERO ── -->
-<section class="article-hero" style="background:#1a1a1a;">
+<!-- ── ARTICLE HERO (breadcrumb bar) ── -->
+<section class="article-hero">
   <div class="article-hero__content">
     <div class="container">
       <nav class="article-hero__breadcrumb" aria-label="Breadcrumb">
         <a href="/">Startseite</a> &nbsp;/&nbsp; <a href="/magazin/">Magazin</a> &nbsp;/&nbsp; Wohnung sanieren
       </nav>
-      <span class="article-hero__cat">Sanierung</span>
-      <h1>Wohnung sanieren: Wann lohnt sich eine Renovation wirklich?</h1>
-      <span class="article-hero__meta">Von Elexons &nbsp;·&nbsp; 1. August 2026 &nbsp;·&nbsp; 8 Min. Lesezeit</span>
     </div>
   </div>
 </section>
@@ -233,6 +231,12 @@
     <div class="article-wrap">
 
       <article class="article-body">
+
+        <span class="article-cat">Sanierung</span>
+        <h1>Wohnung sanieren: Wann lohnt sich eine Renovation wirklich?</h1>
+        <span class="article-meta">Von Elexons &nbsp;·&nbsp; 1. August 2026 &nbsp;·&nbsp; 8 Min. Lesezeit</span>
+        
+
 
         <img src="/assets/images/magazin/wohnung-sanieren-featured.jpg" alt="Wohnung sanieren – Moderne Wohnraumgestaltung" width="1200" height="604" style="width:100%;border-radius:4px;margin-bottom:32px;display:block;" />
 
