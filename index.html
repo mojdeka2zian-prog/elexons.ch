@@ -657,16 +657,72 @@
 </section>
 
 <!-- ── SEO BOX ── -->
+<style>
+  .seo-box-body {
+    position: relative;
+    overflow: hidden;
+    max-height: 72px;
+    transition: max-height .4s ease;
+  }
+  .seo-box-body.expanded {
+    max-height: 600px;
+  }
+  .seo-box-fade {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 40px;
+    background: linear-gradient(transparent, var(--section-soft));
+    pointer-events: none;
+    transition: opacity .3s;
+  }
+  .seo-box-body.expanded .seo-box-fade {
+    opacity: 0;
+  }
+  .seo-read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .seo-read-more svg { transition: transform .3s; }
+  .seo-read-more.open svg { transform: rotate(180deg); }
+</style>
 <section style="background:var(--section-soft);padding:64px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
   <div class="container">
     <div style="max-width:860px;margin:0 auto;">
       <h2 style="font-family:var(--font-h);font-size:1.45rem;font-weight:400;color:var(--text);margin-bottom:20px;" data-i18n-de="Sanierung & Renovation in Zürich – Ihr verlässlicher Generalunternehmer" data-i18n-en="Renovation & Refurbishment in Zürich – Your Reliable General Contractor">Sanierung &amp; Renovation in Zürich – Ihr verlässlicher Generalunternehmer</h2>
-      <p style="font-size:.88rem;color:var(--text-sec);line-height:1.95;margin-bottom:14px;">Elexons ist Ihr <a href="generalunternehmer-zuerich.html" style="color:var(--accent);text-decoration:none;">Generalunternehmer in Zürich</a> für professionelle <a href="sanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Wohnungssanierung</a> und <a href="altbausanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Altbausanierung</a>. Ob vollständige Komplettsanierung, <a href="badsanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Badsanierung</a>, <a href="kuechensanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Küchensanierung</a> oder <a href="umbau-zuerich.html" style="color:var(--accent);text-decoration:none;">Umbau &amp; Innenausbau</a> – wir realisieren Ihr Projekt termingerecht, transparent und in Schweizer Qualität. Von Zürich City über den Zürichsee bis Winterthur: alle Handwerker aus einer Hand.</p>
-      <p style="font-size:.88rem;color:var(--text-sec);line-height:1.95;margin-bottom:14px;">Als zertifizierter Loxone-Partner integrieren wir <a href="smart-home-zuerich.html" style="color:var(--accent);text-decoration:none;">Smart Home-Lösungen</a> und <a href="deckenbeleuchtung-zuerich.html" style="color:var(--accent);text-decoration:none;">Deckenbeleuchtung</a> direkt während der Renovation. Unsere Handwerkerleistungen umfassen <a href="trockenbau-zuerich.html" style="color:var(--accent);text-decoration:none;">Trockenbau</a>, <a href="gipser-zuerich.html" style="color:var(--accent);text-decoration:none;">Gipserarbeiten</a>, <a href="parkett-zuerich.html" style="color:var(--accent);text-decoration:none;">Parkettverlegung</a> und <a href="fliesenleger-zuerich.html" style="color:var(--accent);text-decoration:none;">Fliesenarbeiten</a> – alles termingerecht und in Schweizer Qualität.</p>
-      <p style="font-size:.88rem;color:var(--text-sec);line-height:1.95;">Von der ersten Idee bis zur schlüsselfertigen Übergabe sind Sie bei Elexons in besten Händen. Kontaktieren Sie uns für eine <a href="kontakt.html" style="color:var(--accent);text-decoration:none;">kostenlose Beratung</a> – unverbindlich, persönlich und ohne versteckte Kosten.</p>
+      <div class="seo-box-body" id="seoBoxBody">
+        <p style="font-size:.88rem;color:var(--text-sec);line-height:1.95;margin-bottom:14px;">Elexons ist Ihr <a href="generalunternehmer-zuerich.html" style="color:var(--accent);text-decoration:none;">Generalunternehmer in Zürich</a> für professionelle <a href="sanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Wohnungssanierung</a> und <a href="altbausanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Altbausanierung</a>. Ob vollständige Komplettsanierung, <a href="badsanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Badsanierung</a>, <a href="kuechensanierung-zuerich.html" style="color:var(--accent);text-decoration:none;">Küchensanierung</a> oder <a href="umbau-zuerich.html" style="color:var(--accent);text-decoration:none;">Umbau &amp; Innenausbau</a> – wir realisieren Ihr Projekt termingerecht, transparent und in Schweizer Qualität. Von Zürich City über den Zürichsee bis Winterthur: alle Handwerker aus einer Hand.</p>
+        <p style="font-size:.88rem;color:var(--text-sec);line-height:1.95;margin-bottom:14px;">Als zertifizierter Loxone-Partner integrieren wir <a href="smart-home-zuerich.html" style="color:var(--accent);text-decoration:none;">Smart Home-Lösungen</a> und <a href="deckenbeleuchtung-zuerich.html" style="color:var(--accent);text-decoration:none;">Deckenbeleuchtung</a> direkt während der Renovation. Unsere Handwerkerleistungen umfassen <a href="trockenbau-zuerich.html" style="color:var(--accent);text-decoration:none;">Trockenbau</a>, <a href="gipser-zuerich.html" style="color:var(--accent);text-decoration:none;">Gipserarbeiten</a>, <a href="parkett-zuerich.html" style="color:var(--accent);text-decoration:none;">Parkettverlegung</a> und <a href="fliesenleger-zuerich.html" style="color:var(--accent);text-decoration:none;">Fliesenarbeiten</a> – alles termingerecht und in Schweizer Qualität.</p>
+        <p style="font-size:.88rem;color:var(--text-sec);line-height:1.95;">Von der ersten Idee bis zur schlüsselfertigen Übergabe sind Sie bei Elexons in besten Händen. Kontaktieren Sie uns für eine <a href="kontakt.html" style="color:var(--accent);text-decoration:none;">kostenlose Beratung</a> – unverbindlich, persönlich und ohne versteckte Kosten.</p>
+        <div class="seo-box-fade" id="seoBoxFade"></div>
+      </div>
+      <button class="seo-read-more" id="seoReadMore" onclick="toggleSeoBox()">
+        <span id="seoReadMoreLabel">Mehr lesen</span>
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
     </div>
   </div>
 </section>
+<script>
+function toggleSeoBox() {
+  var body = document.getElementById('seoBoxBody');
+  var btn = document.getElementById('seoReadMore');
+  var label = document.getElementById('seoReadMoreLabel');
+  var expanded = body.classList.toggle('expanded');
+  btn.classList.toggle('open', expanded);
+  label.textContent = expanded ? 'Weniger anzeigen' : 'Mehr lesen';
+}
+</script>
 
 <!-- ── FOOTER ── -->
 <footer class="footer">
