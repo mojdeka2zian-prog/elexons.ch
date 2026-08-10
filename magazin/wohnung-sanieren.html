@@ -108,8 +108,8 @@
     .article-body .article-cat { display:inline-block; font-size:.62rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin-bottom:14px; }
     .article-body .article-meta { font-size:.78rem; color:var(--text-sec); margin:0 0 28px; display:block; }
     .article-hero__meta { font-size:.78rem; opacity:.75; }
-    .article-wrap { display:grid; grid-template-columns:1fr 260px; gap:40px; padding:64px 0 80px; align-items:start; }
-    @media(max-width:900px){ .article-wrap{grid-template-columns:1fr;gap:40px;} }
+    .article-wrap { display:grid; grid-template-columns:minmax(0,1fr) 260px; gap:40px; padding:64px 0 80px; align-items:start; }
+    @media(max-width:900px){ .article-wrap{grid-template-columns:minmax(0,1fr);gap:40px;} }
     .article-sidebar { position:sticky; top:90px; }
     .article-body h2 { font-family:var(--font-h); font-size:1.55rem; font-weight:400; margin:44px 0 14px; color:var(--text); }
     .article-body h3 { font-size:1rem; font-weight:600; margin:28px 0 10px; color:var(--text); }
