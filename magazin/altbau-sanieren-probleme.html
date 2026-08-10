@@ -115,7 +115,10 @@
     .service-link-list { display:flex; flex-wrap:wrap; gap:12px; }
     .service-link-list a { display:inline-flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--border); border-radius:4px; padding:10px 16px; font-size:.85rem; color:var(--text); text-decoration:none; transition:border-color .2s,color .2s; }
     .service-link-list a:hover { border-color:var(--accent); color:var(--accent); }
-    </style>
+    @media(max-width:768px){
+    .article-section-container { padding: 0 20px !important; }
+  }
+  </style>
 </head>
 <body>
 
@@ -199,7 +202,7 @@
 
 <!-- ── ARTICLE CONTENT ── -->
 <section style="background:#fff;">
-  <div class="container" style="max-width:1280px;padding:0 40px;">
+  <div class="container article-section-container" style="max-width:1280px;padding:0 40px;">
     <div class="article-wrap">
 
       <article class="article-body">
@@ -266,7 +269,8 @@
 
         <p>Eine gründliche Bestandsaufnahme hilft dabei, die wichtigsten Risiken frühzeitig zu erkennen. Nicht jedes Gebäude braucht dieselben Maßnahmen, aber einige Bereiche sollten grundsätzlich kontrolliert werden:</p>
 
-        <table class="article-cost-table">
+        <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:32px 0;">
+        <table class="article-cost-table" style="margin:0;min-width:520px;">
           <thead>
             <tr><th>Bereich</th><th>Mögliche Probleme</th><th>Sinnvolle Prüfung</th></tr>
           </thead>
@@ -282,6 +286,7 @@
             <tr><td>Heizung</td><td>Hoher Verbrauch, veraltete Technik</td><td>Heizungscheck und Wärmebedarfsberechnung</td></tr>
           </tbody>
         </table>
+        </div>
 
         <h2>In welcher Reihenfolge sollte man einen Altbau sanieren?</h2>
 

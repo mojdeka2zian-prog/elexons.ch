@@ -147,6 +147,9 @@
     .service-link-list { display:flex; flex-wrap:wrap; gap:12px; }
     .service-link-list a { display:inline-flex; align-items:center; gap:8px; padding:10px 20px; border:1px solid var(--border); border-radius:2px; font-size:.84rem; font-weight:500; color:var(--text); text-decoration:none; background:#fff; transition:border-color .2s,color .2s; }
     .service-link-list a:hover { border-color:var(--accent); color:var(--accent); }
+  @media(max-width:768px){
+    .article-section-container { padding: 0 20px !important; }
+  }
   </style>
 </head>
 <body>
@@ -233,7 +236,7 @@
 
 <!-- ── ARTICLE CONTENT ── -->
 <section style="background:#fff;">
-  <div class="container" style="max-width:1280px;padding:0 40px;">
+  <div class="container article-section-container" style="max-width:1280px;padding:0 40px;">
     <div class="article-wrap">
 
       <article class="article-body">
