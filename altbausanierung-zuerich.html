@@ -43,6 +43,12 @@
     .cta-simple { background:var(--section-soft); border-top:1px solid var(--border); padding:64px 0; text-align:center; }
     .cta-simple h2 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.6rem,3vw,2.4rem); font-weight:400; margin-bottom:14px; }
     .cta-simple p { font-size:.9rem; color:var(--text-sec); max-width:480px; margin:0 auto 32px; line-height:1.8; }
+    .photo-strip { display:grid; grid-template-columns:repeat(3,1fr); gap:4px; height:360px; overflow:hidden; }
+    .photo-strip__cell { overflow:hidden; background:#111; }
+    .photo-strip__cell img { width:100%; height:100%; object-fit:cover; transition:transform .6s ease; }
+    .photo-strip__cell:hover img { transform:scale(1.04); }
+    .photo-strip--4 { grid-template-columns:repeat(4,1fr); height:320px; }
+    @media(max-width:768px) { .photo-strip--4 { grid-template-columns:repeat(2,1fr); height:auto; } .photo-strip__cell { height:200px; } }
   </style>
   <script type="application/ld+json">
   {
@@ -174,7 +180,7 @@
 
 <section class="svc-hero">
   <div class="svc-hero__bg">
-    <img src="Langnau am Albis/webp/img02.webp" alt="Altbausanierung Zürich – Elexons Projekt Langnau am Albis" loading="eager" />
+    <img src="Langnau am Albis/webp/img28.webp" alt="Altbausanierung Zürich – Fassadenrenovation Elexons Langnau am Albis" loading="eager" />
     <div class="svc-hero__overlay"></div>
   </div>
   <div class="svc-hero__content">
@@ -217,6 +223,14 @@
     </div>
   </div>
 </section>
+
+<!-- ── PHOTO STRIP ── -->
+<div class="photo-strip photo-strip--4">
+  <div class="photo-strip__cell"><img src="Langnau am Albis/webp/img01.webp" alt="Altbausanierung Langnau am Albis – Rückbau und Rohbauzustand" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="Langnau am Albis/webp/img06.webp" alt="Altbausanierung Langnau am Albis – Innenausbau Elexons" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="Langnau am Albis/webp/img09.webp" alt="Altbausanierung Langnau am Albis – Elektroinstallation Elexons" loading="lazy" /></div>
+  <div class="photo-strip__cell"><img src="Leimbach/webp/IMG_0856.webp" alt="Altbausanierung Leimbach – Renovierter Innenraum Elexons" loading="lazy" /></div>
+</div>
 
 <section class="cta-simple">
   <div class="container">
