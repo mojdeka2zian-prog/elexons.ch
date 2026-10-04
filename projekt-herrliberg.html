@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59PF3F84');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekt Herrliberg – Bodenbelag, Fussbodenheizung &amp; Innenausbau | elexons.ch</title>
+  <meta name="description" content="Projekt Herrliberg – neuer Parkettboden, Fussbodenheizung, massgefertigte Schränke und neue Türen. Planung und Ausführung durch elexons.ch." />
+  <link rel="canonical" href="https://elexons.ch/projekt-herrliberg.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #fff;
+      --bg2: #F7F5F0;
+      --text: #1A1A1A;
+      --text2: #555;
+      --accent: #D52B1E;
+      --gold: #B89A5C;
+      --border: #E5E1D8;
+      --font-h: 'Cormorant Garamond', Georgia, serif;
+      --font-b: 'DM Sans', sans-serif;
+    }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font-b); color: var(--text); background: var(--bg); overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ── HERO ── */
+    .hero {
+      height: 82vh; min-height: 500px;
+      position: relative; overflow: hidden;
+      background: #1a1a1a;
+    }
+    .hero img {
+      width: 100%; height: 100%; object-fit: cover;
+      opacity: .75; transition: transform 8s ease;
+    }
+    .hero:hover img { transform: scale(1.03); }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.7) 0%, rgba(0,0,0,.15) 60%, transparent 100%);
+    }
+    .hero-content {
+      position: absolute; bottom: 64px; left: 60px; right: 60px;
+    }
+    .hero-tag {
+      font-size: .68rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 12px;
+    }
+    .hero-title {
+      font-family: var(--font-h); font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 400; color: #fff; line-height: 1.1; margin-bottom: 10px;
+    }
+    .hero-sub { font-size: .9rem; color: rgba(255,255,255,.6); }
+    @media(max-width:600px) { .hero-content { left: 24px; right: 24px; bottom: 40px; } }
+
+    /* ── CONTAINER ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    @media(max-width:600px) { .container { padding: 0 20px; } }
+    section { padding: 80px 0; }
+
+    /* ── INTRO ── */
+    .intro-grid {
+      display: grid; grid-template-columns: 1.4fr 1fr; gap: 80px; align-items: start;
+    }
+    .label {
+      font-size: .68rem; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--gold); display: block; margin-bottom: 12px;
+    }
+    h2 { font-family: var(--font-h); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 400; line-height: 1.15; margin-bottom: 20px; }
+    p { font-size: .93rem; color: var(--text2); line-height: 1.8; margin-bottom: 14px; }
+    .meta-list { list-style: none; margin-top: 32px; }
+    .meta-list li {
+      display: flex; align-items: baseline; gap: 12px;
+      padding: 14px 0; border-bottom: 1px solid var(--border);
+      font-size: .85rem;
+    }
+    .meta-list li:first-child { border-top: 1px solid var(--border); }
+    .meta-label { font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: .72rem; color: var(--text); min-width: 110px; }
+    .meta-val { color: var(--text2); }
+    @media(max-width:768px) { .intro-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    /* ── GALLERY MASONRY ── */
+    .gallery-section { background: var(--bg2); }
+    .gallery-header { margin-bottom: 48px; text-align: center; }
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+    }
+    .gallery-item {
+      overflow: hidden; cursor: pointer; position: relative; aspect-ratio: 4/3;
+    }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform .5s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.04); }
+    @media(max-width:900px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(max-width:500px) { .gallery-grid { grid-template-columns: 1fr; } }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 999;
+      background: rgba(0,0,0,.95);
+      display: none; align-items: center; justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-height: 90vh; max-width: 90vw; object-fit: contain; border-radius: 2px; }
+    .lb-close {
+      position: fixed; top: 20px; right: 28px;
+      font-size: 2rem; color: #fff; cursor: pointer; z-index: 1000;
+      background: none; border: none; line-height: 1;
+    }
+    .lb-prev, .lb-next {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,.1); border: none; color: #fff;
+      font-size: 1.6rem; padding: 16px 20px; cursor: pointer; z-index: 1000;
+      transition: background .2s;
+    }
+    .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,.2); }
+    .lb-prev { left: 16px; }
+    .lb-next { right: 16px; }
+
+    /* ── PROJECT FACTS STRIP ── */
+    .facts-strip {
+      background: #F7F5F0; border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border); padding: 0;
+    }
+    .facts-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      max-width: 1200px; margin: 0 auto;
+    }
+    .fact-item {
+      padding: 32px 28px; border-right: 1px solid var(--border);
+      text-align: center;
+    }
+    .fact-item:last-child { border-right: none; }
+    .fact-label {
+      font-size: .62rem; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--gold); display: block; margin-bottom: 8px;
+    }
+    .fact-value {
+      font-family: var(--font-h); font-size: 1.55rem; font-weight: 400;
+      color: var(--text); line-height: 1.15;
+    }
+    @media(max-width:900px) { .facts-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(max-width:600px) { .facts-grid { grid-template-columns: repeat(2, 1fr); } .fact-item { border-right: none; border-bottom: 1px solid var(--border); } }
+
+    /* ── LIGHTBOX CAPTION ── */
+    .lb-caption {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+      background: rgba(0,0,0,.6); color: rgba(255,255,255,.75);
+      font-size: .78rem; padding: 7px 18px; border-radius: 2px;
+      z-index: 1001; max-width: 80vw; text-align: center;
+      pointer-events: none; letter-spacing: .04em;
+    }
+    .lb-counter {
+      position: fixed; top: 24px; left: 50%; transform: translateX(-50%);
+      font-size: .72rem; letter-spacing: .15em; color: rgba(255,255,255,.4);
+      z-index: 1001; pointer-events: none;
+    }
+
+    /* ── CTA ── */
+    .cta-section { background: var(--accent); text-align: center; padding: 72px 0; }
+    .cta-section h2 { font-family: var(--font-h); font-size: 2.4rem; font-weight: 400; color: #fff; margin-bottom: 14px; }
+    .cta-section p { color: rgba(255,255,255,.72); max-width: 500px; margin: 0 auto 32px; }
+    .btn-light {
+      display: inline-block; border: 1.5px solid rgba(255,255,255,.6);
+      color: #fff; padding: 14px 36px; font-size: .82rem;
+      font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      border-radius: 3px; transition: all .3s;
+    }
+    .btn-light:hover { background: #fff; color: var(--accent); }
+
+    /* ── Back link ── */
+    .back-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 32px;
+    }
+    .back-link svg { width: 16px; height: 16px; }
+    .back-link:hover { opacity: .7; }
+  </style>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59PF3F84"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ── HEADER ── -->
+<header class="header transparent" data-transparent="true">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="logo"><img src="assets/images/logo.png" alt="elexons.ch" /></a>
+      <nav class="nav">
+        <a href="/" class="nav__link" data-i18n="nav_home">Startseite</a>
+        <div class="nav__dropdown">
+          <span class="nav__link nav__dropdown-toggle">
+            <span data-i18n="nav_services">Leistungen</span>
+            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </span>
+          <div class="dropdown-menu">
+          <div class="dropdown-menu__grid">
+            <a href="sanierung-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.125 1.125 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Wohnungssanierung" data-i18n-en="Apartment Renovation">Wohnungssanierung</span><span class="dropdown-item__sub" data-i18n-de="Komplett & Teilsanierung" data-i18n-en="Full & partial renovation">Komplett & Teilsanierung</span></div>
+            </a>
+            <a href="generalunternehmer-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 9.75V21m15-11.25V21M3.75 9.75L12 3l8.25 6.75"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Generalunternehmer" data-i18n-en="General Contractor">Generalunternehmer</span><span class="dropdown-item__sub" data-i18n-de="Alles aus einer Hand" data-i18n-en="Everything from one source">Alles aus einer Hand</span></div>
+            </a>
+            <a href="altbausanierung-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Altbausanierung" data-i18n-en="Old Building Renovation">Altbausanierung</span><span class="dropdown-item__sub" data-i18n-de="Modernisierung & Werterhalt" data-i18n-en="Modernisation & preservation">Modernisierung & Werterhalt</span></div>
+            </a>
+            <a href="umbau-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Umbau & Innenausbau" data-i18n-en="Remodelling & Interiors">Umbau & Innenausbau</span><span class="dropdown-item__sub" data-i18n-de="Raumgestaltung & Grundriss" data-i18n-en="Design & floor plan">Raumgestaltung & Grundriss</span></div>
+            </a>
+            <a href="badsanierung-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Badsanierung" data-i18n-en="Bathroom Renovation">Badsanierung</span><span class="dropdown-item__sub" data-i18n-de="Planung bis Übergabe" data-i18n-en="Planning to handover">Planung bis Übergabe</span></div>
+            </a>
+            <a href="trockenbau-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 4.5v15m6-15v15m-10.875 0h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125C3.504 4.5 3 5.004 3 5.625v12.75c0 .621.504 1.125 1.125 1.125z"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Trockenbau" data-i18n-en="Drywall Construction">Trockenbau</span><span class="dropdown-item__sub" data-i18n-de="Gipskarton & Decken" data-i18n-en="Plasterboard & ceilings">Gipskarton & Decken</span></div>
+            </a>
+            <a href="kuechensanierung-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Küchensanierung" data-i18n-en="Kitchen Renovation">Küchensanierung</span><span class="dropdown-item__sub" data-i18n-de="Modern & individuell" data-i18n-en="Modern & individual">Modern & individuell</span></div>
+            </a>
+            <a href="gipser-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Gipser" data-i18n-en="Plasterer">Gipser</span><span class="dropdown-item__sub" data-i18n-de="Innenputz & Spachtelarbeiten" data-i18n-en="Plastering & skimming">Innenputz & Spachtelarbeiten</span></div>
+            </a>
+            <a href="smart-home-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title">Smart Home</span><span class="dropdown-item__sub" data-i18n-de="Loxone & Automation" data-i18n-en="Loxone & automation">Loxone & Automation</span></div>
+            </a>
+            <a href="parkett-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zm0 9.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zm9.75-9.75A2.25 2.25 0 0115.75 3.75H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zm0 9.75A2.25 2.25 0 0115.75 13.5H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Parkett verlegen" data-i18n-en="Parquet Flooring">Parkett verlegen</span><span class="dropdown-item__sub" data-i18n-de="Holzböden & Laminat" data-i18n-en="Wood floors & laminate">Holzböden & Laminat</span></div>
+            </a>
+            <a href="fliesenleger-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Fliesenleger" data-i18n-en="Tiling">Fliesenleger</span><span class="dropdown-item__sub" data-i18n-de="Fliesen & Keramik" data-i18n-en="Tiles & ceramics">Fliesen & Keramik</span></div>
+            </a>
+            <a href="deckenbeleuchtung-zuerich.html" class="dropdown-item">
+              <div class="dropdown-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 2v2m0 16v2M4.22 4.22l1.42 1.42m10.72 10.72l1.42 1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+              <div class="dropdown-item__text"><span class="dropdown-item__title" data-i18n-de="Deckenbeleuchtung" data-i18n-en="Ceiling Lighting">Deckenbeleuchtung</span><span class="dropdown-item__sub" data-i18n-de="LED & Lichtplanung" data-i18n-en="LED & lighting design">LED & Lichtplanung</span></div>
+            </a>
+          </div>
+          <div class="dropdown-menu__footer">
+            <a href="leistungen.html" class="dropdown-item--all" data-i18n-de="Alle Leistungen ansehen →" data-i18n-en="View all services →">Alle Leistungen ansehen →</a>
+          </div>
+        </div>
+        </div>
+        <a href="projekte.html" class="nav__link active" data-i18n="nav_projects">Projekte</a>
+        <a href="ueber-uns.html" class="nav__link" data-i18n="nav_about">Über uns</a>
+        <a href="/magazin/" class="nav__link" data-i18n-de="Magazin" data-i18n-en="Magazine">Magazin</a>
+        <a href="kontakt.html" class="nav__link" data-i18n="nav_contact">Kontakt</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="de" onclick="setLang('de')">DE</button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        </div>
+        <a href="kontakt.html" class="btn btn--primary" data-i18n="btn_cta">Kostenlose Beratung</a>
+        <button class="hamburger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+  <nav class="mobile-menu__nav">
+    <a href="/" class="mobile-menu__link" data-i18n="mob_home">Startseite</a>
+    <button class="mob-services-toggle" id="mobServicesToggle">
+      <span data-i18n="nav_services">Leistungen</span>
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="mob-services-list" id="mobServicesList">
+      <a href="sanierung-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955a1.125 1.125 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg></div><span data-i18n-de="Wohnungssanierung" data-i18n-en="Apartment Renovation">Wohnungssanierung</span></a>
+      <a href="generalunternehmer-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 9.75V21m15-11.25V21M3.75 9.75L12 3l8.25 6.75"/></svg></div><span data-i18n-de="Generalunternehmer" data-i18n-en="General Contractor">Generalunternehmer</span></a>
+      <a href="altbausanierung-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21"/></svg></div><span data-i18n-de="Altbausanierung" data-i18n-en="Old Building Renovation">Altbausanierung</span></a>
+      <a href="umbau-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63"/></svg></div><span data-i18n-de="Umbau & Innenausbau" data-i18n-en="Remodelling">Umbau & Innenausbau</span></a>
+      <a href="badsanierung-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15"/></svg></div><span data-i18n-de="Badsanierung" data-i18n-en="Bathroom Renovation">Badsanierung</span></a>
+      <a href="kuechensanierung-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg></div><span data-i18n-de="Küchensanierung" data-i18n-en="Kitchen Renovation">Küchensanierung</span></a>
+      <a href="smart-home-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg></div><span>Smart Home</span></a>
+      <a href="trockenbau-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 4.5v15m6-15v15m-10.875 0h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125C3.504 4.5 3 5.004 3 5.625v12.75c0 .621.504 1.125 1.125 1.125z"/></svg></div><span data-i18n-de="Trockenbau" data-i18n-en="Drywall">Trockenbau</span></a>
+      <a href="gipser-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/></svg></div><span data-i18n-de="Gipser" data-i18n-en="Plasterer">Gipser</span></a>
+      <a href="parkett-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zm0 9.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zm9.75-9.75A2.25 2.25 0 0115.75 3.75H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zm0 9.75A2.25 2.25 0 0115.75 13.5H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"/></svg></div><span data-i18n-de="Parkett verlegen" data-i18n-en="Parquet">Parkett verlegen</span></a>
+      <a href="fliesenleger-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313"/></svg></div><span data-i18n-de="Fliesenleger" data-i18n-en="Tiler">Fliesenleger</span></a>
+      <a href="deckenbeleuchtung-zuerich.html" class="mob-services-item"><div class="mob-services-item__icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 2v2m0 16v2M4.22 4.22l1.42 1.42m10.72 10.72l1.42 1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div><span data-i18n-de="Deckenbeleuchtung" data-i18n-en="Ceiling Lighting">Deckenbeleuchtung</span></a>
+      <a href="leistungen.html" class="mob-services-item" style="color:var(--accent);font-weight:600;"><div class="mob-services-item__icon" style="background:rgba(213,43,30,.08);"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg></div><span data-i18n-de="Alle Leistungen →" data-i18n-en="All Services →">Alle Leistungen →</span></a>
+    </div>
+    <a href="projekte.html" class="mobile-menu__link active" data-i18n="mob_projects">Projekte</a>
+    <a href="ueber-uns.html" class="mobile-menu__link" data-i18n="mob_about">Über uns</a>
+    <a href="/magazin/" class="mobile-menu__link" data-i18n-de="Magazin" data-i18n-en="Magazine">Magazin</a>
+    <a href="kontakt.html" class="mobile-menu__link" data-i18n="mob_contact">Kontakt</a>
+  </nav>
+  <a href="kontakt.html" class="btn btn--primary" style="width:100%;justify-content:center;" data-i18n="btn_cta">Kostenlose Beratung</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="Herrliberg/webp/img07.webp" alt="Projekt Herrliberg – Parkett und Innenausbau elexons.ch" loading="eager" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Referenzprojekt · Herrliberg</div>
+    <h1 class="hero-title">Herrliberg</h1>
+    <div class="hero-sub">Bodenbelag · Fussbodenheizung · Innenausbau</div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section>
+  <div class="container">
+    <a href="projekte.html" class="back-link">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      <span data-i18n="btn_alle_proj">Alle Projekte</span>
+    </a>
+    <div class="intro-grid">
+      <div>
+        <span class="label">Referenzprojekt</span>
+        <h2>Vom Boden bis ins Detail – neuer Wohnkomfort</h2>
+        <p>Bei diesem Renovierungsprojekt haben wir den alten Bodenbelag entfernt, eine Fussbodenheizung eingebaut und neuen Parkettboden verlegt. Massgefertigte Schränke und neue Türen ergänzen das Gesamtbild und schaffen ein harmonisches, funktionales und stilvolles Wohnambiente.</p>
+        <p>Planung und Ausführung: Elexons.</p>
+      </div>
+      <div>
+        <ul class="meta-list">
+          <li><span class="meta-label">Standort</span><span class="meta-val">Herrliberg, ZH</span></li>
+          <li><span class="meta-label">Leistungen</span><span class="meta-val">Bodenbelag, Fussbodenheizung, Parkett, Schränke, Türen</span></li>
+          <li><span class="meta-label">Status</span><span class="meta-val">Abgeschlossen</span></li>
+          <li><span class="meta-label">Auftraggeber</span><span class="meta-val">Privater Eigentümer</span></li>
+          <li><span class="meta-label">Projektleitung</span><span class="meta-val">Elexons</span></li>
+          <li><span class="meta-label">Kontakt</span><span class="meta-val"><a href="kontakt.html" style="color:var(--accent);">Ähnliches Projekt anfragen →</a></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT FACTS STRIP -->
+<section class="facts-strip">
+  <div class="facts-grid">
+    <div class="fact-item">
+      <span class="fact-label">Standort</span>
+      <span class="fact-value">Herrliberg, ZH</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Leistung</span>
+      <span class="fact-value">Parkett & Heizung</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Auftraggeber</span>
+      <span class="fact-value">Privat</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Status</span>
+      <span class="fact-value">Abgeschlossen</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-header">
+      <span class="label" style="justify-content:center;display:block;">Projektdokumentation</span>
+      <h2>Einblicke ins Projekt</h2>
+    </div>
+    <div class="gallery-grid" id="herrliberg-gallery">
+      <div class="gallery-item" onclick="openLB(0)" data-caption="Herrliberg – Renovation (1/22)"><img src="Herrliberg/webp/img01.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(1)" data-caption="Herrliberg – Renovation (2/22)"><img src="Herrliberg/webp/img02.webp" alt="Herrliberg – Parkett elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(2)" data-caption="Herrliberg – Renovation (3/22)"><img src="Herrliberg/webp/img03.webp" alt="Herrliberg – Innenausbau elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(3)" data-caption="Herrliberg – Renovation (4/22)"><img src="Herrliberg/webp/img04.webp" alt="Herrliberg – Bodenbelag elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(4)" data-caption="Herrliberg – Renovation (5/22)"><img src="Herrliberg/webp/img05.webp" alt="Herrliberg – Fussbodenheizung elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(5)" data-caption="Herrliberg – Renovation (6/22)"><img src="Herrliberg/webp/img06.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(6)" data-caption="Herrliberg – Renovation (7/22)"><img src="Herrliberg/webp/img07.webp" alt="Herrliberg – Parkett verlegen elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(7)" data-caption="Herrliberg – Renovation (8/22)"><img src="Herrliberg/webp/img08.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(8)" data-caption="Herrliberg – Renovation (9/22)"><img src="Herrliberg/webp/img09.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(9)" data-caption="Herrliberg – Renovation (10/22)"><img src="Herrliberg/webp/img10.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(10)" data-caption="Herrliberg – Renovation (11/22)"><img src="Herrliberg/webp/img11.webp" alt="Herrliberg – Schränke elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(11)" data-caption="Herrliberg – Renovation (12/22)"><img src="Herrliberg/webp/img12.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(12)" data-caption="Herrliberg – Renovation (13/22)"><img src="Herrliberg/webp/img13.webp" alt="Herrliberg – Türen elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(13)" data-caption="Herrliberg – Renovation (14/22)"><img src="Herrliberg/webp/img14.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(14)" data-caption="Herrliberg – Renovation (15/22)"><img src="Herrliberg/webp/img15.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(15)" data-caption="Herrliberg – Renovation (16/22)"><img src="Herrliberg/webp/img16.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(16)" data-caption="Herrliberg – Renovation (17/22)"><img src="Herrliberg/webp/img17.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(17)" data-caption="Herrliberg – Renovation (18/22)"><img src="Herrliberg/webp/img18.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(18)" data-caption="Herrliberg – Renovation (19/22)"><img src="Herrliberg/webp/img19.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(19)" data-caption="Herrliberg – Renovation (20/22)"><img src="Herrliberg/webp/img20.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(20)" data-caption="Herrliberg – Renovation (21/22)"><img src="Herrliberg/webp/img21.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+      <div class="gallery-item" onclick="openLB(21)" data-caption="Herrliberg – Renovation (22/22)"><img src="Herrliberg/webp/img22.webp" alt="Herrliberg – Renovation elexons.ch" loading="lazy" decoding="async" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ein ähnliches Projekt planen?</h2>
+    <p>Kontaktieren Sie uns für eine kostenlose Erstberatung – persönlich, unverbindlich und ohne versteckte Kosten.</p>
+    <a href="kontakt.html" class="btn-light">Kostenlose Beratung anfragen</a>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildvorschau">
+  <button class="lb-close" onclick="closeLB()" aria-label="Schliessen">×</button>
+  <button class="lb-prev" onclick="moveLB(-1)" aria-label="Vorheriges Bild">&#8249;</button>
+  <img src="" alt="" id="lb-img" />
+  <button class="lb-next" onclick="moveLB(1)" aria-label="Nächstes Bild">&#8250;</button>
+  <div class="lb-counter" id="lb-counter"></div>
+  <div class="lb-caption" id="lb-caption"></div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="footer"><div class="container">
+  <div class="footer__grid">
+    <div class="footer__brand"><a href="/" class="logo"><img src="assets/images/logo.png" alt="elexons.ch" /></a><p>Professionelle Sanierung, Umbau und Smart Home Integration in Zürich. Schweizer Qualität – persönlich, transparent, zuverlässig.</p></div>
+    <div class="footer__col"><h5>Leistungen</h5><div class="footer__links"><a href="sanierung-zuerich.html" class="footer__link">Sanierung Zürich</a><a href="umbau-zuerich.html" class="footer__link">Umbau Zürich</a><a href="badsanierung-zuerich.html" class="footer__link">Badsanierung</a><a href="kuechensanierung-zuerich.html" class="footer__link">Küchensanierung</a><a href="smart-home-zuerich.html" class="footer__link">Smart Home</a></div></div>
+    <div class="footer__col"><h5>Unternehmen</h5><div class="footer__links"><a href="ueber-uns.html" class="footer__link">Über uns</a><a href="projekte.html" class="footer__link">Projekte</a><a href="kontakt.html" class="footer__link">Kontakt</a><a href="datenschutz.html" class="footer__link">Datenschutz</a><a href="impressum.html" class="footer__link">Impressum</a></div></div>
+    <div class="footer__col"><h5>Kontakt</h5><div class="footer__links"><span class="footer__link">Alpenblickstrasse 2, 8725 Gebertingen</span><a href="tel:+41799109999" class="footer__link">+41 79 910 99 99</a><a href="mailto:info@elexons.com" class="footer__link">info@elexons.com</a></div></div>
+  </div>
+  <div class="footer__bottom"><span>© 2026 elexons.ch – Alle Rechte vorbehalten</span><div class="footer__legal"><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></div></div>
+</div></footer>
+
+<script>
+  const galleryItems = Array.from(document.querySelectorAll('.gallery-item[data-caption]'));
+  const imgs = galleryItems.map(el => el.querySelector('img').src);
+  const captions = galleryItems.map(el => el.dataset.caption || '');
+  let cur = 0;
+  const lb      = document.getElementById('lightbox');
+  const lbImg   = document.getElementById('lb-img');
+  const lbCap   = document.getElementById('lb-caption');
+  const lbCount = document.getElementById('lb-counter');
+  function updateLB() {
+    lbImg.src = imgs[cur]; lbImg.alt = captions[cur];
+    lbCap.textContent = captions[cur];
+    lbCount.textContent = (cur + 1) + ' / ' + imgs.length;
+  }
+  function openLB(i) { cur = i; updateLB(); lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeLB() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+  function moveLB(d) { cur = (cur + d + imgs.length) % imgs.length; updateLB(); }
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLB();
+    if (e.key === 'ArrowLeft') moveLB(-1);
+    if (e.key === 'ArrowRight') moveLB(1);
+  });
+  lb.addEventListener('click', e => { if (e.target === lb) closeLB(); });
+  let touchStartX = 0;
+  lb.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 50) moveLB(dx < 0 ? 1 : -1);
+  }, { passive: true });
+</script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/lang.js"></script>
+</body>
+</html>
