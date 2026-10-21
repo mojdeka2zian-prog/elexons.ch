@@ -4,6 +4,8 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- ==================== MAIN PAGES ==================== -->
+
   <url>
     <loc>https://elexons.ch/</loc>
     <lastmod>2024-01-01</lastmod>
@@ -11,29 +13,52 @@
     <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://elexons.ch/leistungen</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- ==================== SERVICE PAGES ==================== -->
 
   <url>
-    <loc>https://elexons.ch/sanierung-zuerich</loc>
-    <lastmod>2024-01-01</lastmod>
+    <loc>https://elexons.ch/altbausanierung-zuerich</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://elexons.ch/umbau-zuerich</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://elexons.ch/badsanierung-zuerich</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/deckenbeleuchtung-zuerich</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/fliesenleger-zuerich</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/generalunternehmer-zuerich</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/gipser-zuerich</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/kontakt</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -47,6 +72,27 @@
   </url>
 
   <url>
+    <loc>https://elexons.ch/leistungen</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/parkett-zuerich</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/sanierung-zuerich</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://elexons.ch/smart-home-zuerich</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -54,10 +100,47 @@
   </url>
 
   <url>
-    <loc>https://elexons.ch/projekte</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://elexons.ch/trockenbau-zuerich</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/ueber-uns</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/umbau-kosten-zuerich</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/umbau-zuerich</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ==================== PROJECT PAGES ==================== -->
+
+  <url>
+    <loc>https://elexons.ch/projekt-herrliberg</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/projekt-langnau</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>
@@ -75,172 +158,215 @@
   </url>
 
   <url>
-    <loc>https://elexons.ch/ueber-uns</loc>
+    <loc>https://elexons.ch/projekte</loc>
     <lastmod>2024-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://elexons.ch/kontakt</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- ==================== MAGAZIN ==================== -->
+
   <url>
-    <loc>https://www.elexons.ch/magazin/</loc>
+    <loc>https://elexons.ch/magazin/</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/kuechensanierung-fachbetrieb-zuerich</loc>
+    <loc>https://elexons.ch/magazin/kuechensanierung-fachbetrieb-zuerich</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/garantien-badsanierung</loc>
+    <loc>https://elexons.ch/magazin/garantien-badsanierung</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/innenausbau-betrieb-waehlen</loc>
+    <loc>https://elexons.ch/magazin/innenausbau-betrieb-waehlen</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/offerte-altbausanierung</loc>
+    <loc>https://elexons.ch/magazin/offerte-altbausanierung</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/warnsignale-generalunternehmer</loc>
+    <loc>https://elexons.ch/magazin/badsanierung-planen</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/kuechenrenovation-zuerich</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://elexons.ch/magazin/checkliste-altbausanierung</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/smart-home-kosten-zuerich</loc>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://elexons.ch/magazin/checkliste-trockenbau</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/badezimmer-renovation-zuerich</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://elexons.ch/magazin/serioeser-sanierungsbetrieb-zuerich</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/wohnungssanierung-zuerich</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://elexons.ch/magazin/smart-home-budget</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/altbau-sanieren-probleme</loc>
-    <lastmod>2026-08-09</lastmod>
+    <loc>https://elexons.ch/magazin/umbau-kosten-zuerich</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/generalunternehmer-zuerich</loc>
-    <lastmod>2026-08-03</lastmod>
+    <loc>https://elexons.ch/magazin/verputzarten-vergleich</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/wohnung-sanieren</loc>
-    <lastmod>2026-08-01</lastmod>
+    <loc>https://elexons.ch/magazin/warnsignale-generalunternehmer</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/grundriss-aendern</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://elexons.ch/magazin/generalunternehmer-kosten</loc>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/badezimmer-sanierung-warnzeichen</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.elexons.ch/magazin/feuchtigkeit-badezimmer-wann-zum-problem</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.elexons.ch/magazin/gipser-aufgaben-handwerk-ablauf</loc>
-    <lastmod>2026-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.elexons.ch/magazin/kuechensanierung-oder-neubau-entscheidung</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.elexons.ch/magazin/was-ist-smart-home-funktionsweise</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.elexons.ch/magazin/wohnungssanierung-kosten-2026</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.elexons.ch/magazin/trockenbauwand-vs-mauerwerk-unterschiede</loc>
+    <loc>https://elexons.ch/magazin/trockenbauwand-vs-mauerwerk-unterschiede</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.elexons.ch/magazin/generalunternehmer-kosten</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://elexons.ch/magazin/wohnungssanierung-kosten-2026</loc>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://elexons.ch/magazin/was-ist-smart-home-funktionsweise</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/kuechensanierung-oder-neubau-entscheidung</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/gipser-aufgaben-handwerk-ablauf</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/feuchtigkeit-badezimmer-wann-zum-problem</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/badezimmer-sanierung-warnzeichen</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/grundriss-aendern</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/altbau-sanieren-probleme</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/generalunternehmer-zuerich</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/wohnung-sanieren</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/badezimmer-renovation-zuerich</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/wohnungssanierung-zuerich</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/kuechenrenovation-zuerich</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://elexons.ch/magazin/smart-home-kosten-zuerich</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
 </urlset>

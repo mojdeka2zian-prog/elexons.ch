@@ -1,0 +1,47 @@
+name: Update Sitemap
+
+# Triggers: any push to main that touches HTML files or the sitemap itself.
+# Also runnable manually from the GitHub Actions UI.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**.html"
+      - "sitemap.xml"
+      - "scripts/generate-sitemap.py"
+  workflow_dispatch:
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to push the updated sitemap back
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch full history so lastmod dates can be read from git log if needed
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate sitemap.xml
+        run: python3 scripts/generate-sitemap.py
+
+      - name: Commit updated sitemap (if changed)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet sitemap.xml; then
+            echo "sitemap.xml is unchanged — nothing to commit."
+          else
+            git add sitemap.xml
+            git commit -m "chore: auto-update sitemap [skip ci]"
+            git push
+            echo "sitemap.xml updated and pushed."
+          fi
